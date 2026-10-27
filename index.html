@@ -1,27 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home | The GeoAI Lab</title>
-  <link rel="stylesheet" href="assets/style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A personal field guide to Hamburg: historic Kneipen, cocktails, traditional food, harbor and hidden corners.">
+<title>Hamburg 2026 · A local's field guide</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzxYnkxfrVwLEf21mCB2Y6kUqk=" crossorigin="">
+<style>
+:root{--ink:#eae9e4;--muted:#b7bcc3;--bg:#101820;--panel:#17232d;--line:#34414a;--red:#ed514d;--gold:#f6ca78}
+*{box-sizing:border-box}html,body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--gold)}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+header{display:grid;grid-template-columns:minmax(230px,330px) 1fr;min-height:265px;background:#0d151d}
+.hero-photo{background:#27313c url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Astra_rotlicht.jpg") center 63%/cover no-repeat;min-height:265px}
+.hero-copy{padding:clamp(26px,5vw,62px);align-self:center}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.17em;font-size:.7rem;font-weight:700}
+h1{font-size:clamp(2rem,5vw,4rem);line-height:1.08;margin:12px 0}header p{color:var(--muted);max-width:55ch;line-height:1.6}
+main{display:grid;grid-template-columns:360px minmax(0,1fr);height:calc(100vh - 265px);min-height:580px}
+aside{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+.controls{padding:20px 18px 14px;border-bottom:1px solid var(--line)}
+.controls h2{font-size:1.1rem;margin:0 0 14px}
+input[type=search]{width:100%;border:1px solid #687581;background:#0e1923;color:white;padding:12px;border-radius:8px}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin:13px 0}
+.filter{border:1px solid #52616b;background:transparent;color:var(--ink);border-radius:99px;padding:7px 11px;font-size:.78rem}
+.filter.active{background:var(--gold);border-color:var(--gold);color:#15202a;font-weight:700}
+.count{color:var(--muted);font-size:.8rem}.place-list{overflow-y:auto;flex:1;padding:0 12px 20px}
+.place{display:block;text-align:left;width:100%;border:0;border-bottom:1px solid var(--line);color:var(--ink);background:transparent;padding:15px 9px}
+.place:hover,.place:focus{background:#253641}
+.place strong{display:block;font-size:.94rem}.place small{color:var(--gold);font-size:.73rem}
+.place .desc{color:var(--muted);font-size:.81rem;line-height:1.45;display:block;margin-top:5px}
+.mapwrap{position:relative}#map{height:100%;width:100%;background:#d8ddd7}
+.map-notice{position:absolute;bottom:22px;left:15px;z-index:600;background:#111c26ec;color:#e9eae6;border-radius:7px;padding:8px 12px;max-width:290px;font-size:.72rem;pointer-events:none}
+.popup-title{font-weight:750;font-size:1rem;margin-bottom:7px}.popup-meta{color:#6b5a43;font-size:.8rem;font-weight:700;margin-bottom:8px}
+.popup-desc{line-height:1.5}.popup-links{margin-top:11px;display:flex;gap:12px}.popup-links a{color:#155d76;font-weight:700}
+.leaflet-container{font:inherit}.leaflet-popup-content{min-width:190px}
+footer{padding:15px 23px;color:var(--muted);font-size:.76rem;line-height:1.5}footer a{color:var(--gold)}
+@media(max-width:760px){header{grid-template-columns:125px 1fr;min-height:185px}.hero-photo{min-height:185px}.hero-copy{padding:18px}h1{font-size:1.8rem}header p{font-size:.82rem;margin:0}main{display:flex;flex-direction:column;height:auto;min-height:0}.mapwrap{height:53vh;min-height:340px;order:0}aside{order:1;max-height:540px}.place-list{max-height:320px}.controls{padding:15px}.map-notice{bottom:10px;font-size:.65rem}}
+@media(max-width:400px){header{grid-template-columns:105px 1fr}.hero-copy{padding:13px}h1{font-size:1.5rem}}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Karsten Kelm  |  GeoAI Lab</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="work.html">Work</a>
-      <a href="about.html">About Me</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Welcome</h2>
-    <p>This is where I showcase my work in GIS, GeoAI, and computer vision. Explore my projects, learn more about my background, and feel free to reach out.</p>
-  </main>
-  <footer>
-    &copy; 2025 Karsten Kelm
-  </footer>
-</body>
-</html>
+<header>
+<div class="hero-photo" role="img" aria-label="Astra Rotlicht bottle by Hamburg's harbor"></div>
+<div class="hero-copy"><div class="eyebrow">Hamburg · November 2026</div><h1>Back to Hamburg.</h1><p>My city, rediscovered. Traditional kitchens, honest Kneipen, great cocktails, the Elbe, and places worth slowing down for.</p></div>
+</header>
+<main>
+<aside aria-label="Places and filters">
+<div class="controls"><h2>Explore the city</h2><label for="search" class="eyebrow" style="display:block;margin-bottom:7px">Search places</label><input id="search" type="search" placeholder="Name, neighborhood, description…">
+<div class="filters" id="filters" aria-label="Place categories"></div><div id="count" class="count" aria-live="polite">Loading locations…</div></div>
+<div class="place-list" id="places"></div>
+</aside>
+<section class="mapwrap" aria-label="Interactive map of Hamburg"><div id="map"></div><div class="map-notice">Pins are approximate. Use “Directions” for an exact destination.</div></section>
+</main>
+<footer>Curated Hamburg guide · Map © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> ·
+Photo: <a href="https://commons.wikimedia.org/wiki/File:Astra_rotlicht.jpg">Florian Schäffer / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (image displayed without alterations). Public places only; personal itinerary details excluded. <a href="https://github.com/karstenkelm/karstenkelm.github.io">Source</a>.</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+"use strict";
+const palette={Food:"#eaa45f",Kneipen:"#e05d5a",Cocktails:"#ac8ce3",Sights:"#469a89",Harbor:"#428ec3",Shops:"#b99c50"};
+const map=L.map("map",{zoomControl:true}).setView([53.563,9.987],12);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"© OpenStreetMap contributors"}).addTo(map);
+let all=[],category="All",term="",markers=[];
+const safe=s=>String(s).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+function route(name){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(name+", Hamburg Germany")}
+function popup(f){const p=f.properties;return '<div class="popup-title">'+safe(p.name)+'</div><div class="popup-meta">'+safe(p.category)+'</div><div class="popup-desc">'+safe(p.description)+'</div><div class="popup-links"><a href="'+route(p.name)+'" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>'}
+function draw(){
+markers.forEach(m=>map.removeLayer(m));markers=[];
+const subset=all.filter(f=>(category==="All"||f.properties.category===category)&&((f.properties.name+" "+f.properties.description+" "+f.properties.category).toLowerCase().includes(term)));
+document.getElementById("count").textContent=subset.length+" of "+all.length+" places";
+const list=document.getElementById("places");list.replaceChildren();
+subset.forEach(f=>{const p=f.properties,c=f.geometry.coordinates;
+const m=L.circleMarker([c[1],c[0]],{radius:8,color:"#fff",weight:1.5,fillColor:palette[p.category]||"#555",fillOpacity:.95}).bindPopup(popup(f)).addTo(map);markers.push(m);
+const b=document.createElement("button");b.className="place";b.type="button";
+const head=document.createElement("strong");head.textContent=p.name;
+const cat=document.createElement("small");cat.textContent=p.category;
+const desc=document.createElement("span");desc.className="desc";desc.textContent=p.description;
+b.append(head,cat,desc);b.addEventListener("click",()=>{map.setView([c[1],c[0]],Math.max(map.getZoom(),15));m.openPopup();if(window.innerWidth<761)document.getElementById("map").scrollIntoView({behavior:"smooth",block:"center"})});list.append(b);
+});
+}
+function filters(){const el=document.getElementById("filters");["All",...Object.keys(palette)].forEach(v=>{let b=document.createElement("button");b.type="button";b.className="filter"+(v===category?" active":"");b.textContent=v;b.setAttribute("aria-pressed",String(v===category));b.onclick=()=>{category=v;[...el.children].forEach(x=>{x.classList.toggle("active",x.textContent===v);x.setAttribute("aria-pressed",String(x.textContent===v))});draw()};el.append(b)})}
+filters();
+document.getElementById("search").addEventListener("input",e=>{term=e.target.value.trim().toLowerCase();draw()});
+fetch("data/hamburg_places.geojson").then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(geo=>{all=geo.features.filter(f=>f.geometry?.type==="Point");draw()}).catch(e=>{document.getElementById("count").textContent="Unable to load places. Try refreshing.";console.error(e)});
+</script>
+</body></html>
