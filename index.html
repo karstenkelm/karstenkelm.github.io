@@ -84,55 +84,70 @@ footer{max-width:1020px;margin:70px auto 0;padding:32px 22px 44px;border-top:1px
  footer{margin-top:40px}
 }
 @media(prefers-reduced-motion:reduce){aside{transition:none}}
-</style></head><body>
-<nav class="topbar" aria-label="Site heading"><span class="brand">Hamburg Notes</span><span class="edition">A personal city journal · No. 01</span></nav>
+.language-switch{display:flex;gap:3px;border:1px solid var(--line);padding:3px;border-radius:5px;margin-left:12px}.language-switch button{border:0;background:transparent;border-radius:3px;color:#5b5b5b;font-size:12px;font-weight:700;padding:7px 9px;min-width:38px}.language-switch button[aria-pressed="true"]{background:var(--ink);color:white}.topbar{gap:8px}.topbar .edition{margin-left:auto}@media(max-width:760px){.topbar .edition{display:none}.language-switch button{min-height:36px;min-width:43px}}</style></head><body>
+<nav class="topbar" aria-label="Site heading"><span class="brand">Hamburg Notes</span><span class="edition" data-i18n="edition">A personal city journal · No. 01</span><div class="language-switch" role="group" aria-label="Language / Sprache"><button type="button" id="lang-en" aria-pressed="true">EN</button><button type="button" id="lang-de" aria-pressed="false">DE</button></div></nav>
 <header>
-<div class="eyebrow">From the Elbe · November 2026</div>
-<h1>Back to <em>Hamburg.</em></h1>
-<p class="subtitle">An illustrated field guide to old streets, honest Kneipen, harbor mornings and the city that never quite leaves you.</p>
-<div class="byline"><span>THE HAMBURG EDITION</span><span class="dot">●</span><span>36 places to explore</span></div>
+<div class="eyebrow" data-i18n="date">Hamburg · November 2026</div>
+<h1 data-i18n-html="title">Back to <em>Hamburg.</em></h1>
+<p class="subtitle" data-i18n="subtitle">I grew up in Hamburg. Now I live a long way away, and every time I come back I have a list of places I want to see again.</p>
+<div class="byline"><span data-i18n="byline">A FEW NOTES FROM HOME</span><span class="dot">●</span><span data-i18n="placeTotal">36 places to explore</span></div>
 </header>
-<figure style="margin:0"><div class="hero-photo" role="img" aria-label="Astra Rotlicht bottle overlooking Hamburg harbor"></div><figcaption class="photo-caption">The Elbe, the harbor, and a little Astra. Photo: Florian Schäffer / Wikimedia Commons.</figcaption></figure>
+<figure style="margin:0"><div class="hero-photo" role="img" aria-label="Astra Rotlicht bottle overlooking Hamburg harbor"></div><figcaption class="photo-caption" data-i18n="caption">The Elbe, the cranes and an Astra. That looks like Hamburg to me. Photo: Florian Schäffer / Wikimedia Commons.</figcaption></figure>
 <article class="article">
-<h2>A city to return to</h2>
-<p class="dropcap">There are many ways to see Hamburg. Mine begins by the water, follows the old brick streets, and occasionally disappears into a neighborhood Kneipe where time seems to have slowed down.</p>
-<p>This is a collection of the places I want to return to—and others I still want to discover. Some are Hamburg institutions. Others are small, ordinary corners that make the city feel like home.</p>
+<h2 data-i18n="essayTitle">A few things I miss about Hamburg</h2>
+<p class="dropcap" data-i18n="essay1">I’m originally from Hamburg, but I’ve been living in California for a long time. When I come back, I don’t really need to tick off the big sights. I’d rather walk along the Elbe, look at the old streets, stop for a Fischbrötchen and spend an evening in a proper neighborhood Kneipe.</p>
+<p data-i18n="essay2">I’ve put together this map partly to remember the old places and partly to find a few new ones. There are traditional restaurants, Barmbek pubs, cocktail bars, bookshops and bits of Hamburg history. It’s a personal list, not a ranking—and I expect I’ll keep adding to it.</p>
 </article>
 <div class="section-rule"></div>
-<section class="map-intro" aria-label="Map introduction"><div class="eyebrow">The field guide</div><h2>Explore Hamburg, one stop at a time</h2><p>Browse traditional restaurants, neighborhood bars, cocktail spots, museums, bookstores and the harbor. Choose a category or open a pin on the interactive map.</p></section>
+<section class="map-intro" aria-label="Map introduction"><div class="eyebrow" data-i18n="mapEyebrow">My Hamburg map</div><h2 data-i18n="mapTitle">Places I want to revisit</h2><p data-i18n="mapIntro">Some old favorites, some places I’ve only heard about. Browse the list or open a pin on the map.</p></section>
 <main>
-<button id="showPlaces" class="mobile-toggle" type="button" aria-expanded="false" aria-controls="placesPanel">☰ <span>Explore places</span></button>
+<button id="showPlaces" class="mobile-toggle" type="button" aria-expanded="false" aria-controls="placesPanel">☰ <span data-i18n="explore">Explore places</span></button>
 <aside id="placesPanel" aria-label="Places and filters">
-<div class="controls"><button id="closePlaces" class="sheet-close" type="button" aria-label="Close places panel">×</button><h2>Places &amp; stories</h2><label for="search" class="eyebrow">Find a place</label><input id="search" type="search" placeholder="Search restaurants, Kneipen, sights…">
+<div class="controls"><button id="closePlaces" class="sheet-close" type="button" aria-label="Close places panel">×</button><h2 data-i18n="placesTitle">Places on my list</h2><label for="search" class="eyebrow" data-i18n="find">Find a place</label><input id="search" type="search" placeholder="Search restaurants, Kneipen, sights…">
 <div class="filters" id="filters" aria-label="Place categories"></div><div id="count" class="count" aria-live="polite">Loading locations…</div></div>
 <div class="place-list" id="places"></div>
 </aside>
-<section class="mapwrap" aria-label="Interactive map of Hamburg"><iframe id="map" title="Hamburg map generated with leafmap" src="leafmap-map.html" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe><div class="map-notice">Built with leafmap · Pins approximate; check directions for exact locations.</div></section>
+<section class="mapwrap" aria-label="Interactive map of Hamburg"><iframe id="map" title="Hamburg map generated with leafmap" src="leafmap-map.html" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe><div class="map-notice" data-i18n="mapNotice">Made with leafmap · Pins are approximate; check exact directions.</div></section>
 </main>
 <footer>Hamburg Notes · Map © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> · Photo <a href="https://commons.wikimedia.org/wiki/File:Astra_rotlicht.jpg">Florian Schäffer / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, displayed without alteration. Public places only; private itinerary excluded. <a href="https://github.com/karstenkelm/karstenkelm.github.io">Source</a>.</footer>
 <script>
 "use strict";
 const palette={Food:"#eaa45f",Kneipen:"#e05d5a",Cocktails:"#ac8ce3",Sights:"#469a89",Harbor:"#428ec3",Shops:"#b99c50"};
-let all=[],category="All",term="";
+let all=[],category="All",term="",language="en";
+const translations={"en":{"edition":"A personal city journal · No. 01","date":"Hamburg · November 2026","title":"Back to <em>Hamburg.</em>","subtitle":"I grew up in Hamburg. Now I live a long way away, and every time I come back I have a list of places I want to see again.","byline":"A FEW NOTES FROM HOME","placeTotal":"36 places to explore","caption":"The Elbe, the cranes and an Astra. That looks like Hamburg to me. Photo: Florian Schäffer / Wikimedia Commons.","essayTitle":"A few things I miss about Hamburg","essay1":"I’m originally from Hamburg, but I’ve been living in California for a long time. When I come back, I don’t really need to tick off the big sights. I’d rather walk along the Elbe, look at the old streets, stop for a Fischbrötchen and spend an evening in a proper neighborhood Kneipe.","essay2":"I’ve put together this map partly to remember the old places and partly to find a few new ones. There are traditional restaurants, Barmbek pubs, cocktail bars, bookshops and bits of Hamburg history. It’s a personal list, not a ranking—and I expect I’ll keep adding to it.","mapEyebrow":"My Hamburg map","mapTitle":"Places I want to revisit","mapIntro":"Some old favorites, some places I’ve only heard about. Browse the list or open a pin on the map.","explore":"Explore places","placesTitle":"Places on my list","find":"Find a place","mapNotice":"Made with leafmap · Pins are approximate; check exact directions.","placeholder":"Search restaurants, Kneipen, sights…","loading":"Loading locations…","failed":tr("failed"),"count":"places","of":"of"},"de":{"edition":"Ein persönliches Hamburg-Journal · Nr. 01","date":"Hamburg · November 2026","title":"Wieder in <em>Hamburg.</em>","subtitle":"Ich bin in Hamburg aufgewachsen. Inzwischen wohne ich weit weg, aber wenn ich zurückkomme, habe ich immer eine Liste mit Orten im Kopf.","byline":"EIN PAAR NOTIZEN AUS DER HEIMAT","placeTotal":"36 Orte auf meiner Liste","caption":"Elbe, Containerbrücken und ein Astra. Für mich sieht so Hamburg aus. Foto: Florian Schäffer / Wikimedia Commons.","essayTitle":"Was ich an Hamburg vermisse","essay1":"Ich komme ursprünglich aus Hamburg, lebe aber schon lange in Kalifornien. Wenn ich wieder da bin, muss ich nicht unbedingt die großen Sehenswürdigkeiten abhaken. Lieber an der Elbe entlanglaufen, durch alte Straßen bummeln, ein Fischbrötchen essen und abends in einer richtigen Stadtteilkneipe am Tresen sitzen.","essay2":"Diese Karte ist einerseits eine Gedächtnisstütze für die alten Ecken, andererseits eine Liste mit Dingen, die ich noch entdecken möchte. Hamburger Traditionslokale, Kneipen in Barmbek, gute Cocktailbars, Buchläden und ein bisschen Stadtgeschichte. Keine Bestenliste – einfach meine persönliche Sammlung, die sicher noch wächst.","mapEyebrow":"Meine Hamburg-Karte","mapTitle":"Orte, die ich wiedersehen möchte","mapIntro":"Ein paar alte Favoriten und einige neue Entdeckungen. Such dir etwas aus der Liste oder klick direkt auf die Karte.","explore":"Orte ansehen","placesTitle":"Meine Liste","find":"Ort suchen","mapNotice":"Mit leafmap erstellt · Markierungen ungefähr; genaue Adresse bitte prüfen.","placeholder":"Restaurant, Kneipe, Museum …","loading":"Orte werden geladen …","failed":"Orte konnten nicht geladen werden. Bitte neu laden.","count":"Orte","of":"von"}};
+const categoryNames={en:{All:"All",Food:"Food",Kneipen:"Kneipen",Cocktails:"Cocktails",Sights:"Sights",Harbor:"Harbor",Shops:"Shops"},de:{All:"Alle",Food:"Essen",Kneipen:"Kneipen",Cocktails:"Cocktails",Sights:"Sehenswertes",Harbor:"Hafen",Shops:"Läden"}};
+function tr(k){return translations[language][k]}
 const safe=s=>String(s).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
 function route(name){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(name+", Hamburg Germany")}
 function popup(f){const p=f.properties;return '<div class="popup-title">'+safe(p.name)+'</div><div class="popup-meta">'+safe(p.category)+'</div><div class="popup-desc">'+safe(p.description)+'</div><div class="popup-links"><a href="'+route(p.name)+'" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>'}
 function draw(){
 
-const subset=all.filter(f=>(category==="All"||f.properties.category===category)&&((f.properties.name+" "+f.properties.description+" "+f.properties.category).toLowerCase().includes(term)));
-document.getElementById("count").textContent=subset.length+" of "+all.length+" places";
+const subset=all.filter(f=>(category==="All"||f.properties.category===category)&&((f.properties.name+" "+f.properties.description+" "+(f.properties.description_de||"")+" "+f.properties.category).toLowerCase().includes(term)));
+document.getElementById("count").textContent=subset.length+" "+tr("of")+" "+all.length+" "+tr("count");
 const list=document.getElementById("places");list.replaceChildren();
 subset.forEach(f=>{const p=f.properties;
 
 const b=document.createElement("button");b.className="place";b.type="button";
 const head=document.createElement("strong");head.textContent=p.name;
-const cat=document.createElement("small");cat.textContent=p.category;
-const desc=document.createElement("span");desc.className="desc";desc.textContent=p.description;
+const cat=document.createElement("small");cat.textContent=categoryNames[language][p.category]||p.category;
+const desc=document.createElement("span");desc.className="desc";desc.textContent=language==="de"?(p.description_de||p.description):p.description;
 b.append(head,cat,desc);b.addEventListener("click",()=>window.open(route(p.name),"_blank","noopener,noreferrer"));list.append(b);
 });
 }
-function filters(){const el=document.getElementById("filters");["All",...Object.keys(palette)].forEach(v=>{let b=document.createElement("button");b.type="button";b.className="filter"+(v===category?" active":"");b.textContent=v;b.setAttribute("aria-pressed",String(v===category));b.onclick=()=>{category=v;[...el.children].forEach(x=>{x.classList.toggle("active",x.textContent===v);x.setAttribute("aria-pressed",String(x.textContent===v))});draw()};el.append(b)})}
+function filters(){const el=document.getElementById("filters");["All",...Object.keys(palette)].forEach(v=>{let b=document.createElement("button");b.type="button";b.className="filter"+(v===category?" active":"");b.textContent=categoryNames[language][v];b.dataset.category=v;b.setAttribute("aria-pressed",String(v===category));b.onclick=()=>{category=v;[...el.children].forEach(x=>{x.classList.toggle("active",x.dataset.category===v);x.setAttribute("aria-pressed",String(x.textContent===v))});draw()};el.append(b)})}
 filters();
+function switchLanguage(next){
+ language=next;document.documentElement.lang=next;
+ document.querySelectorAll("[data-i18n]").forEach(el=>{el.textContent=tr(el.dataset.i18n)});
+ document.querySelectorAll("[data-i18n-html]").forEach(el=>{if(el.dataset.i18nHtml==="title")el.innerHTML=tr("title")});
+ document.getElementById("search").placeholder=tr("placeholder");
+ document.getElementById("lang-en").setAttribute("aria-pressed",String(next==="en"));
+ document.getElementById("lang-de").setAttribute("aria-pressed",String(next==="de"));
+ document.querySelectorAll(".filter").forEach(el=>{el.textContent=categoryNames[next][el.dataset.category]});
+ if(all.length)draw();else document.getElementById("count").textContent=tr("loading");
+}
+document.getElementById("lang-en").addEventListener("click",()=>switchLanguage("en"));
+document.getElementById("lang-de").addEventListener("click",()=>switchLanguage("de"));
 const showPlaces=document.getElementById("showPlaces"),closePlaces=document.getElementById("closePlaces"),panel=document.getElementById("placesPanel");
 function setSheet(open){document.body.classList.toggle("sheet-open",open);showPlaces.setAttribute("aria-expanded",String(open));if(open){document.getElementById("search").focus({preventScroll:true})}else{showPlaces.focus({preventScroll:true})}}
 showPlaces.addEventListener("click",()=>setSheet(true));
