@@ -107,6 +107,16 @@ footer{max-width:1020px;margin:70px auto 0;padding:32px 22px 44px;border-top:1px
 .weather-chip strong{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;line-height:1.2;white-space:normal;max-width:170px}
 @media(max-width:850px){.clock-chip time{font-size:19px}.weather-symbol{font-size:24px;min-width:24px}.weather-chip strong{font-size:12px}}
 @media(max-width:600px){.live-conditions{justify-content:space-between}.clock-chip time{font-size:18px}.weather-reading{gap:4px}.weather-symbol{font-size:23px;min-width:22px}.weather-chip strong{font-size:11px;max-width:128px}}
+
+/* Quiet editorial language selector — no dark flag frames */
+.language-switch{border:0;background:transparent;border-radius:0;padding:0;gap:12px}
+.language-switch button{position:relative;background:transparent!important;color:var(--ink)!important;border:0;border-radius:0;padding:7px 4px 10px!important;min-width:0;opacity:.62;transition:opacity .18s ease,transform .18s ease}
+.language-switch button:hover{opacity:1;transform:translateY(-1px)}
+.language-switch button[aria-pressed="true"]{opacity:1}
+.language-switch button[aria-pressed="true"]::after{content:"";position:absolute;bottom:1px;left:15%;right:15%;height:2px;border-radius:2px;background:var(--accent)}
+.language-switch button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.language-switch .flag{filter:none;border:0;box-shadow:none}
+@media(max-width:600px){.language-switch{gap:5px}.language-switch button{padding:5px 2px 8px!important}}
 </style></head><body>
 <nav class="topbar" aria-label="Site heading"><span class="brand">Hamburg Notes</span><span class="edition" data-i18n="edition">A personal city journal · No. 01</span><div class="live-conditions" aria-label="Hamburg weather and local times"><div class="clock-chip"><span class="chip-label">California</span><time id="california-clock">--:--</time></div><div class="clock-chip"><span class="chip-label">Hamburg</span><time id="hamburg-clock">--:--</time></div><div class="weather-chip" title="Current Hamburg weather via Open-Meteo"><span class="chip-label" id="weather-label">Hamburg weather</span><div class="weather-reading"><span class="weather-symbol" id="weather-symbol" aria-hidden="true">☁</span><strong id="hamburg-weather" aria-live="polite">—</strong></div></div></div><div class="language-switch" role="group" aria-label="Language / Sprache"><button type="button" id="lang-en" aria-pressed="true" aria-label="English"><img class="flag" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_California.svg" alt="" aria-hidden="true"></button><button type="button" id="lang-de" aria-pressed="false" aria-label="Deutsch"><img class="flag" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Hamburg.svg" alt="" aria-hidden="true"></button></div></nav>
 <header>
