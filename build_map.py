@@ -2,12 +2,13 @@
 
 Install: pip install leafmap folium
 Run:     python build_map.py
-Output:  leafmap-map.html (optional standalone alternative to the custom homepage)
-The public homepage reads the same GeoJSON and uses Leaflet directly for responsive filtering.
+Output:  leafmap-map.html (authoritative interactive map embedded on homepage)
+GitHub Actions regenerates this on changes to the script or GeoJSON.
 """
 from pathlib import Path
 import json
 import html
+from urllib.parse import quote
 import folium
 import leafmap.foliumap as leafmap
 
@@ -23,7 +24,7 @@ for category, color in colors.items():
         if p["category"] != category:
             continue
         longitude, latitude = feature["geometry"]["coordinates"]
-        dest = "https://www.google.com/maps/search/?api=1&query=" + __import__("urllib.parse", fromlist=["quote"]).quote(p["name"] + ", Hamburg Germany")
+        dest = "https://www.google.com/maps/search/?api=1&query=" + quote(p["name"] + ", Hamburg Germany")
         popup = (f"<b>{html.escape(p['name'])}</b><p>{html.escape(p['description'])}</p>"
                  f'<a href="{dest}" target="_blank" rel="noopener noreferrer">Directions</a>')
         folium.CircleMarker(
