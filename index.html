@@ -149,7 +149,7 @@ function filters(){const el=document.getElementById("filters");["All",...Object.
 function updateClocks(){
  const now=new Date();
  for(const [id,zone] of [["california-clock","America/Los_Angeles"],["hamburg-clock","Europe/Berlin"]]){
-  document.getElementById(id).textContent=new Intl.DateTimeFormat("en-GB",{timeZone:zone,hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(now);
+  document.getElementById(id).textContent=new Intl.DateTimeFormat(id==="california-clock"?"en-US":"en-GB",{timeZone:zone,hour:"2-digit",minute:"2-digit",hourCycle:id==="california-clock"?"h12":"h23"}).format(now);
  }
 }
 updateClocks();setInterval(updateClocks,15000);
@@ -164,7 +164,7 @@ function weatherCondition(code){
 function renderWeather(){
  const lang=language==="de"?"de":"en";document.getElementById("weather-label").textContent=weatherText[lang].label;
  document.getElementById("hamburg-weather").textContent=weatherReading
- ? Math.round(weatherReading.temperature_2m)+"°C · "+weatherText[lang][weatherCondition(weatherReading.weather_code)]
+ ? Math.round(weatherReading.temperature_2m)+"°C / "+Math.round(weatherReading.temperature_2m*9/5+32)+"°F · "+weatherText[lang][weatherCondition(weatherReading.weather_code)]
  : weatherText[lang].unavailable;
 }
 async function updateHamburgWeather(){
