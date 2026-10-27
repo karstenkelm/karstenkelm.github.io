@@ -190,6 +190,7 @@ window.addEventListener("message",event=>{
 function draw(){
 
 const subset=all.filter(f=>(category==="All"||f.properties.category===category)&&((f.properties.name+" "+f.properties.description+" "+(f.properties.description_de||"")+" "+f.properties.category).toLowerCase().includes(term)));
+subset.sort((a,b)=>a.properties.name.localeCompare(b.properties.name,language==="de"?"de":"en",{sensitivity:"base",ignorePunctuation:true}));
 document.getElementById("count").textContent=subset.length+" "+tr("of")+" "+all.length+" "+tr("count");
 const list=document.getElementById("places");list.replaceChildren();
 subset.forEach(f=>{const p=f.properties;
