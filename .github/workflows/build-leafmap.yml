@@ -9,6 +9,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: hamburg-leafmap-build
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,9 +34,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp leafmap-map.html /tmp/hamburg-map-en.html
+          cp leafmap-map-de.html /tmp/hamburg-map-de.html
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/hamburg-map-en.html leafmap-map.html
+          cp /tmp/hamburg-map-de.html leafmap-map-de.html
           git add leafmap-map.html leafmap-map-de.html
           if ! git diff --cached --quiet; then
-            git commit -m "Build static Hamburg map with leafmap [skip ci]"
-            git pull --rebase origin main
+            git commit -m "Build bilingual Hamburg maps with leafmap [skip ci]"
             git push origin HEAD:main
           fi
