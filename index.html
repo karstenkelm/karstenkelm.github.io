@@ -13,7 +13,7 @@ a{color:var(--accent)}
 button,input{font:inherit}
 button{cursor:pointer}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.topbar{height:58px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc((100vw - 1080px)/2));font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.topbar{position:sticky;top:0;z-index:1500;background:var(--paper);height:58px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc((100vw - 1080px)/2));font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
 .topbar .brand{font-family:Georgia,serif;font-size:20px;letter-spacing:-.035em;text-transform:none}
 .topbar .edition{color:var(--muted);font-weight:500}
 header{display:block;max-width:920px;margin:0 auto;padding:69px 22px 0;text-align:center}
