@@ -15,6 +15,14 @@ names_de = {"Food": "Essen", "Kneipen": "Kneipen", "Cocktails": "Cocktails",
 
 for lang, output in (("en", "leafmap-map.html"), ("de", "leafmap-map-de.html")):
     m = leafmap.Map(center=[53.563, 9.987], zoom=12)
+    # Minimal monochrome appearance for the raster basemap, preserving colored markers.
+    m.get_root().header.add_child(folium.Element("""
+    <style>
+    .leaflet-tile-pane img.leaflet-tile {
+      filter: grayscale(100%) saturate(0%) contrast(82%) brightness(110%);
+    }
+    </style>
+    """))
     for category, color in colors.items():
         label = names_de[category] if lang == "de" else category
         group = folium.FeatureGroup(name=label, show=True)
