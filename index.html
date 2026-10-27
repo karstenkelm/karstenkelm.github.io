@@ -169,7 +169,7 @@ function sendMapFilter(){
 }
 window.addEventListener("message",event=>{
  const frame=document.getElementById("map");
- if(event.origin===window.location.origin && event.source===frame.contentWindow && event.data && event.data.type==="hamburg-map-ready")sendMapFilter();
+ if(event.origin===window.location.origin && event.source===frame?.contentWindow && event.data && event.data.type==="hamburg-map-ready")sendMapFilter();
 });
 function draw(){
 
@@ -182,7 +182,14 @@ const b=document.createElement("button");b.className="place";b.type="button";
 const head=document.createElement("strong");head.textContent=p.name;
 const cat=document.createElement("small");cat.textContent=categoryNames[language][p.category]||p.category;
 const desc=document.createElement("span");desc.className="desc";desc.textContent=language==="de"?(p.description_de||p.description):p.description;
-b.append(head,cat,desc);b.addEventListener("click",()=>window.open(route(p.name),"_blank","noopener,noreferrer"));list.append(b);
+b.append(head,cat,desc);b.addEventListener("click",()=>{
+ const frame=document.getElementById("map");
+ if(frame?.contentWindow)frame.contentWindow.postMessage({type:"hamburg-map-focus",id:p.id},window.location.origin);
+ if(window.matchMedia("(max-width:760px)").matches){
+  setSheet(false);
+  document.getElementById("map").scrollIntoView({behavior:"smooth",block:"center"});
+ }
+});list.append(b);
 });
 sendMapFilter();
 }
