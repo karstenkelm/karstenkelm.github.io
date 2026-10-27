@@ -9,7 +9,12 @@
         "category": "Food",
         "description": "Historic courtyard dining near the Michel, with Labskaus and Pannfisch.",
         "location_note": "Map pin approximate — use Directions for exact destination.",
-        "description_de": "Historische Gaststuben am Michel. Auf der Karte stehen Hamburger Klassiker wie Labskaus und Pannfisch."
+        "description_de": "Historische Gaststuben am Michel. Auf der Karte stehen Hamburger Klassiker wie Labskaus und Pannfisch.",
+        "address": "Krayenkamp 10, 20459 Hamburg",
+        "phone": "+49 40 365800",
+        "hours": "Tue–Sun 12:00–23:00 (kitchen until 21:00)",
+        "hours_de": "Di–So 12:00–23:00 (Küche bis 21:00)",
+        "website": "https://www.krameramtsstuben.de/"
       },
       "geometry": {
         "type": "Point",
@@ -243,7 +248,12 @@
         "category": "Cocktails",
         "description": "Birthplace of the Gin Basil Smash; intimate and expertly made classics.",
         "location_note": "Map pin approximate — use Directions for exact destination.",
-        "description_de": "Hier wurde der Gin Basil Smash bekannt. Eine kleine, feine Cocktailbar in der Innenstadt."
+        "description_de": "Hier wurde der Gin Basil Smash bekannt. Eine kleine, feine Cocktailbar in der Innenstadt.",
+        "address": "Rathausstraße 3, 20095 Hamburg",
+        "phone": "+49 40 334753780",
+        "hours": "Mon–Fri from 17:00; Sat from 13:00; Sun closed",
+        "hours_de": "Mo–Fr ab 17:00; Sa ab 13:00; So geschlossen",
+        "website": "https://www.lelion.net/"
       },
       "geometry": {
         "type": "Point",
@@ -659,7 +669,10 @@
         "description_de": "Frisch gerösteter Kaffee, Kuchen und Fleetblick im historischen Speicherboden von 1888. Kehrwieder 5 – ein schöner Zwischenstopp beim Bummel durch die Speicherstadt.",
         "address": "Kehrwieder 5, 20457 Hamburg",
         "website": "https://speicherstadt-kaffee.de/",
-        "location_note": "Coordinates sourced from address listings; confirm entrance on arrival."
+        "location_note": "Coordinates sourced from address listings; confirm entrance on arrival.",
+        "phone": "+49 40 537998500",
+        "hours": "Café daily 10:00–18:00; espresso bar 08:00–18:00",
+        "hours_de": "Café täglich 10:00–18:00; Espressobar 08:00–18:00"
       },
       "geometry": {
         "type": "Point",
