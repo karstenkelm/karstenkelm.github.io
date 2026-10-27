@@ -375,17 +375,20 @@
       "type": "Feature",
       "properties": {
         "id": 21,
-        "name": "Tower Bar",
-        "category": "Cocktails",
-        "description": "Harbor views over the Elbe and the docks.",
-        "location_note": "Map pin approximate — use Directions for exact destination.",
-        "description_de": "Ein Drink mit Blick auf Elbe und Hafen – hoch über den Landungsbrücken."
+        "name": "Hotel Hafen Hamburg",
+        "category": "Sights",
+        "description": "Traditional maritime hotel above the Landungsbrücken with harbor views. The Tower Bar is located inside the hotel.",
+        "location_note": "Hotel building location based on OpenStreetMap (approximately); map pin is for Hotel Hafen Hamburg, not the separate Tower Bar.",
+        "description_de": "Traditionsreiches Hotel oberhalb der Landungsbrücken mit Hafenblick. Die Tower Bar befindet sich im Hotel.",
+        "address": "Seewartenstraße 9, 20459 Hamburg",
+        "phone": "+49 40 31113-0",
+        "website": "https://www.hotel-hafen-hamburg.de/"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          9.9661,
-          53.5465
+          9.96959,
+          53.54697
         ]
       }
     },
