@@ -648,6 +648,26 @@
           53.5487
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 37,
+        "name": "Speicherstadt Kaffeerösterei",
+        "category": "Food",
+        "description": "Coffee roasted on site, cake and a view of the canal in a historic 1888 Speicherstadt warehouse. Kehrwieder 5; a good stop while exploring the old port.",
+        "description_de": "Frisch gerösteter Kaffee, Kuchen und Fleetblick im historischen Speicherboden von 1888. Kehrwieder 5 – ein schöner Zwischenstopp beim Bummel durch die Speicherstadt.",
+        "address": "Kehrwieder 5, 20457 Hamburg",
+        "website": "https://speicherstadt-kaffee.de/",
+        "location_note": "Coordinates sourced from address listings; confirm entrance on arrival."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.988128,
+          53.54365
+        ]
+      }
     }
   ]
 }
