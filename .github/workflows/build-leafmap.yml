@@ -32,5 +32,6 @@ jobs:
           git add leafmap-map.html
           if ! git diff --cached --quiet; then
             git commit -m "Build static Hamburg map with leafmap [skip ci]"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
