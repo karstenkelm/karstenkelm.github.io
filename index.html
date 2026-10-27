@@ -1,148 +1,115 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f3ede2"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="description" content="A personal field guide to Hamburg: historic Kneipen, cocktails, traditional food, harbor and hidden corners.">
-<title>Hamburg 2026 · A local's field guide</title>
-
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fffdfa">
+<meta name="description" content="An illustrated personal guide to Hamburg: the Elbe, historic neighborhoods, traditional pubs, restaurants, and memorable corners.">
+<title>Back to Hamburg — An illustrated field guide</title>
 <style>
-:root{--ink:#eae9e4;--muted:#b7bcc3;--bg:#101820;--panel:#17232d;--line:#34414a;--red:#ed514d;--gold:#f6ca78}
-*{box-sizing:border-box}html,body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
-a{color:var(--gold)}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-header{display:grid;grid-template-columns:minmax(230px,330px) 1fr;min-height:265px;background:#0d151d}
-.hero-photo{background:#27313c url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Astra_rotlicht.jpg") center 63%/cover no-repeat;min-height:265px}
-.hero-copy{padding:clamp(26px,5vw,62px);align-self:center}
-.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.17em;font-size:.7rem;font-weight:700}
-h1{font-size:clamp(2rem,5vw,4rem);line-height:1.08;margin:12px 0}header p{color:var(--muted);max-width:55ch;line-height:1.6}
-main{display:grid;grid-template-columns:360px minmax(0,1fr);height:calc(100vh - 265px);min-height:580px}
-aside{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
-.controls{padding:20px 18px 14px;border-bottom:1px solid var(--line)}
-.controls h2{font-size:1.1rem;margin:0 0 14px}
-input[type=search]{width:100%;border:1px solid #687581;background:#0e1923;color:white;padding:12px;border-radius:8px}
-.filters{display:flex;flex-wrap:wrap;gap:7px;margin:13px 0}
-.filter{border:1px solid #52616b;background:transparent;color:var(--ink);border-radius:99px;padding:7px 11px;font-size:.78rem}
-.filter.active{background:var(--gold);border-color:var(--gold);color:#15202a;font-weight:700}
-.count{color:var(--muted);font-size:.8rem}.place-list{overflow-y:auto;flex:1;padding:0 12px 20px}
-.place{display:block;text-align:left;width:100%;border:0;border-bottom:1px solid var(--line);color:var(--ink);background:transparent;padding:15px 9px}
-.place:hover,.place:focus{background:#253641}
-.place strong{display:block;font-size:.94rem}.place small{color:var(--gold);font-size:.73rem}
-.place .desc{color:var(--muted);font-size:.81rem;line-height:1.45;display:block;margin-top:5px}
-.mapwrap{position:relative}#map{height:100%;width:100%;background:#d8ddd7}
-.map-notice{position:absolute;bottom:22px;left:15px;z-index:600;background:#111c26ec;color:#e9eae6;border-radius:7px;padding:8px 12px;max-width:290px;font-size:.72rem;pointer-events:none}
-.popup-title{font-weight:750;font-size:1rem;margin-bottom:7px}.popup-meta{color:#6b5a43;font-size:.8rem;font-weight:700;margin-bottom:8px}
-.popup-desc{line-height:1.5}.popup-links{margin-top:11px;display:flex;gap:12px}.popup-links a{color:#155d76;font-weight:700}
-
-footer{padding:15px 23px;color:var(--muted);font-size:.76rem;line-height:1.5}footer a{color:var(--gold)}
-@media(max-width:760px){header{grid-template-columns:125px 1fr;min-height:185px}.hero-photo{min-height:185px}.hero-copy{padding:18px}h1{font-size:1.8rem}header p{font-size:.82rem;margin:0}main{display:flex;flex-direction:column;height:auto;min-height:0}.mapwrap{height:53vh;min-height:340px;order:0}aside{order:1;max-height:540px}.place-list{max-height:320px}.controls{padding:15px}.map-notice{bottom:10px;font-size:.65rem}}
-@media(max-width:400px){header{grid-template-columns:105px 1fr}.hero-copy{padding:13px}h1{font-size:1.5rem}}
-
-/* iPhone-first map experience. Desktop grid remains unchanged. */
+:root{--paper:#fffdfa;--ink:#252525;--muted:#74716e;--line:#e6e2dd;--accent:#b34335;--panel:#f7f5f1}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--accent)}
+button,input{font:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.topbar{height:58px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc((100vw - 1080px)/2));font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.topbar .brand{font-family:Georgia,serif;font-size:20px;letter-spacing:-.035em;text-transform:none}
+.topbar .edition{color:var(--muted);font-weight:500}
+header{display:block;max-width:920px;margin:0 auto;padding:69px 22px 0;text-align:center}
+.eyebrow{color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:700}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.7rem,8.2vw,6.7rem);font-weight:500;line-height:1.04;letter-spacing:-.055em;margin:17px 0 20px}
+h1 em{font-style:italic;font-weight:400}
+.subtitle{font-family:Georgia,serif;font-size:clamp(1.1rem,2.2vw,1.45rem);color:#5b5a57;line-height:1.47;max-width:690px;margin:0 auto 19px}
+.byline{display:flex;justify-content:center;align-items:center;gap:12px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding:17px 0;margin:28px auto 0;max-width:670px}
+.byline .dot{color:var(--accent)}
+.hero-photo{height:clamp(260px,45vw,510px);margin:0 auto;background:#d2d2d2 url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Astra_rotlicht.jpg") center 60% / cover no-repeat;max-width:1010px}
+.photo-caption{max-width:1010px;margin:0 auto;color:var(--muted);font-size:11px;padding:9px 16px;text-align:right}
+.article{max-width:690px;padding:0 20px;margin:52px auto 58px;font-family:Georgia,serif}
+.article h2{font-size:clamp(1.75rem,3vw,2.25rem);font-weight:500;letter-spacing:-.03em}
+.article p{font-size:19px;line-height:1.76;margin:17px 0;color:#333}
+.article .dropcap:first-letter{float:left;font-size:65px;line-height:.8;padding:9px 9px 0 0;color:var(--accent)}
+.section-rule{height:1px;background:var(--line);max-width:1060px;margin:0 auto}
+.map-intro{text-align:center;padding:48px 20px 27px}
+.map-intro .eyebrow{margin-bottom:12px}
+.map-intro h2{font:400 clamp(2rem,4vw,3rem) Georgia,serif;letter-spacing:-.035em;margin:0 0 12px}
+.map-intro p{color:var(--muted);font-size:14px;line-height:1.65;max-width:580px;margin:auto}
+main{max-width:1250px;margin:auto;display:grid;grid-template-columns:320px minmax(0,1fr);height:min(720px,75vh);min-height:540px;border:1px solid var(--line)}
+aside{display:flex;flex-direction:column;min-height:0;background:var(--paper);border-right:1px solid var(--line)}
+.controls{padding:20px 18px 13px;border-bottom:1px solid var(--line)}
+.controls h2{font:400 26px Georgia,serif;letter-spacing:-.02em;margin:0 0 14px}
+label.eyebrow{display:block;font-size:10px;margin-bottom:8px}
+input[type=search]{border:1px solid #c8c6c2;background:#fff;color:var(--ink);padding:13px;width:100%;border-radius:3px;font-size:16px}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:13px 0}
+.filter{min-height:36px;padding:7px 11px;font-size:12px;border:1px solid #c8c5c0;border-radius:3px;background:#fff;color:#444}
+.filter.active{background:var(--accent);color:white;border-color:var(--accent)}
+.count{font-size:12px;color:var(--muted)}
+.place-list{overflow-y:auto;flex:1;padding:0 12px}
+.place{text-align:left;display:block;width:100%;padding:16px 6px;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink)}
+.place:hover,.place:focus{background:var(--panel)}
+.place strong{display:block;font:500 18px Georgia,serif}
+.place small{display:block;color:var(--accent);font-size:11px;margin-top:5px}
+.place .desc{display:block;color:#696967;line-height:1.5;margin-top:7px;font-size:12px}
+.mapwrap{position:relative;min-width:0;background:#e5e9e4}
+#map{height:100%;width:100%;display:block;border:0}
+.map-notice{position:absolute;left:12px;bottom:15px;background:#fffcf0ed;color:#555;padding:8px 10px;max-width:215px;font-size:11px;border:1px solid #ddd5c9;pointer-events:none}
+footer{max-width:1020px;margin:70px auto 0;padding:32px 22px 44px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);text-align:center;line-height:1.9}
 .mobile-toggle,.sheet-close{display:none}
-@media (max-width:760px){
- html,body{width:100%;height:100%;overflow:hidden;overscroll-behavior:none}
- header{height:106px;min-height:106px;grid-template-columns:88px 1fr}
- .hero-photo{min-height:106px;background-position:center 60%}
- .hero-copy{padding:8px 14px}
- .eyebrow{font-size:.62rem;letter-spacing:.12em}
- h1{font-size:1.55rem;line-height:1.12;margin:4px 0}
- header p{font-size:.72rem;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
- main{height:calc(100vh - 106px);height:calc(100dvh - 106px);min-height:0;display:block;position:relative}
- .mapwrap{height:100%;min-height:0;width:100%;position:relative}
- #map{display:block;width:100%;height:100%}
- .map-notice{left:10px;bottom:calc(78px + env(safe-area-inset-bottom));max-width:215px;font-size:.65rem;line-height:1.3}
- aside{position:fixed;z-index:1100;top:auto;bottom:0;left:0;right:0;height:min(74dvh,720px);max-height:none;border-right:0;border-radius:19px 19px 0 0;box-shadow:0 -12px 50px #0009;transform:translateY(105%);transition:transform .24s ease;visibility:hidden;padding-bottom:env(safe-area-inset-bottom);overflow:hidden}
- body.sheet-open aside{visibility:visible;transform:translateY(0)}
- .controls{padding:14px 16px 10px}
- .controls h2{margin:0 0 12px;padding-right:55px}
- input[type=search]{font-size:16px;min-height:48px;border-radius:10px}
- .filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:10px 0;padding-bottom:4px}
- .filters::-webkit-scrollbar{display:none}
- .filter{white-space:nowrap;min-height:44px;padding:9px 14px;font-size:.88rem;flex-shrink:0}
- .place-list{max-height:none;flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0 12px 12px}
- .place{padding:15px 10px;min-height:76px}
- .place strong{font-size:1rem}
- .place .desc{font-size:.85rem}
- .mobile-toggle{display:flex;position:fixed;z-index:900;right:14px;bottom:calc(20px + env(safe-area-inset-bottom));align-items:center;justify-content:center;gap:9px;min-height:52px;padding:0 21px;border:0;border-radius:28px;background:var(--gold);color:#10202b;box-shadow:0 4px 18px #0008;font-weight:750}
- .sheet-close{display:flex;position:absolute;right:14px;top:10px;align-items:center;justify-content:center;width:44px;height:44px;background:#2a3c48;border:1px solid #596875;color:#fff;border-radius:99px;font-size:23px}
- body.sheet-open .mobile-toggle{display:none}
- footer{display:none}
-}
-@media(max-width:390px){header{grid-template-columns:76px 1fr}.hero-copy{padding:7px 10px}h1{font-size:1.38rem}}
-@media(prefers-reduced-motion:reduce){aside{transition:none!important}}
-
-/* Hanseatic editorial design: sandstone, brick, ink and nautical detailing. */
-:root{--ink:#192e3a;--muted:#617077;--bg:#f3ede2;--panel:#fbf8f0;--line:#d9d0c1;--red:#9f3531;--gold:#b38a53}
-html,body{background:var(--bg);color:var(--ink)}
-body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-header{position:relative;min-height:204px;grid-template-columns:minmax(220px,285px) 1fr;background:#f3ede2;border-top:7px solid var(--red);border-bottom:1px solid #bcae9e}
-header:after{content:"";position:absolute;right:24px;top:22px;width:75px;height:65px;opacity:.13;background:linear-gradient(90deg,transparent 47%,var(--red) 47% 52%,transparent 52%),linear-gradient(0deg,transparent 47%,var(--red) 47% 52%,transparent 52%);pointer-events:none}
-.hero-photo{min-height:204px;border-right:5px solid var(--red);background-position:center 60%}
-.hero-copy{padding:21px clamp(25px,4vw,62px)}
-.eyebrow{color:var(--red);letter-spacing:.2em;font-size:.68rem}
-h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.035em;line-height:1.03;font-size:clamp(2.2rem,4.2vw,3.9rem);margin:10px 0;color:#193541}
-h1 em{font-weight:500;color:var(--red);font-style:italic}
-header p{color:#4d5d63;font-size:.95rem;margin:8px 0;max-width:65ch;line-height:1.5}
-main{height:calc(100vh - 204px);min-height:500px;grid-template-columns:330px minmax(0,1fr)}
-aside{background:var(--panel);border-right:2px solid #c4b5a1}
-.controls{padding:22px 20px 15px;border-bottom:1px solid #d9d0c1;background:#efe7d9}
-.controls h2{font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;font-weight:500;color:#223a45;margin-bottom:13px}
-input[type=search]{color:var(--ink);background:#fffefb;border:1px solid #b8aa96;border-radius:3px;min-height:45px}
-input[type=search]::placeholder{color:#798187}
-.filters{gap:8px}
-.filter{background:#fbf8f0;color:#324650;border-color:#baac99;border-radius:3px;padding:7px 11px;font-size:.8rem}
-.filter.active{background:var(--red);border-color:var(--red);color:#fff;font-weight:650}
-.count{color:#685e53;font-size:.76rem;letter-spacing:.04em}
-.place{border-bottom:1px solid #e2d9cb;padding:17px 12px;transition:background .15s}
-.place:hover,.place:focus{background:#f1e9dd}
-.place strong{font-family:Georgia,"Times New Roman",serif;font-weight:600;color:#233943;font-size:1.07rem}
-.place small{display:block;color:var(--red);font-size:.7rem;text-transform:uppercase;letter-spacing:.11em;margin-top:5px}
-.place .desc{color:#58666b;font-size:.81rem;margin-top:7px}
-.mapwrap{background:#e0ddd1;border-left:6px solid #d2c6b5}
-.map-notice{background:#fcf8edea;border:1px solid #b6a48d;color:#364449;border-radius:2px;padding:8px 12px;bottom:18px;font-size:.7rem;box-shadow:0 2px 10px #0001}
-footer{background:#1d3946;color:#e9e0d2;padding:13px 21px;border-top:3px solid var(--red)}
-footer a{color:#f2d1a8}
-a{color:var(--red)}
-button:focus-visible,input:focus-visible,a:focus-visible{outline-color:var(--red)}
 @media(max-width:760px){
- header{height:110px;min-height:110px;border-top:4px solid var(--red);grid-template-columns:88px 1fr}
- header:after{display:none}
- .hero-photo{min-height:106px;border-right:3px solid var(--red);background-position:center 58%}
- .hero-copy{padding:9px 12px}
- .eyebrow{font-size:.54rem;letter-spacing:.08em}
- h1{font-size:1.45rem;letter-spacing:-.035em;margin:5px 0}
- header p{font-size:.7rem;line-height:1.3;margin:2px 0}
- main{height:calc(100vh - 110px);height:calc(100dvh - 110px);min-height:0}
- .mapwrap{border-left:0}
- .map-notice{left:10px;bottom:calc(80px + env(safe-area-inset-bottom));max-width:200px}
- aside{background:var(--panel);border-radius:12px 12px 0 0;border:1px solid #bbad98;border-bottom:0}
- .controls{background:#f3eddf;padding:14px 16px 10px}
- .controls h2{font-size:1.43rem;margin:0 0 12px}
- .filter{min-height:44px;padding:10px 13px}
- .mobile-toggle{background:var(--red);color:#fff;box-shadow:0 5px 18px #1e292d66;border-radius:5px;min-height:52px}
- .sheet-close{background:var(--red);color:#fff;border:0;border-radius:4px}
- .place{min-height:79px}
+ .topbar{height:51px;padding:0 17px}.topbar .brand{font-size:19px}.topbar .edition{font-size:10px}
+ header{padding:38px 18px 0}
+ h1{font-size:clamp(2.75rem,11vw,4.2rem);margin:12px 0 17px}
+ .subtitle{font-size:17px}
+ .byline{margin-top:22px}
+ .hero-photo{height:320px;background-position:center 62%}
+ .article{margin:30px auto 45px;padding:0 22px}
+ .article p{font-size:18px;line-height:1.68}
+ .article .dropcap:first-letter{font-size:54px}
+ .map-intro{padding:36px 18px 20px}
+ main{display:block;height:70dvh;min-height:440px;position:relative;border-left:0;border-right:0}
+ .mapwrap{height:100%}
+ aside{position:fixed;z-index:1100;bottom:0;left:0;right:0;top:auto;height:min(75dvh,700px);visibility:hidden;transform:translateY(105%);transition:transform .24s ease;border:1px solid var(--line);border-radius:13px 13px 0 0;box-shadow:0 -8px 42px #0004;padding-bottom:env(safe-area-inset-bottom);overflow:hidden}
+ body.sheet-open aside{visibility:visible;transform:translateY(0)}
+ .controls{padding:17px 15px 11px}
+ .controls h2{padding-right:56px}
+ .filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+ .filters::-webkit-scrollbar{display:none}
+ .filter{flex-shrink:0;min-height:44px;font-size:13px}
+ .place-list{min-height:0;-webkit-overflow-scrolling:touch}
+ .place{min-height:75px}
+ .mobile-toggle{position:fixed;z-index:900;display:flex;align-items:center;justify-content:center;gap:9px;right:14px;bottom:calc(19px + env(safe-area-inset-bottom));border:0;border-radius:4px;background:var(--accent);color:white;box-shadow:0 4px 16px #0005;padding:0 22px;min-height:52px;font-weight:650}
+ .sheet-close{display:flex;position:absolute;right:14px;top:13px;width:44px;height:44px;align-items:center;justify-content:center;background:#f2efeb;border:1px solid var(--line);color:var(--ink);border-radius:3px;font-size:24px}
+ body.sheet-open .mobile-toggle{display:none}
+ .map-notice{bottom:14px;font-size:10px;max-width:195px}
+ footer{margin-top:40px}
 }
-@media(max-width:390px){header{grid-template-columns:77px 1fr}.hero-copy{padding:8px 9px}h1{font-size:1.28rem}.eyebrow{font-size:.5rem}}
-</style>
-</head>
-<body>
+@media(prefers-reduced-motion:reduce){aside{transition:none}}
+</style></head><body>
+<nav class="topbar" aria-label="Site heading"><span class="brand">Hamburg Notes</span><span class="edition">A personal city journal · No. 01</span></nav>
 <header>
-<div class="hero-photo" role="img" aria-label="Astra Rotlicht bottle by Hamburg's harbor"></div>
-<div class="hero-copy"><div class="eyebrow">Eine kleine Hamburg-Karte <span aria-hidden="true">✦</span> November 2026</div><h1>Back to <em>Hamburg.</em></h1><p>Zwischen Elbe und Alster · Honest Kneipen, old merchants’ streets, harbor views &amp; good places to linger.</p></div>
+<div class="eyebrow">From the Elbe · November 2026</div>
+<h1>Back to <em>Hamburg.</em></h1>
+<p class="subtitle">An illustrated field guide to old streets, honest Kneipen, harbor mornings and the city that never quite leaves you.</p>
+<div class="byline"><span>THE HAMBURG EDITION</span><span class="dot">●</span><span>36 places to explore</span></div>
 </header>
+<figure style="margin:0"><div class="hero-photo" role="img" aria-label="Astra Rotlicht bottle overlooking Hamburg harbor"></div><figcaption class="photo-caption">The Elbe, the harbor, and a little Astra. Photo: Florian Schäffer / Wikimedia Commons.</figcaption></figure>
+<article class="article">
+<h2>A city to return to</h2>
+<p class="dropcap">There are many ways to see Hamburg. Mine begins by the water, follows the old brick streets, and occasionally disappears into a neighborhood Kneipe where time seems to have slowed down.</p>
+<p>This is a collection of the places I want to return to—and others I still want to discover. Some are Hamburg institutions. Others are small, ordinary corners that make the city feel like home.</p>
+</article>
+<div class="section-rule"></div>
+<section class="map-intro" aria-label="Map introduction"><div class="eyebrow">The field guide</div><h2>Explore Hamburg, one stop at a time</h2><p>Browse traditional restaurants, neighborhood bars, cocktail spots, museums, bookstores and the harbor. Choose a category or open a pin on the interactive map.</p></section>
 <main>
-<button id="showPlaces" class="mobile-toggle" type="button" aria-expanded="false" aria-controls="placesPanel">☰ <span>Orte entdecken</span></button>
+<button id="showPlaces" class="mobile-toggle" type="button" aria-expanded="false" aria-controls="placesPanel">☰ <span>Explore places</span></button>
 <aside id="placesPanel" aria-label="Places and filters">
-<div class="controls"><button id="closePlaces" class="sheet-close" type="button" aria-label="Close places panel">×</button><h2>Hamburg entdecken</h2><label for="search" class="eyebrow" style="display:block;margin-bottom:7px">Orte suchen</label><input id="search" type="search" placeholder="Restaurant, Kneipe, Museum …">
+<div class="controls"><button id="closePlaces" class="sheet-close" type="button" aria-label="Close places panel">×</button><h2>Places &amp; stories</h2><label for="search" class="eyebrow">Find a place</label><input id="search" type="search" placeholder="Search restaurants, Kneipen, sights…">
 <div class="filters" id="filters" aria-label="Place categories"></div><div id="count" class="count" aria-live="polite">Loading locations…</div></div>
 <div class="place-list" id="places"></div>
 </aside>
-<section class="mapwrap" aria-label="Interactive map of Hamburg"><iframe id="map" title="Hamburg map generated with leafmap" src="leafmap-map.html" loading="eager" style="border:0;width:100%;height:100%" referrerpolicy="no-referrer-when-downgrade"></iframe><div class="map-notice">Generated with leafmap · Map pins approximate; use Directions for exact locations.</div></section>
+<section class="mapwrap" aria-label="Interactive map of Hamburg"><iframe id="map" title="Hamburg map generated with leafmap" src="leafmap-map.html" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe><div class="map-notice">Built with leafmap · Pins approximate; check directions for exact locations.</div></section>
 </main>
-<footer>Hamburg, meine Perle · Map © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> ·
-Photo: <a href="https://commons.wikimedia.org/wiki/File:Astra_rotlicht.jpg">Florian Schäffer / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (image displayed without alterations). Public places only; personal itinerary details excluded. <a href="https://github.com/karstenkelm/karstenkelm.github.io">Source</a>.</footer>
-
+<footer>Hamburg Notes · Map © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> · Photo <a href="https://commons.wikimedia.org/wiki/File:Astra_rotlicht.jpg">Florian Schäffer / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, displayed without alteration. Public places only; private itinerary excluded. <a href="https://github.com/karstenkelm/karstenkelm.github.io">Source</a>.</footer>
 <script>
 "use strict";
 const palette={Food:"#eaa45f",Kneipen:"#e05d5a",Cocktails:"#ac8ce3",Sights:"#469a89",Harbor:"#428ec3",Shops:"#b99c50"};
@@ -174,4 +141,5 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&document.body.class
 document.getElementById("search").addEventListener("input",e=>{term=e.target.value.trim().toLowerCase();draw()});
 fetch("data/hamburg_places.geojson").then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(geo=>{all=geo.features.filter(f=>f.geometry?.type==="Point");draw()}).catch(e=>{document.getElementById("count").textContent="Unable to load places. Try refreshing.";console.error(e)});
 </script>
+
 </body></html>
