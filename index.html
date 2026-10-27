@@ -163,6 +163,14 @@ function tr(k){return translations[language][k]}
 const safe=s=>String(s).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
 function route(name){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(name+", Hamburg Germany")}
 function popup(f){const p=f.properties;return '<div class="popup-title">'+safe(p.name)+'</div><div class="popup-meta">'+safe(p.category)+'</div><div class="popup-desc">'+safe(p.description)+'</div><div class="popup-links"><a href="'+route(p.name)+'" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>'}
+function sendMapFilter(){
+ const frame=document.getElementById("map");
+ if(frame && frame.contentWindow)frame.contentWindow.postMessage({type:"hamburg-map-filter",category,term},window.location.origin);
+}
+window.addEventListener("message",event=>{
+ const frame=document.getElementById("map");
+ if(event.origin===window.location.origin && event.source===frame.contentWindow && event.data && event.data.type==="hamburg-map-ready")sendMapFilter();
+});
 function draw(){
 
 const subset=all.filter(f=>(category==="All"||f.properties.category===category)&&((f.properties.name+" "+f.properties.description+" "+(f.properties.description_de||"")+" "+f.properties.category).toLowerCase().includes(term)));
@@ -176,6 +184,7 @@ const cat=document.createElement("small");cat.textContent=categoryNames[language
 const desc=document.createElement("span");desc.className="desc";desc.textContent=language==="de"?(p.description_de||p.description):p.description;
 b.append(head,cat,desc);b.addEventListener("click",()=>window.open(route(p.name),"_blank","noopener,noreferrer"));list.append(b);
 });
+sendMapFilter();
 }
 function filters(){const el=document.getElementById("filters");["All",...Object.keys(palette)].forEach(v=>{let b=document.createElement("button");b.type="button";b.className="filter"+(v===category?" active":"");b.textContent=categoryNames[language][v];b.dataset.category=v;b.setAttribute("aria-pressed",String(v===category));b.onclick=()=>{category=v;[...el.children].forEach(x=>{x.classList.toggle("active",x.dataset.category===v);x.setAttribute("aria-pressed",String(x.textContent===v))});draw()};el.append(b)})}
 
