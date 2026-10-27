@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+# Hamburg 2026 — interactive public city guide
 
-You can use the [editor on GitHub](https://github.com/karstenkelm/karstenkelm.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+A map-first website of 36 curated public locations collected for a November 2026 Hamburg visit.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Public website:** https://karstenkelm.github.io/
 
-### Markdown
+## Files
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- `index.html` — deployed mobile-friendly site: Leaflet/OpenStreetMap, place search, category filters and popups.
+- `data/hamburg_places.geojson` — editable curated locations and descriptions.
+- `build_map.py` — alternative reproducible HTML map generator using **Professor Qiusheng Wu's leafmap Folium backend**.
 
-```markdown
-Syntax highlighted code block
+## Build with leafmap
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```sh
+python -m pip install leafmap folium
+python build_map.py
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+This writes `leafmap-map.html`, a separate standalone map with category layers. The homepage itself uses Leaflet directly so its custom search, list, and mobile experience work on GitHub Pages without a Python runtime. Both use the same GeoJSON.
 
-### Jekyll Themes
+## Editing the website
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/karstenkelm/karstenkelm.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Edit `data/hamburg_places.geojson` to add places, then commit to `main`. GitHub Pages should serve the update from its configured publishing branch. Coordinates are **approximate orientation markers**, not verified front-door coordinates. The Directions link searches for the venue name.
 
-### Support or Contact
+Only public attractions and businesses are included; private trip plans and accommodation are intentionally excluded.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Image and map credits
+
+Header photo: **Florian Schäffer**, [Astra rotlicht.jpg](https://commons.wikimedia.org/wiki/File:Astra_rotlicht.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The original Commons file is displayed without editing.
+
+Map tiles and data: © OpenStreetMap contributors, [copyright notice](https://www.openstreetmap.org/copyright).
+
+## Previous website
+
+The former GeoAI Lab homepage remains available through Git history (before commit `af2eebf`). Other prior pages were not deleted.
+
+## QA
+
+Check the published site on mobile and desktop. External dependencies require Internet (OpenStreetMap tiles, Leaflet CDN, Commons photo). Validate exact business locations and opening times before visiting.
