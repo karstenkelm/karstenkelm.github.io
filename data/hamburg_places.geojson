@@ -8,7 +8,8 @@
         "name": "Krameramtsstuben",
         "category": "Food",
         "description": "Historic courtyard dining near the Michel, with Labskaus and Pannfisch.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Historische Gaststuben am Michel. Auf der Karte stehen Hamburger Klassiker wie Labskaus und Pannfisch."
       },
       "geometry": {
         "type": "Point",
@@ -25,7 +26,8 @@
         "name": "Old Commercial Room",
         "category": "Food",
         "description": "A classic Hamburg institution near the Michel, renowned for Labskaus.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Ein Hamburger Original gleich beim Michel, besonders bekannt für Labskaus."
       },
       "geometry": {
         "type": "Point",
@@ -42,7 +44,8 @@
         "name": "Deichgraf",
         "category": "Food",
         "description": "Hanseatic cooking on the historic Deichstraße; ideal before an evening stroll.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Hanseatische Küche in der alten Deichstraße. Gut mit einem Spaziergang am Nikolaifleet zu verbinden."
       },
       "geometry": {
         "type": "Point",
@@ -59,7 +62,8 @@
         "name": "Oberhafen-Kantine",
         "category": "Food",
         "description": "Distinctive crooked brick building and hearty regional fare.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Schiefes kleines Backsteinhaus im Oberhafen – ein Stück Hamburger Geschichte mit deftiger Küche."
       },
       "geometry": {
         "type": "Point",
@@ -76,7 +80,8 @@
         "name": "Gasthaus Heimathafen",
         "category": "Food",
         "description": "Relaxed harbor restaurant with traditional fish dishes.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Gemütliches Lokal am Baumwall mit Fischgerichten und Hafenatmosphäre."
       },
       "geometry": {
         "type": "Point",
@@ -93,7 +98,8 @@
         "name": "Das Feuerschiff",
         "category": "Food",
         "description": "A restaurant aboard a historic red lightship.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Essen und Trinken auf einem historischen roten Feuerschiff im City-Sporthafen."
       },
       "geometry": {
         "type": "Point",
@@ -110,7 +116,8 @@
         "name": "Brücke 10",
         "category": "Food",
         "description": "Fischbrötchen and harbor views at the Landungsbrücken.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Fischbrötchen an den Landungsbrücken, dazu Elbe und Hafen direkt vor der Nase."
       },
       "geometry": {
         "type": "Point",
@@ -127,7 +134,8 @@
         "name": "Fischereihafen Restaurant",
         "category": "Food",
         "description": "Traditional seafood restaurant near the Elbe, for a more formal meal.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Klassisches Fischrestaurant an der Elbe – für einen etwas besonderen Abend."
       },
       "geometry": {
         "type": "Point",
@@ -144,7 +152,8 @@
         "name": "Capri-Stube",
         "category": "Kneipen",
         "description": "Traditional Barmbek-Süd Gardinenkneipe with neighborhood regulars.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Alte Gardinenkneipe in Barmbek-Süd, mit Stammgästen und viel Stadtteilgeschichte."
       },
       "geometry": {
         "type": "Point",
@@ -161,7 +170,8 @@
         "name": "Zum Guten Tropfen",
         "category": "Kneipen",
         "description": "Historic Mozartstraße Eckkneipe with football and local conversations.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Eine Eckkneipe in der Mozartstraße. Fußball, Tresen und Barmbeker Alltag."
       },
       "geometry": {
         "type": "Point",
@@ -178,7 +188,8 @@
         "name": "Gaststätte Imstedt 4",
         "category": "Kneipen",
         "description": "Neighborhood pub with football, cards and classic Tresen culture.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Kiezkneipe mit Fußball, Karten und unkomplizierter Tresenkultur."
       },
       "geometry": {
         "type": "Point",
@@ -195,7 +206,8 @@
         "name": "Meisennest",
         "category": "Kneipen",
         "description": "Old-fashioned neighborhood bar on Wachtelstraße.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Eine traditionelle Kneipe in der Wachtelstraße in Barmbek-Nord."
       },
       "geometry": {
         "type": "Point",
@@ -212,7 +224,8 @@
         "name": "Barmbek Express",
         "category": "Kneipen",
         "description": "Unpretentious Barmbek-Nord Stammkneipe with darts.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Unaufgeregte Stammkneipe in Barmbek-Nord, unter anderem mit Darts."
       },
       "geometry": {
         "type": "Point",
@@ -229,7 +242,8 @@
         "name": "Le Lion – Bar de Paris",
         "category": "Cocktails",
         "description": "Birthplace of the Gin Basil Smash; intimate and expertly made classics.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Hier wurde der Gin Basil Smash bekannt. Eine kleine, feine Cocktailbar in der Innenstadt."
       },
       "geometry": {
         "type": "Point",
@@ -246,7 +260,8 @@
         "name": "Christiansen's",
         "category": "Cocktails",
         "description": "A long-running St. Pauli institution for vintage and forgotten cocktails.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Hamburger Cocktailinstitution auf St. Pauli – klassische und fast vergessene Drinks."
       },
       "geometry": {
         "type": "Point",
@@ -263,7 +278,8 @@
         "name": "The Chug Club",
         "category": "Cocktails",
         "description": "Tequila and mezcal specialists with tasting-sized cocktails.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Auf Tequila und Mezcal spezialisiert, mit kleineren Cocktails zum Probieren."
       },
       "geometry": {
         "type": "Point",
@@ -280,7 +296,8 @@
         "name": "The Rabbithole",
         "category": "Cocktails",
         "description": "Cozy creative cocktails and excellent rum and whiskey selections.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Gemütliche Bar für kreative Cocktails, Rum und Whiskey."
       },
       "geometry": {
         "type": "Point",
@@ -297,7 +314,8 @@
         "name": "Clockers",
         "category": "Cocktails",
         "description": "Inventive gin drinks in a forest-inspired interior.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Originelle Gin-Drinks in einer Bar mit ungewöhnlich waldartigem Interieur."
       },
       "geometry": {
         "type": "Point",
@@ -314,7 +332,8 @@
         "name": "Puzzle Bar",
         "category": "Cocktails",
         "description": "Modern experimental cocktails and 15th-floor city views.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Experimentelle Cocktails mit Aussicht über die HafenCity."
       },
       "geometry": {
         "type": "Point",
@@ -331,7 +350,8 @@
         "name": "The Bohemian",
         "category": "Cocktails",
         "description": "Creative cocktails in historic Deichstraße.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Kreative Cocktails in der historischen Deichstraße."
       },
       "geometry": {
         "type": "Point",
@@ -348,7 +368,8 @@
         "name": "Tower Bar",
         "category": "Cocktails",
         "description": "Harbor views over the Elbe and the docks.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Ein Drink mit Blick auf Elbe und Hafen – hoch über den Landungsbrücken."
       },
       "geometry": {
         "type": "Point",
@@ -365,7 +386,8 @@
         "name": "Deichstraße & Nikolaifleet",
         "category": "Sights",
         "description": "Old merchant houses and waterways: historic Hamburg.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Alte Kaufmannshäuser am Nikolaifleet. Hier sieht Hamburg noch nach früher aus."
       },
       "geometry": {
         "type": "Point",
@@ -382,7 +404,8 @@
         "name": "Alter Elbtunnel",
         "category": "Sights",
         "description": "Walk underneath the river through remarkable old engineering.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Ein Spaziergang unter der Elbe durch einen beeindruckenden alten Tunnel."
       },
       "geometry": {
         "type": "Point",
@@ -399,7 +422,8 @@
         "name": "Speicherstadt",
         "category": "Sights",
         "description": "Historic brick warehouses and canals, especially atmospheric at dusk.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Backsteinspeicher, Fleete und Brücken. Besonders schön in der Dämmerung."
       },
       "geometry": {
         "type": "Point",
@@ -416,7 +440,8 @@
         "name": "Treppenviertel Blankenese",
         "category": "Sights",
         "description": "Stairways, white captains' houses and sweeping Elbe views.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Treppen, Kapitänshäuser und ein weiter Blick über die Elbe."
       },
       "geometry": {
         "type": "Point",
@@ -433,7 +458,8 @@
         "name": "Museumshafen Oevelgönne",
         "category": "Sights",
         "description": "Historic working boats beside the Elbe beach.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Historische Schiffe und alte Hafengeschichte direkt am Elbstrand."
       },
       "geometry": {
         "type": "Point",
@@ -450,7 +476,8 @@
         "name": "Internationales Maritimes Museum",
         "category": "Sights",
         "description": "Ship models, maritime history, navigation and historical maps.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Schiffsmodelle, Seefahrtsgeschichte und historische Karten im Kaispeicher B."
       },
       "geometry": {
         "type": "Point",
@@ -467,7 +494,8 @@
         "name": "Museum der Arbeit",
         "category": "Sights",
         "description": "Hamburg's industrial and working-class history in Barmbek.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Industrie- und Arbeitergeschichte Hamburgs – passend gelegen in Barmbek."
       },
       "geometry": {
         "type": "Point",
@@ -484,7 +512,8 @@
         "name": "Altonaer Museum",
         "category": "Sights",
         "description": "Regional and cultural history of Altona and North Germany.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Geschichte und Kultur von Altona und Norddeutschland."
       },
       "geometry": {
         "type": "Point",
@@ -501,7 +530,8 @@
         "name": "Winterdom / Heiligengeistfeld",
         "category": "Sights",
         "description": "Hamburg's winter fairground, during the November visit.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Der Hamburger Winterdom auf dem Heiligengeistfeld während meines Besuchs."
       },
       "geometry": {
         "type": "Point",
@@ -518,7 +548,8 @@
         "name": "Bergedorfer Schloss",
         "category": "Sights",
         "description": "Historic Bergedorf castle and old-town walk.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Altes Bergedorfer Schloss und ein Spaziergang durch die historische Innenstadt."
       },
       "geometry": {
         "type": "Point",
@@ -535,7 +566,8 @@
         "name": "Ferry 62 – Landungsbrücken",
         "category": "Harbor",
         "description": "Start the HVV public ferry toward Finkenwerder; working harbor scenery.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Mit der HVV-Fähre 62 ab Landungsbrücken Richtung Finkenwerder – eine kleine Hafenrundfahrt im Alltag."
       },
       "geometry": {
         "type": "Point",
@@ -552,7 +584,8 @@
         "name": "Ferry 62 – Finkenwerder",
         "category": "Harbor",
         "description": "The western end of the public ferry outing.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Endstation der Fähre 62; hier lässt sich die Elbe einmal aus einem anderen Winkel sehen."
       },
       "geometry": {
         "type": "Point",
@@ -569,7 +602,8 @@
         "name": "Dr. Götze Land & Karte",
         "category": "Shops",
         "description": "Browse maps, atlases and historical Hamburg cartography at Alstertor 14.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Karten, Atlanten und Hamburgs historische Kartografie am Alstertor 14."
       },
       "geometry": {
         "type": "Point",
@@ -586,7 +620,8 @@
         "name": "Heinr. von Have",
         "category": "Shops",
         "description": "Traditional Bergedorf wine merchant; ask for Hamburger Rotspon.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Traditionsreicher Weinhändler in Bergedorf. Hier würde ich nach Hamburger Rotspon schauen."
       },
       "geometry": {
         "type": "Point",
@@ -603,7 +638,8 @@
         "name": "Antiquariat near the Michel",
         "category": "Shops",
         "description": "Browse older Hamburg books and German literary classics in the Michel area.",
-        "location_note": "Map pin approximate — use Directions for exact destination."
+        "location_note": "Map pin approximate — use Directions for exact destination.",
+        "description_de": "Auf der Suche nach alten Hamburg-Büchern und deutschen Klassikern rund um den Michel."
       },
       "geometry": {
         "type": "Point",
