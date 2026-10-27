@@ -150,7 +150,7 @@ footer{max-width:1020px;margin:70px auto 0;padding:32px 22px 44px;border-top:1px
 <main>
 <button id="showPlaces" class="mobile-toggle" type="button" aria-expanded="false" aria-controls="placesPanel">☰ <span data-i18n="explore">Explore places</span></button>
 <aside id="placesPanel" aria-label="Places and filters">
-<div class="controls"><button id="closePlaces" class="sheet-close" type="button" aria-label="Close places panel">×</button><h2 data-i18n="placesTitle">Places on my list</h2><label for="search" class="eyebrow" data-i18n="find">Find a place</label><input id="search" type="search" placeholder="Search restaurants, Kneipen, sights…">
+<div class="controls"><button id="closePlaces" class="sheet-close" type="button" aria-label="Close places panel">×</button><h2 data-i18n="placesTitle">Places on my list</h2>
 <div class="filters" id="filters" aria-label="Place categories"></div><div id="count" class="count" aria-live="polite">Loading locations…</div></div>
 <div class="place-list" id="places"></div>
 </aside>
@@ -264,7 +264,6 @@ function switchLanguage(next){
  const mapFrame=document.getElementById("map");const desired=next==="de"?"leafmap-map-de.html":"leafmap-map.html";if(mapFrame.getAttribute("src")!==desired)mapFrame.setAttribute("src",desired);
  document.querySelectorAll("[data-i18n]").forEach(el=>{el.textContent=tr(el.dataset.i18n)});
  document.querySelectorAll("[data-i18n-html]").forEach(el=>{if(el.dataset.i18nHtml==="title")el.innerHTML=tr("title")});
- document.getElementById("search").placeholder=tr("placeholder");
  document.getElementById("lang-en").setAttribute("aria-pressed",String(next==="en"));
  document.getElementById("lang-de").setAttribute("aria-pressed",String(next==="de"));
  document.querySelectorAll(".filter").forEach(el=>{el.textContent=categoryNames[next][el.dataset.category]});
@@ -273,7 +272,6 @@ function switchLanguage(next){
 }
 document.getElementById("winterdom-on-map").addEventListener("click",()=>{
  category="All";term="";
- document.getElementById("search").value="";
  document.querySelectorAll(".filter").forEach(el=>{const active=el.dataset.category==="All";el.classList.toggle("active",active);el.setAttribute("aria-pressed",String(active))});
  if(all.length)draw();
  document.querySelector(".map-intro").scrollIntoView({behavior:"smooth",block:"start"});
@@ -283,11 +281,10 @@ document.getElementById("winterdom-on-map").addEventListener("click",()=>{
 document.getElementById("lang-en").addEventListener("click",()=>switchLanguage("en"));
 document.getElementById("lang-de").addEventListener("click",()=>switchLanguage("de"));
 const showPlaces=document.getElementById("showPlaces"),closePlaces=document.getElementById("closePlaces"),panel=document.getElementById("placesPanel");
-function setSheet(open){document.body.classList.toggle("sheet-open",open);showPlaces.setAttribute("aria-expanded",String(open));if(open){document.getElementById("search").focus({preventScroll:true})}else{showPlaces.focus({preventScroll:true})}}
+function setSheet(open){document.body.classList.toggle("sheet-open",open);showPlaces.setAttribute("aria-expanded",String(open));if(open){closePlaces.focus({preventScroll:true})}else{showPlaces.focus({preventScroll:true})}}
 showPlaces.addEventListener("click",()=>setSheet(true));
 closePlaces.addEventListener("click",()=>setSheet(false));
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&document.body.classList.contains("sheet-open"))setSheet(false)});
-document.getElementById("search").addEventListener("input",e=>{term=e.target.value.trim().toLowerCase();draw()});
 fetch("data/hamburg_places.geojson").then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(geo=>{all=geo.features.filter(f=>f.geometry?.type==="Point");draw()}).catch(e=>{document.getElementById("count").textContent=tr("failed");console.error(e)});
 </script>
 
