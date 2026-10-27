@@ -681,6 +681,212 @@
           53.54365
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 38,
+        "name": "Aktion Buch – Farmsen",
+        "category": "Shops",
+        "description": "Affordable secondhand books in Einkaufstreff Farmsen, near U-Bahn Farmsen. Book prices reportedly €2–6.",
+        "description_de": "Gemeinnütziger Gebrauchtbuchladen im Einkaufstreff Farmsen, nahe U Farmsen. Bücher etwa 2–6 €.",
+        "address": "Berner Heerweg 177–179, 22159 Hamburg",
+        "phone": "+49 40 33356932",
+        "hours": "Mon–Fri 10:00–19:00; Sat 10:00–18:00",
+        "hours_de": "Mo–Fr 10:00–19:00; Sa 10:00–18:00",
+        "website": "https://aktion-buch.de/buecher-kaufen/",
+        "location_note": "Approximate map location; use the address and Directions link for the exact entrance. Shop schedules may change."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1179,
+          53.6053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 39,
+        "name": "Hempels Gebrauchtwarenhaus",
+        "category": "Shops",
+        "description": "Secondhand warehouse in Norderstedt with glassware, porcelain, furniture and surprising finds.",
+        "description_de": "Gebrauchtwarenkaufhaus in Norderstedt mit Glas, Porzellan, Möbeln und allerlei Fundstücken.",
+        "address": "Stormarnstraße 34–36, 22844 Norderstedt",
+        "phone": "+49 40 53595800",
+        "hours": "Mon–Fri 10:00–18:00; Sat 10:00–15:00",
+        "hours_de": "Mo–Fr 10:00–18:00; Sa 10:00–15:00",
+        "website": "https://www.hempels-norderstedt.de/Kontakt",
+        "location_note": "Approximate map location; use the address and Directions link for the exact entrance. Shop schedules may change."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.02033,
+          53.70875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 40,
+        "name": "Bücherflohmarkt der Bücherhallen",
+        "category": "Shops",
+        "description": "Volunteer-run secondhand book market in the Zentralbibliothek. Books usually €1; cash only.",
+        "description_de": "Ehrenamtlicher Bücherflohmarkt in der Zentralbibliothek. Bücher meist 1 €; nur Bargeld.",
+        "address": "Hühnerposten 1, 20097 Hamburg",
+        "phone": "",
+        "hours": "Mon & Thu 11:00–18:00; Tue, Wed, Fri 11:00–17:00; 1st & 2nd Sat 11:00–17:00",
+        "hours_de": "Mo & Do 11:00–18:00; Di, Mi, Fr 11:00–17:00; 1. & 2. Sa 11:00–17:00",
+        "website": "https://www.buecherhallen.de/buecherflohmarkt.html",
+        "location_note": "Approximate map location; use the address and Directions link for the exact entrance. Shop schedules may change."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.00802,
+          53.54965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 41,
+        "name": "Flohschanze",
+        "category": "Shops",
+        "description": "Saturday flea market at the Alte Rinderschlachthalle: vintage objects, books and curious finds.",
+        "description_de": "Samstagsflohmarkt an der Alten Rinderschlachthalle mit Vintage, Büchern und Kuriositäten.",
+        "address": "Neuer Kamp 30, 20357 Hamburg",
+        "phone": "+49 40 2702766",
+        "hours": "Sat 08:00–16:00; confirm event day",
+        "hours_de": "Sa 08:00–16:00; Termin vorher prüfen",
+        "website": "https://www.marktundkultur.de/",
+        "location_note": "Approximate map location; use the address and Directions link for the exact entrance. Shop schedules may change."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9641,
+          53.5569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 42,
+        "name": "Lüders Buchhandlung & Antiquariat",
+        "category": "Shops",
+        "description": "Independent bookshop and antiquarian books in Eimsbüttel; literature, classics, philosophy and art.",
+        "description_de": "Buchhandlung und Antiquariat in Eimsbüttel mit Literatur, Klassikern, Philosophie und Kunst.",
+        "address": "Heußweg 33, 20255 Hamburg",
+        "phone": "+49 40 405727",
+        "hours": "Mon–Fri 09:00–20:00; Sat 10:00–19:00",
+        "hours_de": "Mo–Fr 09:00–20:00; Sa 10:00–19:00",
+        "website": "https://buchhandlunglueders.buchhandlung.de/",
+        "location_note": "Approximate map location; use the address and Directions link for the exact entrance. Shop schedules may change."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9514,
+          53.5755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 43,
+        "name": "Buchhandlung & Antiquariat Lutz Heimhalt",
+        "category": "Shops",
+        "description": "Books on history, architecture, philosophy, technology and aviation; also antiquarian postcards.",
+        "description_de": "Bücher über Geschichte, Architektur, Philosophie, Technik und Luftfahrt; auch alte Postkarten.",
+        "address": "Erdkampsweg 18, 22335 Hamburg",
+        "phone": "+49 40 5000140",
+        "hours": "Mon–Fri 10:00–18:00; Sat 10:00–13:00",
+        "hours_de": "Mo–Fr 10:00–18:00; Sa 10:00–13:00",
+        "website": "https://www.buchhandlung-lutz-heimhalt.de/",
+        "location_note": "Approximate map location; use the address and Directions link for the exact entrance. Shop schedules may change."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0252,
+          53.628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 44,
+        "name": "Antiquariat Torsten Bernhardt",
+        "category": "Shops",
+        "description": "Traditional Eilbek bookshop for used, out-of-print and antiquarian titles.",
+        "description_de": "Traditionelles Antiquariat in Eilbek für gebrauchte, vergriffene und ältere Bücher.",
+        "address": "Wandsbeker Chaussee 159, 22089 Hamburg",
+        "phone": "+49 40 336303",
+        "hours": "Mon–Fri 10:00–18:30; Sat 10:00–15:00",
+        "hours_de": "Mo–Fr 10:00–18:30; Sa 10:00–15:00",
+        "location_note": "Approximate map location; use the address and Directions link for the exact entrance. Shop schedules may change."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0467,
+          53.5679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 45,
+        "name": "Schn€ppchen-Hamburg",
+        "category": "Shops",
+        "description": "Vintage and secondhand household goods, lamps, ceramics, pictures and furniture.",
+        "description_de": "Secondhand und Vintage: Lampen, Keramik, Bilder, Möbel und Haushaltswaren.",
+        "address": "Wandsbeker Chaussee 189, 22089 Hamburg",
+        "phone": "+49 40 23686866",
+        "hours": "Tue–Fri 10:30–19:00; Sat 12:00–18:00",
+        "hours_de": "Di–Fr 10:30–19:00; Sa 12:00–18:00",
+        "website": "https://www.schnaeppchen-hamburg.de/",
+        "location_note": "Approximate map location; use the address and Directions link for the exact entrance. Shop schedules may change."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.04923,
+          53.56843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 46,
+        "name": "Rathauspassage Hamburg",
+        "category": "Shops",
+        "description": "Social-enterprise café and bookshop beneath Rathausmarkt, with secondhand books.",
+        "description_de": "Soziales Café und Buchladen unter dem Rathausmarkt, auch mit gebrauchten Büchern.",
+        "address": "Rathausmarkt 3, 20095 Hamburg",
+        "phone": "+49 40 60002000",
+        "hours": "Mon–Sat 09:30–19:00",
+        "hours_de": "Mo–Sa 09:30–19:00",
+        "website": "https://www.rathauspassage.de/",
+        "location_note": "Approximate map location; use the address and Directions link for the exact entrance. Shop schedules may change."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9952,
+          53.5504
+        ]
+      }
     }
   ]
 }
