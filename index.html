@@ -138,6 +138,7 @@ function filters(){const el=document.getElementById("filters");["All",...Object.
 filters();
 function switchLanguage(next){
  language=next;document.documentElement.lang=next;
+ const mapFrame=document.getElementById("map");const desired=next==="de"?"leafmap-map-de.html":"leafmap-map.html";if(mapFrame.getAttribute("src")!==desired)mapFrame.setAttribute("src",desired);
  document.querySelectorAll("[data-i18n]").forEach(el=>{el.textContent=tr(el.dataset.i18n)});
  document.querySelectorAll("[data-i18n-html]").forEach(el=>{if(el.dataset.i18nHtml==="title")el.innerHTML=tr("title")});
  document.getElementById("search").placeholder=tr("placeholder");
@@ -154,7 +155,7 @@ showPlaces.addEventListener("click",()=>setSheet(true));
 closePlaces.addEventListener("click",()=>setSheet(false));
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&document.body.classList.contains("sheet-open"))setSheet(false)});
 document.getElementById("search").addEventListener("input",e=>{term=e.target.value.trim().toLowerCase();draw()});
-fetch("data/hamburg_places.geojson").then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(geo=>{all=geo.features.filter(f=>f.geometry?.type==="Point");draw()}).catch(e=>{document.getElementById("count").textContent="Unable to load places. Try refreshing.";console.error(e)});
+fetch("data/hamburg_places.geojson").then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(geo=>{all=geo.features.filter(f=>f.geometry?.type==="Point");draw()}).catch(e=>{document.getElementById("count").textContent=tr("failed");console.error(e)});
 </script>
 
 </body></html>
