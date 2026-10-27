@@ -13,12 +13,32 @@ colors = {"Food": "#eaa45f", "Kneipen": "#e05d5a", "Cocktails": "#ac8ce3",
 names_de = {"Food": "Essen", "Kneipen": "Kneipen", "Cocktails": "Cocktails",
             "Sights": "Sehenswertes", "Harbor": "Hafen", "Shops": "Läden"}
 
+# Compact Lucide-style SVG pictograms inside understated, category-colored badges.
+icon_paths = {
+    "Food": '<path d="M4 3v7a3 3 0 0 0 6 0V3M7 3v18M19 3c-3 3-4 6-4 10h4v8"/>',
+    "Kneipen": '<path d="M5 8h12v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V8ZM17 9h2a3 3 0 0 1 0 6h-2M7 3v3M11 3v3M15 3v3"/>',
+    "Cocktails": '<path d="m3 4 9 10 9-10H3ZM12 14v7M7 21h10M16 7l4-4"/>',
+    "Sights": '<path d="m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18"/>',
+    "Harbor": '<circle cx="12" cy="4" r="2"/><path d="M12 6v15M5 11H2l3 4M19 11h3l-3 4M3 15c1 4 4 6 9 6s8-2 9-6"/>',
+    "Shops": '<path d="M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7"/>',
+}
+def category_icon(category, color):
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" '
+           'width="19" height="19" fill="none" stroke="currentColor" '
+           'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'
+           + icon_paths[category] + "</svg>")
+    markup = (f'<div class="poi-symbol" style="background:{color}">'
+              + svg + "</div>")
+    return folium.DivIcon(html=markup, icon_size=(32, 32), icon_anchor=(16, 16),
+                          popup_anchor=(0, -16), class_name="poi-div-icon")
+
+
 for lang, output in (("en", "leafmap-map.html"), ("de", "leafmap-map-de.html")):
     m = leafmap.Map(center=[53.563, 9.987], zoom=12, fullscreen_control=False)
     # Minimal monochrome appearance for the raster basemap, preserving colored markers.
     m.get_root().header.add_child(folium.Element("""
     <style>
-    .leaflet-tile-pane img.leaflet-tile {
+    .poi-div-icon { background: transparent; border: none; }\n    .poi-symbol { width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 1px 5px #34342f44; box-sizing: border-box; }\n    .leaflet-tile-pane img.leaflet-tile {
       filter: grayscale(100%) saturate(0%) contrast(82%) brightness(110%);
     }
     </style>
@@ -46,9 +66,8 @@ for lang, output in (("en", "leafmap-map.html"), ("de", "leafmap-map-de.html")):
                 fields.append(f'<p><a href="{html.escape(p["website"], quote=True)}" target="_blank" rel="noopener noreferrer">{"Webseite" if lang == "de" else "Website"} ↗</a></p>')
             fields.append(f'<a href="{dest}" target="_blank" rel="noopener noreferrer">{link_text} ↗</a>')
             popup = "".join(fields)
-            marker = folium.CircleMarker(
-                location=[latitude, longitude], radius=7, color="#ffffff",
-                weight=1.5, fill=True, fill_color=color, fill_opacity=0.95,
+            marker = folium.Marker(
+                location=[latitude, longitude], icon=category_icon(category, color),
                 popup=folium.Popup(popup, max_width=320), tooltip=p["name"],
             ).add_to(group)
             query = " ".join([p["name"], p["description"], p.get("description_de", ""), category]).lower()
