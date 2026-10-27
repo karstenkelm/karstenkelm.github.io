@@ -5,6 +5,8 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     
     <style>
+    .poi-div-icon { background: transparent; border: none; }
+    .poi-symbol { width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 1px 5px #34342f44; box-sizing: border-box; }
     .leaflet-tile-pane img.leaflet-tile {
       filter: grayscale(100%) saturate(0%) contrast(82%) brightness(110%);
     }
@@ -24,7 +26,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_ad296c07d642851b7a62294deaf34c96 {
+                #map_bd33321629d9f18a89ca43a77e984c16 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -61,14 +63,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_ad296c07d642851b7a62294deaf34c96" ></div>
+            <div class="folium-map" id="map_bd33321629d9f18a89ca43a77e984c16" ></div>
         
 </body>
 <script>
     
     
-            var map_ad296c07d642851b7a62294deaf34c96 = L.map(
-                "map_ad296c07d642851b7a62294deaf34c96",
+            var map_bd33321629d9f18a89ca43a77e984c16 = L.map(
+                "map_bd33321629d9f18a89ca43a77e984c16",
                 {
                     center: [53.563, 9.987],
                     crs: L.CRS.EPSG3857,
@@ -83,13 +85,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_ad296c07d642851b7a62294deaf34c96);
+            L.control.scale().addTo(map_bd33321629d9f18a89ca43a77e984c16);
 
             
 
         
     
-            var tile_layer_b85838b1db280219db5b0686df2530c9 = L.tileLayer(
+            var tile_layer_9e685e4e8c5ac329b04c1a1621318ca9 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -106,45 +108,55 @@
             );
         
     
-            tile_layer_b85838b1db280219db5b0686df2530c9.addTo(map_ad296c07d642851b7a62294deaf34c96);
+            tile_layer_9e685e4e8c5ac329b04c1a1621318ca9.addTo(map_bd33321629d9f18a89ca43a77e984c16);
         
     
-            map_ad296c07d642851b7a62294deaf34c96.fitBounds(
+            map_bd33321629d9f18a89ca43a77e984c16.fitBounds(
                 [[53.563, 9.987], [53.563, 9.987]],
                 {"maxZoom": 12}
             );
         
     
-            var feature_group_e2fa3efd15e0012a67a649ebe38d82e6 = L.featureGroup(
+            var feature_group_c61e8b9acaca608b161bb31725c76e99 = L.featureGroup(
                 {
 }
             );
         
     
-            var circle_marker_24e71b440aca451991c559029c343521 = L.circleMarker(
+            var marker_b3d0869fc9ee84c3f5d9618542e9e0d2 = L.marker(
                 [53.5485, 9.9791],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaa45f", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_e2fa3efd15e0012a67a649ebe38d82e6);
+                {
+}
+            ).addTo(feature_group_c61e8b9acaca608b161bb31725c76e99);
         
     
-        var popup_ddad6aeefdc30707f0e97446f3c43998 = L.popup({
+            var div_icon_2bccd22eab2cc06915899d8df18f2b79 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#eaa45f\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 3v7a3 3 0 0 0 6 0V3M7 3v18M19 3c-3 3-4 6-4 10h4v8\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_cb4f66620a51091067b4842057c684c6 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_a1c554a67cf03ecd5f2a7dacec7fd774 = $(`<div id="html_a1c554a67cf03ecd5f2a7dacec7fd774" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Krameramtsstuben</strong><p>Historic courtyard dining near the Michel, with Labskaus and Pannfisch.</p><div><b>Address:</b> Krayenkamp 10, 20459 Hamburg</div><div><b>Phone:</b> +49 40 365800</div><div><b>Hours:</b> Tue–Sun 12:00–23:00 (kitchen until 21:00)</div><p><a href="https://www.krameramtsstuben.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Krameramtsstuben%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_ddad6aeefdc30707f0e97446f3c43998.setContent(html_a1c554a67cf03ecd5f2a7dacec7fd774);
+                var html_3162edb7d0470c1fd7acc956aa2afd2a = $(`<div id="html_3162edb7d0470c1fd7acc956aa2afd2a" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Krameramtsstuben</strong><p>Historic courtyard dining near the Michel, with Labskaus and Pannfisch.</p><div><b>Address:</b> Krayenkamp 10, 20459 Hamburg</div><div><b>Phone:</b> +49 40 365800</div><div><b>Hours:</b> Tue–Sun 12:00–23:00 (kitchen until 21:00)</div><p><a href="https://www.krameramtsstuben.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Krameramtsstuben%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_cb4f66620a51091067b4842057c684c6.setContent(html_3162edb7d0470c1fd7acc956aa2afd2a);
             
         
 
-        circle_marker_24e71b440aca451991c559029c343521.bindPopup(popup_ddad6aeefdc30707f0e97446f3c43998)
+        marker_b3d0869fc9ee84c3f5d9618542e9e0d2.bindPopup(popup_cb4f66620a51091067b4842057c684c6)
         ;
 
         
     
     
-            circle_marker_24e71b440aca451991c559029c343521.bindTooltip(
+            marker_b3d0869fc9ee84c3f5d9618542e9e0d2.bindTooltip(
                 `<div>
                      Krameramtsstuben
                  </div>`,
@@ -154,30 +166,43 @@
             );
         
     
-            var circle_marker_6c38d0ecee25bd9ba04cf9b4b41d9792 = L.circleMarker(
+                marker_b3d0869fc9ee84c3f5d9618542e9e0d2.setIcon(div_icon_2bccd22eab2cc06915899d8df18f2b79);
+            
+    
+            var marker_eb6bb810917f615bd142cbf4c543e7bc = L.marker(
                 [53.548, 9.9786],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaa45f", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_e2fa3efd15e0012a67a649ebe38d82e6);
+                {
+}
+            ).addTo(feature_group_c61e8b9acaca608b161bb31725c76e99);
         
     
-        var popup_74b28608068f16785c8dcfba078d161e = L.popup({
+            var div_icon_20840663bafbf2797f8a0a77af194e93 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#eaa45f\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 3v7a3 3 0 0 0 6 0V3M7 3v18M19 3c-3 3-4 6-4 10h4v8\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_d845e16cd8673da968b855bddc8f0d4c = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_d8cdc1ffe9da492d3d2830176ea33942 = $(`<div id="html_d8cdc1ffe9da492d3d2830176ea33942" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Old Commercial Room</strong><p>A classic Hamburg institution near the Michel, renowned for Labskaus.</p><a href="https://www.google.com/maps/search/?api=1&query=Old%20Commercial%20Room%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_74b28608068f16785c8dcfba078d161e.setContent(html_d8cdc1ffe9da492d3d2830176ea33942);
+                var html_7e182b2f6a663944b88464768f5d67fa = $(`<div id="html_7e182b2f6a663944b88464768f5d67fa" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Old Commercial Room</strong><p>A classic Hamburg institution near the Michel, renowned for Labskaus.</p><a href="https://www.google.com/maps/search/?api=1&query=Old%20Commercial%20Room%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_d845e16cd8673da968b855bddc8f0d4c.setContent(html_7e182b2f6a663944b88464768f5d67fa);
             
         
 
-        circle_marker_6c38d0ecee25bd9ba04cf9b4b41d9792.bindPopup(popup_74b28608068f16785c8dcfba078d161e)
+        marker_eb6bb810917f615bd142cbf4c543e7bc.bindPopup(popup_d845e16cd8673da968b855bddc8f0d4c)
         ;
 
         
     
     
-            circle_marker_6c38d0ecee25bd9ba04cf9b4b41d9792.bindTooltip(
+            marker_eb6bb810917f615bd142cbf4c543e7bc.bindTooltip(
                 `<div>
                      Old Commercial Room
                  </div>`,
@@ -187,30 +212,43 @@
             );
         
     
-            var circle_marker_400f4b8a991cc30c4b9ac569f2a8945f = L.circleMarker(
+                marker_eb6bb810917f615bd142cbf4c543e7bc.setIcon(div_icon_20840663bafbf2797f8a0a77af194e93);
+            
+    
+            var marker_6824b5b6e8a610cb226eb9d1f5f2e424 = L.marker(
                 [53.5468, 9.9871],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaa45f", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_e2fa3efd15e0012a67a649ebe38d82e6);
+                {
+}
+            ).addTo(feature_group_c61e8b9acaca608b161bb31725c76e99);
         
     
-        var popup_15d67ddd886e91b5251c1083d8a91ef3 = L.popup({
+            var div_icon_8a72d5074d51ceeddd6eceabb2c3a5b8 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#eaa45f\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 3v7a3 3 0 0 0 6 0V3M7 3v18M19 3c-3 3-4 6-4 10h4v8\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_9501f065393f181b4c11ec93635be05d = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_999e83c3d8e46cd8defefe3b85a331d7 = $(`<div id="html_999e83c3d8e46cd8defefe3b85a331d7" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Deichgraf</strong><p>Hanseatic cooking on the historic Deichstraße; ideal before an evening stroll.</p><a href="https://www.google.com/maps/search/?api=1&query=Deichgraf%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_15d67ddd886e91b5251c1083d8a91ef3.setContent(html_999e83c3d8e46cd8defefe3b85a331d7);
+                var html_ca7635bf967110dc153a2670b2302f1b = $(`<div id="html_ca7635bf967110dc153a2670b2302f1b" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Deichgraf</strong><p>Hanseatic cooking on the historic Deichstraße; ideal before an evening stroll.</p><a href="https://www.google.com/maps/search/?api=1&query=Deichgraf%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_9501f065393f181b4c11ec93635be05d.setContent(html_ca7635bf967110dc153a2670b2302f1b);
             
         
 
-        circle_marker_400f4b8a991cc30c4b9ac569f2a8945f.bindPopup(popup_15d67ddd886e91b5251c1083d8a91ef3)
+        marker_6824b5b6e8a610cb226eb9d1f5f2e424.bindPopup(popup_9501f065393f181b4c11ec93635be05d)
         ;
 
         
     
     
-            circle_marker_400f4b8a991cc30c4b9ac569f2a8945f.bindTooltip(
+            marker_6824b5b6e8a610cb226eb9d1f5f2e424.bindTooltip(
                 `<div>
                      Deichgraf
                  </div>`,
@@ -220,30 +258,43 @@
             );
         
     
-            var circle_marker_0c681b4f1c802b4ccc54f5e2bdfeedc3 = L.circleMarker(
+                marker_6824b5b6e8a610cb226eb9d1f5f2e424.setIcon(div_icon_8a72d5074d51ceeddd6eceabb2c3a5b8);
+            
+    
+            var marker_fb7f43bf5529fd7fa3fe88a50df99f1b = L.marker(
                 [53.5411, 10.0107],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaa45f", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_e2fa3efd15e0012a67a649ebe38d82e6);
+                {
+}
+            ).addTo(feature_group_c61e8b9acaca608b161bb31725c76e99);
         
     
-        var popup_5907b42fef3363f426d23c1b2ded3d14 = L.popup({
+            var div_icon_aec590934e18ae8565f33d8e0974f0aa = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#eaa45f\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 3v7a3 3 0 0 0 6 0V3M7 3v18M19 3c-3 3-4 6-4 10h4v8\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_6d3f5689b99c01279e7e9ab624bd5d87 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_22ff2890398007c151d2af6b23eb616a = $(`<div id="html_22ff2890398007c151d2af6b23eb616a" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Oberhafen-Kantine</strong><p>Distinctive crooked brick building and hearty regional fare.</p><a href="https://www.google.com/maps/search/?api=1&query=Oberhafen-Kantine%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_5907b42fef3363f426d23c1b2ded3d14.setContent(html_22ff2890398007c151d2af6b23eb616a);
+                var html_0c9c6c5615e4eccdecf64d7309a9eac2 = $(`<div id="html_0c9c6c5615e4eccdecf64d7309a9eac2" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Oberhafen-Kantine</strong><p>Distinctive crooked brick building and hearty regional fare.</p><a href="https://www.google.com/maps/search/?api=1&query=Oberhafen-Kantine%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_6d3f5689b99c01279e7e9ab624bd5d87.setContent(html_0c9c6c5615e4eccdecf64d7309a9eac2);
             
         
 
-        circle_marker_0c681b4f1c802b4ccc54f5e2bdfeedc3.bindPopup(popup_5907b42fef3363f426d23c1b2ded3d14)
+        marker_fb7f43bf5529fd7fa3fe88a50df99f1b.bindPopup(popup_6d3f5689b99c01279e7e9ab624bd5d87)
         ;
 
         
     
     
-            circle_marker_0c681b4f1c802b4ccc54f5e2bdfeedc3.bindTooltip(
+            marker_fb7f43bf5529fd7fa3fe88a50df99f1b.bindTooltip(
                 `<div>
                      Oberhafen-Kantine
                  </div>`,
@@ -253,30 +304,43 @@
             );
         
     
-            var circle_marker_820e90ef8c5588b4e2d8e9c49c06dc10 = L.circleMarker(
+                marker_fb7f43bf5529fd7fa3fe88a50df99f1b.setIcon(div_icon_aec590934e18ae8565f33d8e0974f0aa);
+            
+    
+            var marker_9f3b26bc7d3da597c6d30a735ed4b61e = L.marker(
                 [53.5437, 9.9832],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaa45f", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_e2fa3efd15e0012a67a649ebe38d82e6);
+                {
+}
+            ).addTo(feature_group_c61e8b9acaca608b161bb31725c76e99);
         
     
-        var popup_1a751d426e721c99b39c0e438ebde39d = L.popup({
+            var div_icon_b22d8d5f68be7791f5be977e35e6ea01 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#eaa45f\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 3v7a3 3 0 0 0 6 0V3M7 3v18M19 3c-3 3-4 6-4 10h4v8\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_9572ffd6a89fac0e2f85bfc83e97de22 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_63cd1d5538d0bea1e846dcea74750ed8 = $(`<div id="html_63cd1d5538d0bea1e846dcea74750ed8" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Gasthaus Heimathafen</strong><p>Relaxed harbor restaurant with traditional fish dishes.</p><a href="https://www.google.com/maps/search/?api=1&query=Gasthaus%20Heimathafen%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_1a751d426e721c99b39c0e438ebde39d.setContent(html_63cd1d5538d0bea1e846dcea74750ed8);
+                var html_1e37e35d014c1296619fcf86fd373786 = $(`<div id="html_1e37e35d014c1296619fcf86fd373786" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Gasthaus Heimathafen</strong><p>Relaxed harbor restaurant with traditional fish dishes.</p><a href="https://www.google.com/maps/search/?api=1&query=Gasthaus%20Heimathafen%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_9572ffd6a89fac0e2f85bfc83e97de22.setContent(html_1e37e35d014c1296619fcf86fd373786);
             
         
 
-        circle_marker_820e90ef8c5588b4e2d8e9c49c06dc10.bindPopup(popup_1a751d426e721c99b39c0e438ebde39d)
+        marker_9f3b26bc7d3da597c6d30a735ed4b61e.bindPopup(popup_9572ffd6a89fac0e2f85bfc83e97de22)
         ;
 
         
     
     
-            circle_marker_820e90ef8c5588b4e2d8e9c49c06dc10.bindTooltip(
+            marker_9f3b26bc7d3da597c6d30a735ed4b61e.bindTooltip(
                 `<div>
                      Gasthaus Heimathafen
                  </div>`,
@@ -286,30 +350,43 @@
             );
         
     
-            var circle_marker_e97f3e4001966745460d82246c4e66c4 = L.circleMarker(
+                marker_9f3b26bc7d3da597c6d30a735ed4b61e.setIcon(div_icon_b22d8d5f68be7791f5be977e35e6ea01);
+            
+    
+            var marker_9eea85bbd00a7be35399971cb08dc65b = L.marker(
                 [53.5438, 9.9764],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaa45f", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_e2fa3efd15e0012a67a649ebe38d82e6);
+                {
+}
+            ).addTo(feature_group_c61e8b9acaca608b161bb31725c76e99);
         
     
-        var popup_504ce7a59b134095906e9a689ccc9c8e = L.popup({
+            var div_icon_ac178a5b2ac14361be02d0a9dd9b07c0 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#eaa45f\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 3v7a3 3 0 0 0 6 0V3M7 3v18M19 3c-3 3-4 6-4 10h4v8\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_e1c59103d8080b48bfa0582196b3a0d3 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_2acabcf3598757573b83c1e4f3318708 = $(`<div id="html_2acabcf3598757573b83c1e4f3318708" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Das Feuerschiff</strong><p>A restaurant aboard a historic red lightship.</p><a href="https://www.google.com/maps/search/?api=1&query=Das%20Feuerschiff%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_504ce7a59b134095906e9a689ccc9c8e.setContent(html_2acabcf3598757573b83c1e4f3318708);
+                var html_dec5daae8163a93b8702124f9f9685da = $(`<div id="html_dec5daae8163a93b8702124f9f9685da" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Das Feuerschiff</strong><p>A restaurant aboard a historic red lightship.</p><a href="https://www.google.com/maps/search/?api=1&query=Das%20Feuerschiff%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_e1c59103d8080b48bfa0582196b3a0d3.setContent(html_dec5daae8163a93b8702124f9f9685da);
             
         
 
-        circle_marker_e97f3e4001966745460d82246c4e66c4.bindPopup(popup_504ce7a59b134095906e9a689ccc9c8e)
+        marker_9eea85bbd00a7be35399971cb08dc65b.bindPopup(popup_e1c59103d8080b48bfa0582196b3a0d3)
         ;
 
         
     
     
-            circle_marker_e97f3e4001966745460d82246c4e66c4.bindTooltip(
+            marker_9eea85bbd00a7be35399971cb08dc65b.bindTooltip(
                 `<div>
                      Das Feuerschiff
                  </div>`,
@@ -319,30 +396,43 @@
             );
         
     
-            var circle_marker_b1517ce38489fa5fb650f9c7818e5b60 = L.circleMarker(
+                marker_9eea85bbd00a7be35399971cb08dc65b.setIcon(div_icon_ac178a5b2ac14361be02d0a9dd9b07c0);
+            
+    
+            var marker_268c8b211e6496270c965e6fe8cab5b6 = L.marker(
                 [53.5461, 9.9649],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaa45f", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_e2fa3efd15e0012a67a649ebe38d82e6);
+                {
+}
+            ).addTo(feature_group_c61e8b9acaca608b161bb31725c76e99);
         
     
-        var popup_40cb074828348342d135d737d7d71047 = L.popup({
+            var div_icon_ed40c4d2d633c7db18679debd86d9af0 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#eaa45f\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 3v7a3 3 0 0 0 6 0V3M7 3v18M19 3c-3 3-4 6-4 10h4v8\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_3e2efad58dba7fc2ade6c891df6c9c36 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_97f5438bd724d4a4f4e38adac3a14ab7 = $(`<div id="html_97f5438bd724d4a4f4e38adac3a14ab7" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Brücke 10</strong><p>Fischbrötchen and harbor views at the Landungsbrücken.</p><a href="https://www.google.com/maps/search/?api=1&query=Br%C3%BCcke%2010%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_40cb074828348342d135d737d7d71047.setContent(html_97f5438bd724d4a4f4e38adac3a14ab7);
+                var html_e3c7f73185735a431fcf045c8de13826 = $(`<div id="html_e3c7f73185735a431fcf045c8de13826" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Brücke 10</strong><p>Fischbrötchen and harbor views at the Landungsbrücken.</p><a href="https://www.google.com/maps/search/?api=1&query=Br%C3%BCcke%2010%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_3e2efad58dba7fc2ade6c891df6c9c36.setContent(html_e3c7f73185735a431fcf045c8de13826);
             
         
 
-        circle_marker_b1517ce38489fa5fb650f9c7818e5b60.bindPopup(popup_40cb074828348342d135d737d7d71047)
+        marker_268c8b211e6496270c965e6fe8cab5b6.bindPopup(popup_3e2efad58dba7fc2ade6c891df6c9c36)
         ;
 
         
     
     
-            circle_marker_b1517ce38489fa5fb650f9c7818e5b60.bindTooltip(
+            marker_268c8b211e6496270c965e6fe8cab5b6.bindTooltip(
                 `<div>
                      Brücke 10
                  </div>`,
@@ -352,30 +442,43 @@
             );
         
     
-            var circle_marker_0d6dc346274bbf57990ef966af776ef2 = L.circleMarker(
+                marker_268c8b211e6496270c965e6fe8cab5b6.setIcon(div_icon_ed40c4d2d633c7db18679debd86d9af0);
+            
+    
+            var marker_72e449d9d1f0b2ec1947409acb97c631 = L.marker(
                 [53.5448, 9.9437],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaa45f", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_e2fa3efd15e0012a67a649ebe38d82e6);
+                {
+}
+            ).addTo(feature_group_c61e8b9acaca608b161bb31725c76e99);
         
     
-        var popup_db2b4104758ded06ae16ca7acf65307b = L.popup({
+            var div_icon_549cb3c05b42ddc2532abb727140efc6 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#eaa45f\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 3v7a3 3 0 0 0 6 0V3M7 3v18M19 3c-3 3-4 6-4 10h4v8\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_86ad18eb08ae4f647b8c30f7743800fe = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_769c4903499d98f08eda443c5e6bf4ae = $(`<div id="html_769c4903499d98f08eda443c5e6bf4ae" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Fischereihafen Restaurant</strong><p>Traditional seafood restaurant near the Elbe, for a more formal meal.</p><a href="https://www.google.com/maps/search/?api=1&query=Fischereihafen%20Restaurant%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_db2b4104758ded06ae16ca7acf65307b.setContent(html_769c4903499d98f08eda443c5e6bf4ae);
+                var html_5fd6ac0711855a3b0b002e435d977e20 = $(`<div id="html_5fd6ac0711855a3b0b002e435d977e20" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Fischereihafen Restaurant</strong><p>Traditional seafood restaurant near the Elbe, for a more formal meal.</p><a href="https://www.google.com/maps/search/?api=1&query=Fischereihafen%20Restaurant%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_86ad18eb08ae4f647b8c30f7743800fe.setContent(html_5fd6ac0711855a3b0b002e435d977e20);
             
         
 
-        circle_marker_0d6dc346274bbf57990ef966af776ef2.bindPopup(popup_db2b4104758ded06ae16ca7acf65307b)
+        marker_72e449d9d1f0b2ec1947409acb97c631.bindPopup(popup_86ad18eb08ae4f647b8c30f7743800fe)
         ;
 
         
     
     
-            circle_marker_0d6dc346274bbf57990ef966af776ef2.bindTooltip(
+            marker_72e449d9d1f0b2ec1947409acb97c631.bindTooltip(
                 `<div>
                      Fischereihafen Restaurant
                  </div>`,
@@ -385,30 +488,43 @@
             );
         
     
-            var circle_marker_92c777257b1ba022c77edb14dade5b08 = L.circleMarker(
+                marker_72e449d9d1f0b2ec1947409acb97c631.setIcon(div_icon_549cb3c05b42ddc2532abb727140efc6);
+            
+    
+            var marker_d80eba91113aaf005b8caf7f601a0462 = L.marker(
                 [53.54365, 9.988128],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaa45f", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_e2fa3efd15e0012a67a649ebe38d82e6);
+                {
+}
+            ).addTo(feature_group_c61e8b9acaca608b161bb31725c76e99);
         
     
-        var popup_c7d527b49482fcfe229c6631a894736f = L.popup({
+            var div_icon_b89d0349208667f5b61e4f06a4ee1881 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#eaa45f\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 3v7a3 3 0 0 0 6 0V3M7 3v18M19 3c-3 3-4 6-4 10h4v8\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_ed0f11f10ad1eacd35c47981c2a12319 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_25ca1d95bc622a9637f09ddd9fa89274 = $(`<div id="html_25ca1d95bc622a9637f09ddd9fa89274" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Speicherstadt Kaffeerösterei</strong><p>Coffee roasted on site, cake and a view of the canal in a historic 1888 Speicherstadt warehouse. Kehrwieder 5; a good stop while exploring the old port.</p><div><b>Address:</b> Kehrwieder 5, 20457 Hamburg</div><div><b>Phone:</b> +49 40 537998500</div><div><b>Hours:</b> Café daily 10:00–18:00; espresso bar 08:00–18:00</div><p><a href="https://speicherstadt-kaffee.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Speicherstadt%20Kaffeer%C3%B6sterei%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_c7d527b49482fcfe229c6631a894736f.setContent(html_25ca1d95bc622a9637f09ddd9fa89274);
+                var html_0daa051db8415d96639e678f65c2a797 = $(`<div id="html_0daa051db8415d96639e678f65c2a797" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Speicherstadt Kaffeerösterei</strong><p>Coffee roasted on site, cake and a view of the canal in a historic 1888 Speicherstadt warehouse. Kehrwieder 5; a good stop while exploring the old port.</p><div><b>Address:</b> Kehrwieder 5, 20457 Hamburg</div><div><b>Phone:</b> +49 40 537998500</div><div><b>Hours:</b> Café daily 10:00–18:00; espresso bar 08:00–18:00</div><p><a href="https://speicherstadt-kaffee.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Speicherstadt%20Kaffeer%C3%B6sterei%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_ed0f11f10ad1eacd35c47981c2a12319.setContent(html_0daa051db8415d96639e678f65c2a797);
             
         
 
-        circle_marker_92c777257b1ba022c77edb14dade5b08.bindPopup(popup_c7d527b49482fcfe229c6631a894736f)
+        marker_d80eba91113aaf005b8caf7f601a0462.bindPopup(popup_ed0f11f10ad1eacd35c47981c2a12319)
         ;
 
         
     
     
-            circle_marker_92c777257b1ba022c77edb14dade5b08.bindTooltip(
+            marker_d80eba91113aaf005b8caf7f601a0462.bindTooltip(
                 `<div>
                      Speicherstadt Kaffeerösterei
                  </div>`,
@@ -418,39 +534,52 @@
             );
         
     
-            feature_group_e2fa3efd15e0012a67a649ebe38d82e6.addTo(map_ad296c07d642851b7a62294deaf34c96);
+                marker_d80eba91113aaf005b8caf7f601a0462.setIcon(div_icon_b89d0349208667f5b61e4f06a4ee1881);
+            
+    
+            feature_group_c61e8b9acaca608b161bb31725c76e99.addTo(map_bd33321629d9f18a89ca43a77e984c16);
         
     
-            var feature_group_8e71034e9759eb67319200c4d442867a = L.featureGroup(
+            var feature_group_866ca6d8415c2a301d066a613e5c8a75 = L.featureGroup(
                 {
 }
             );
         
     
-            var circle_marker_c51692ae46991f14d8ac55ed721bb8e8 = L.circleMarker(
+            var marker_02bc617bb936325884fb5eb69e2041c8 = L.marker(
                 [53.5776, 10.0334],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e05d5a", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_8e71034e9759eb67319200c4d442867a);
+                {
+}
+            ).addTo(feature_group_866ca6d8415c2a301d066a613e5c8a75);
         
     
-        var popup_c36978bb285c6dcd91d3a2e42c9a66a3 = L.popup({
+            var div_icon_962ddb2cdc658b79a56ff34a55b371b4 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#e05d5a\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M5 8h12v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V8ZM17 9h2a3 3 0 0 1 0 6h-2M7 3v3M11 3v3M15 3v3\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_6086556003549984f69d79dd5102aacb = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_8ab7bb094f37d309a4cef22af3af6ec9 = $(`<div id="html_8ab7bb094f37d309a4cef22af3af6ec9" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Capri-Stube</strong><p>Traditional Barmbek-Süd Gardinenkneipe with neighborhood regulars.</p><a href="https://www.google.com/maps/search/?api=1&query=Capri-Stube%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_c36978bb285c6dcd91d3a2e42c9a66a3.setContent(html_8ab7bb094f37d309a4cef22af3af6ec9);
+                var html_baee15f895d2a391dcf3efe3028fab4f = $(`<div id="html_baee15f895d2a391dcf3efe3028fab4f" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Capri-Stube</strong><p>Traditional Barmbek-Süd Gardinenkneipe with neighborhood regulars.</p><a href="https://www.google.com/maps/search/?api=1&query=Capri-Stube%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_6086556003549984f69d79dd5102aacb.setContent(html_baee15f895d2a391dcf3efe3028fab4f);
             
         
 
-        circle_marker_c51692ae46991f14d8ac55ed721bb8e8.bindPopup(popup_c36978bb285c6dcd91d3a2e42c9a66a3)
+        marker_02bc617bb936325884fb5eb69e2041c8.bindPopup(popup_6086556003549984f69d79dd5102aacb)
         ;
 
         
     
     
-            circle_marker_c51692ae46991f14d8ac55ed721bb8e8.bindTooltip(
+            marker_02bc617bb936325884fb5eb69e2041c8.bindTooltip(
                 `<div>
                      Capri-Stube
                  </div>`,
@@ -460,30 +589,43 @@
             );
         
     
-            var circle_marker_66483cbddd0a179a89898ecad569ea3d = L.circleMarker(
+                marker_02bc617bb936325884fb5eb69e2041c8.setIcon(div_icon_962ddb2cdc658b79a56ff34a55b371b4);
+            
+    
+            var marker_aa46e5316bb8056a5733d04cf2619780 = L.marker(
                 [53.5771, 10.0264],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e05d5a", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_8e71034e9759eb67319200c4d442867a);
+                {
+}
+            ).addTo(feature_group_866ca6d8415c2a301d066a613e5c8a75);
         
     
-        var popup_7b1b78ed78543c6e9a54de1aa410dacb = L.popup({
+            var div_icon_9cf24d44935bb59fbc441d29e0c4e7b6 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#e05d5a\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M5 8h12v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V8ZM17 9h2a3 3 0 0 1 0 6h-2M7 3v3M11 3v3M15 3v3\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_b38b0d7d9566df0c5356b7a06dabfbe9 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_c7801f74a08707284eae11d32cb20909 = $(`<div id="html_c7801f74a08707284eae11d32cb20909" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Zum Guten Tropfen</strong><p>Historic Mozartstraße Eckkneipe with football and local conversations.</p><a href="https://www.google.com/maps/search/?api=1&query=Zum%20Guten%20Tropfen%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_7b1b78ed78543c6e9a54de1aa410dacb.setContent(html_c7801f74a08707284eae11d32cb20909);
+                var html_c18f623bba76d23478adb327d1b618d5 = $(`<div id="html_c18f623bba76d23478adb327d1b618d5" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Zum Guten Tropfen</strong><p>Historic Mozartstraße Eckkneipe with football and local conversations.</p><a href="https://www.google.com/maps/search/?api=1&query=Zum%20Guten%20Tropfen%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_b38b0d7d9566df0c5356b7a06dabfbe9.setContent(html_c18f623bba76d23478adb327d1b618d5);
             
         
 
-        circle_marker_66483cbddd0a179a89898ecad569ea3d.bindPopup(popup_7b1b78ed78543c6e9a54de1aa410dacb)
+        marker_aa46e5316bb8056a5733d04cf2619780.bindPopup(popup_b38b0d7d9566df0c5356b7a06dabfbe9)
         ;
 
         
     
     
-            circle_marker_66483cbddd0a179a89898ecad569ea3d.bindTooltip(
+            marker_aa46e5316bb8056a5733d04cf2619780.bindTooltip(
                 `<div>
                      Zum Guten Tropfen
                  </div>`,
@@ -493,30 +635,43 @@
             );
         
     
-            var circle_marker_163a0ad75689582a59982eb68cdb5cbf = L.circleMarker(
+                marker_aa46e5316bb8056a5733d04cf2619780.setIcon(div_icon_9cf24d44935bb59fbc441d29e0c4e7b6);
+            
+    
+            var marker_c17ad97df0a4c627e8f08c89e00448aa = L.marker(
                 [53.5793, 10.0331],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e05d5a", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_8e71034e9759eb67319200c4d442867a);
+                {
+}
+            ).addTo(feature_group_866ca6d8415c2a301d066a613e5c8a75);
         
     
-        var popup_d9c40b30624ece01fd03cd410bd9613f = L.popup({
+            var div_icon_2b4c213b479a9f720d4ff718c8296c94 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#e05d5a\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M5 8h12v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V8ZM17 9h2a3 3 0 0 1 0 6h-2M7 3v3M11 3v3M15 3v3\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_faaa1e8531ccbe88b5d03488361f936a = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_f773551fce1163c3f94688ff4f01cab0 = $(`<div id="html_f773551fce1163c3f94688ff4f01cab0" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Gaststätte Imstedt 4</strong><p>Neighborhood pub with football, cards and classic Tresen culture.</p><a href="https://www.google.com/maps/search/?api=1&query=Gastst%C3%A4tte%20Imstedt%204%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_d9c40b30624ece01fd03cd410bd9613f.setContent(html_f773551fce1163c3f94688ff4f01cab0);
+                var html_7c8aab5268935412a714b6c9802dec5a = $(`<div id="html_7c8aab5268935412a714b6c9802dec5a" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Gaststätte Imstedt 4</strong><p>Neighborhood pub with football, cards and classic Tresen culture.</p><a href="https://www.google.com/maps/search/?api=1&query=Gastst%C3%A4tte%20Imstedt%204%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_faaa1e8531ccbe88b5d03488361f936a.setContent(html_7c8aab5268935412a714b6c9802dec5a);
             
         
 
-        circle_marker_163a0ad75689582a59982eb68cdb5cbf.bindPopup(popup_d9c40b30624ece01fd03cd410bd9613f)
+        marker_c17ad97df0a4c627e8f08c89e00448aa.bindPopup(popup_faaa1e8531ccbe88b5d03488361f936a)
         ;
 
         
     
     
-            circle_marker_163a0ad75689582a59982eb68cdb5cbf.bindTooltip(
+            marker_c17ad97df0a4c627e8f08c89e00448aa.bindTooltip(
                 `<div>
                      Gaststätte Imstedt 4
                  </div>`,
@@ -526,30 +681,43 @@
             );
         
     
-            var circle_marker_1a2b5688bcad33e2c4723fc8b8ee77f6 = L.circleMarker(
+                marker_c17ad97df0a4c627e8f08c89e00448aa.setIcon(div_icon_2b4c213b479a9f720d4ff718c8296c94);
+            
+    
+            var marker_bf7f8c21572a55cfa4f90c65f8217b21 = L.marker(
                 [53.6008, 10.0444],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e05d5a", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_8e71034e9759eb67319200c4d442867a);
+                {
+}
+            ).addTo(feature_group_866ca6d8415c2a301d066a613e5c8a75);
         
     
-        var popup_7f8ef8be4284c3a40b09c36cd0b67a94 = L.popup({
+            var div_icon_49224b9e0c5d62da20e3f347b297caab = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#e05d5a\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M5 8h12v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V8ZM17 9h2a3 3 0 0 1 0 6h-2M7 3v3M11 3v3M15 3v3\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_f691902634065e019843db077bbd53ea = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_7262eeec0e818a5e19c7135a56cd0685 = $(`<div id="html_7262eeec0e818a5e19c7135a56cd0685" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Meisennest</strong><p>Old-fashioned neighborhood bar on Wachtelstraße.</p><a href="https://www.google.com/maps/search/?api=1&query=Meisennest%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_7f8ef8be4284c3a40b09c36cd0b67a94.setContent(html_7262eeec0e818a5e19c7135a56cd0685);
+                var html_d26e9b31f96d88492777235f6c48c638 = $(`<div id="html_d26e9b31f96d88492777235f6c48c638" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Meisennest</strong><p>Old-fashioned neighborhood bar on Wachtelstraße.</p><a href="https://www.google.com/maps/search/?api=1&query=Meisennest%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_f691902634065e019843db077bbd53ea.setContent(html_d26e9b31f96d88492777235f6c48c638);
             
         
 
-        circle_marker_1a2b5688bcad33e2c4723fc8b8ee77f6.bindPopup(popup_7f8ef8be4284c3a40b09c36cd0b67a94)
+        marker_bf7f8c21572a55cfa4f90c65f8217b21.bindPopup(popup_f691902634065e019843db077bbd53ea)
         ;
 
         
     
     
-            circle_marker_1a2b5688bcad33e2c4723fc8b8ee77f6.bindTooltip(
+            marker_bf7f8c21572a55cfa4f90c65f8217b21.bindTooltip(
                 `<div>
                      Meisennest
                  </div>`,
@@ -559,30 +727,43 @@
             );
         
     
-            var circle_marker_0fd02a3ca6cd435be9ab1835e5775d4d = L.circleMarker(
+                marker_bf7f8c21572a55cfa4f90c65f8217b21.setIcon(div_icon_49224b9e0c5d62da20e3f347b297caab);
+            
+    
+            var marker_d962f9356005b87f84d3feb65ce11731 = L.marker(
                 [53.5972, 10.0398],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e05d5a", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_8e71034e9759eb67319200c4d442867a);
+                {
+}
+            ).addTo(feature_group_866ca6d8415c2a301d066a613e5c8a75);
         
     
-        var popup_da49bafa6f7804c1c8922b6bfe3f1834 = L.popup({
+            var div_icon_2dc90e0b57859e82f255f20ba324ce3a = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#e05d5a\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M5 8h12v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V8ZM17 9h2a3 3 0 0 1 0 6h-2M7 3v3M11 3v3M15 3v3\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_483764ec853702ad34aa9cc1b4579ea7 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_d108898578a82766ac70339e8e33c6d0 = $(`<div id="html_d108898578a82766ac70339e8e33c6d0" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Barmbek Express</strong><p>Unpretentious Barmbek-Nord Stammkneipe with darts.</p><a href="https://www.google.com/maps/search/?api=1&query=Barmbek%20Express%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_da49bafa6f7804c1c8922b6bfe3f1834.setContent(html_d108898578a82766ac70339e8e33c6d0);
+                var html_eb8d526cd8148f064226a327b366b90f = $(`<div id="html_eb8d526cd8148f064226a327b366b90f" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Barmbek Express</strong><p>Unpretentious Barmbek-Nord Stammkneipe with darts.</p><a href="https://www.google.com/maps/search/?api=1&query=Barmbek%20Express%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_483764ec853702ad34aa9cc1b4579ea7.setContent(html_eb8d526cd8148f064226a327b366b90f);
             
         
 
-        circle_marker_0fd02a3ca6cd435be9ab1835e5775d4d.bindPopup(popup_da49bafa6f7804c1c8922b6bfe3f1834)
+        marker_d962f9356005b87f84d3feb65ce11731.bindPopup(popup_483764ec853702ad34aa9cc1b4579ea7)
         ;
 
         
     
     
-            circle_marker_0fd02a3ca6cd435be9ab1835e5775d4d.bindTooltip(
+            marker_d962f9356005b87f84d3feb65ce11731.bindTooltip(
                 `<div>
                      Barmbek Express
                  </div>`,
@@ -592,39 +773,52 @@
             );
         
     
-            feature_group_8e71034e9759eb67319200c4d442867a.addTo(map_ad296c07d642851b7a62294deaf34c96);
+                marker_d962f9356005b87f84d3feb65ce11731.setIcon(div_icon_2dc90e0b57859e82f255f20ba324ce3a);
+            
+    
+            feature_group_866ca6d8415c2a301d066a613e5c8a75.addTo(map_bd33321629d9f18a89ca43a77e984c16);
         
     
-            var feature_group_d623f582f6e725fc851d081ffcc705c6 = L.featureGroup(
+            var feature_group_2e64718a65f013f5f4bbadecd0f1469b = L.featureGroup(
                 {
 }
             );
         
     
-            var circle_marker_1c15121a7d826517693d78b5a5ec9e89 = L.circleMarker(
+            var marker_017f18c244673d9e037fbb9216afe6e6 = L.marker(
                 [53.5506, 9.9954],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ac8ce3", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_d623f582f6e725fc851d081ffcc705c6);
+                {
+}
+            ).addTo(feature_group_2e64718a65f013f5f4bbadecd0f1469b);
         
     
-        var popup_035d57d036cedce130bbfb7be111b145 = L.popup({
+            var div_icon_716de107eb213d22beb9aeab1f81739f = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#ac8ce3\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 4 9 10 9-10H3ZM12 14v7M7 21h10M16 7l4-4\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_b968ccfe21b4c56adcf5fc4e20568cab = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_44b492433b539608e57b35f8e08ab8ce = $(`<div id="html_44b492433b539608e57b35f8e08ab8ce" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Le Lion – Bar de Paris</strong><p>Birthplace of the Gin Basil Smash; intimate and expertly made classics.</p><div><b>Address:</b> Rathausstraße 3, 20095 Hamburg</div><div><b>Phone:</b> +49 40 334753780</div><div><b>Hours:</b> Mon–Fri from 17:00; Sat from 13:00; Sun closed</div><p><a href="https://www.lelion.net/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Le%20Lion%20%E2%80%93%20Bar%20de%20Paris%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_035d57d036cedce130bbfb7be111b145.setContent(html_44b492433b539608e57b35f8e08ab8ce);
+                var html_04cbcaed0b00a86776a30de3c3d963b3 = $(`<div id="html_04cbcaed0b00a86776a30de3c3d963b3" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Le Lion – Bar de Paris</strong><p>Birthplace of the Gin Basil Smash; intimate and expertly made classics.</p><div><b>Address:</b> Rathausstraße 3, 20095 Hamburg</div><div><b>Phone:</b> +49 40 334753780</div><div><b>Hours:</b> Mon–Fri from 17:00; Sat from 13:00; Sun closed</div><p><a href="https://www.lelion.net/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Le%20Lion%20%E2%80%93%20Bar%20de%20Paris%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_b968ccfe21b4c56adcf5fc4e20568cab.setContent(html_04cbcaed0b00a86776a30de3c3d963b3);
             
         
 
-        circle_marker_1c15121a7d826517693d78b5a5ec9e89.bindPopup(popup_035d57d036cedce130bbfb7be111b145)
+        marker_017f18c244673d9e037fbb9216afe6e6.bindPopup(popup_b968ccfe21b4c56adcf5fc4e20568cab)
         ;
 
         
     
     
-            circle_marker_1c15121a7d826517693d78b5a5ec9e89.bindTooltip(
+            marker_017f18c244673d9e037fbb9216afe6e6.bindTooltip(
                 `<div>
                      Le Lion – Bar de Paris
                  </div>`,
@@ -634,30 +828,43 @@
             );
         
     
-            var circle_marker_176deb718a7b0fd5136e8da1c568d0ef = L.circleMarker(
+                marker_017f18c244673d9e037fbb9216afe6e6.setIcon(div_icon_716de107eb213d22beb9aeab1f81739f);
+            
+    
+            var marker_18c351800c0c347114f841a018939556 = L.marker(
                 [53.5476, 9.9425],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ac8ce3", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_d623f582f6e725fc851d081ffcc705c6);
+                {
+}
+            ).addTo(feature_group_2e64718a65f013f5f4bbadecd0f1469b);
         
     
-        var popup_5fcf40c89dbc23bff23b5457a51311f7 = L.popup({
+            var div_icon_4de58686c0218b3152e18d6b5b337058 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#ac8ce3\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 4 9 10 9-10H3ZM12 14v7M7 21h10M16 7l4-4\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_bb9d3627ec3425521a5dc60812564407 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_9177c36328053810d7231e6d8a619151 = $(`<div id="html_9177c36328053810d7231e6d8a619151" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Christiansen&#x27;s</strong><p>A long-running St. Pauli institution for vintage and forgotten cocktails.</p><a href="https://www.google.com/maps/search/?api=1&query=Christiansen%27s%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_5fcf40c89dbc23bff23b5457a51311f7.setContent(html_9177c36328053810d7231e6d8a619151);
+                var html_f75086c784f7ebd47bced9ddcec68565 = $(`<div id="html_f75086c784f7ebd47bced9ddcec68565" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Christiansen&#x27;s</strong><p>A long-running St. Pauli institution for vintage and forgotten cocktails.</p><a href="https://www.google.com/maps/search/?api=1&query=Christiansen%27s%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_bb9d3627ec3425521a5dc60812564407.setContent(html_f75086c784f7ebd47bced9ddcec68565);
             
         
 
-        circle_marker_176deb718a7b0fd5136e8da1c568d0ef.bindPopup(popup_5fcf40c89dbc23bff23b5457a51311f7)
+        marker_18c351800c0c347114f841a018939556.bindPopup(popup_bb9d3627ec3425521a5dc60812564407)
         ;
 
         
     
     
-            circle_marker_176deb718a7b0fd5136e8da1c568d0ef.bindTooltip(
+            marker_18c351800c0c347114f841a018939556.bindTooltip(
                 `<div>
                      Christiansen's
                  </div>`,
@@ -667,30 +874,43 @@
             );
         
     
-            var circle_marker_388bf8bac22e0a03423b78991cebdecc = L.circleMarker(
+                marker_18c351800c0c347114f841a018939556.setIcon(div_icon_4de58686c0218b3152e18d6b5b337058);
+            
+    
+            var marker_402756a6fd6b510d666dead8f54642f3 = L.marker(
                 [53.5532, 9.9584],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ac8ce3", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_d623f582f6e725fc851d081ffcc705c6);
+                {
+}
+            ).addTo(feature_group_2e64718a65f013f5f4bbadecd0f1469b);
         
     
-        var popup_4d9a572a3fbf2adda5067ad8a575bb03 = L.popup({
+            var div_icon_f7036334b23578fd662a3b46e8546b71 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#ac8ce3\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 4 9 10 9-10H3ZM12 14v7M7 21h10M16 7l4-4\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_81b2fed4e649ab9660f8011d286dd3cc = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_4f6b60a848fa7d5a3c96b6c1ec059c9c = $(`<div id="html_4f6b60a848fa7d5a3c96b6c1ec059c9c" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>The Chug Club</strong><p>Tequila and mezcal specialists with tasting-sized cocktails.</p><a href="https://www.google.com/maps/search/?api=1&query=The%20Chug%20Club%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_4d9a572a3fbf2adda5067ad8a575bb03.setContent(html_4f6b60a848fa7d5a3c96b6c1ec059c9c);
+                var html_c8bf7029cbfaf57aa04d6c1faa642543 = $(`<div id="html_c8bf7029cbfaf57aa04d6c1faa642543" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>The Chug Club</strong><p>Tequila and mezcal specialists with tasting-sized cocktails.</p><a href="https://www.google.com/maps/search/?api=1&query=The%20Chug%20Club%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_81b2fed4e649ab9660f8011d286dd3cc.setContent(html_c8bf7029cbfaf57aa04d6c1faa642543);
             
         
 
-        circle_marker_388bf8bac22e0a03423b78991cebdecc.bindPopup(popup_4d9a572a3fbf2adda5067ad8a575bb03)
+        marker_402756a6fd6b510d666dead8f54642f3.bindPopup(popup_81b2fed4e649ab9660f8011d286dd3cc)
         ;
 
         
     
     
-            circle_marker_388bf8bac22e0a03423b78991cebdecc.bindTooltip(
+            marker_402756a6fd6b510d666dead8f54642f3.bindTooltip(
                 `<div>
                      The Chug Club
                  </div>`,
@@ -700,30 +920,43 @@
             );
         
     
-            var circle_marker_abaea2878de7ac5c4b589c9b2c4dd2f3 = L.circleMarker(
+                marker_402756a6fd6b510d666dead8f54642f3.setIcon(div_icon_f7036334b23578fd662a3b46e8546b71);
+            
+    
+            var marker_5836d48bce2d1995253c7b3a1bb7f6c9 = L.marker(
                 [53.5527, 9.9493],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ac8ce3", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_d623f582f6e725fc851d081ffcc705c6);
+                {
+}
+            ).addTo(feature_group_2e64718a65f013f5f4bbadecd0f1469b);
         
     
-        var popup_d6739d0dde7b127364f8cfb55c687cce = L.popup({
+            var div_icon_9760a5ce15669c59d13bb1fa48606576 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#ac8ce3\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 4 9 10 9-10H3ZM12 14v7M7 21h10M16 7l4-4\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_08ee9fe80d4ab4b62c573864bfc0a8cb = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_95a32f8aa2c0a290414d0a6cd22ac58b = $(`<div id="html_95a32f8aa2c0a290414d0a6cd22ac58b" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>The Rabbithole</strong><p>Cozy creative cocktails and excellent rum and whiskey selections.</p><a href="https://www.google.com/maps/search/?api=1&query=The%20Rabbithole%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_d6739d0dde7b127364f8cfb55c687cce.setContent(html_95a32f8aa2c0a290414d0a6cd22ac58b);
+                var html_2ed33bdc166931223e2219c6675fba38 = $(`<div id="html_2ed33bdc166931223e2219c6675fba38" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>The Rabbithole</strong><p>Cozy creative cocktails and excellent rum and whiskey selections.</p><a href="https://www.google.com/maps/search/?api=1&query=The%20Rabbithole%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_08ee9fe80d4ab4b62c573864bfc0a8cb.setContent(html_2ed33bdc166931223e2219c6675fba38);
             
         
 
-        circle_marker_abaea2878de7ac5c4b589c9b2c4dd2f3.bindPopup(popup_d6739d0dde7b127364f8cfb55c687cce)
+        marker_5836d48bce2d1995253c7b3a1bb7f6c9.bindPopup(popup_08ee9fe80d4ab4b62c573864bfc0a8cb)
         ;
 
         
     
     
-            circle_marker_abaea2878de7ac5c4b589c9b2c4dd2f3.bindTooltip(
+            marker_5836d48bce2d1995253c7b3a1bb7f6c9.bindTooltip(
                 `<div>
                      The Rabbithole
                  </div>`,
@@ -733,30 +966,43 @@
             );
         
     
-            var circle_marker_31ea93cf97e8d4363bc603feeadb6661 = L.circleMarker(
+                marker_5836d48bce2d1995253c7b3a1bb7f6c9.setIcon(div_icon_9760a5ce15669c59d13bb1fa48606576);
+            
+    
+            var marker_8a8f6bfe816eef49ada2036cc539100f = L.marker(
                 [53.5529, 9.952],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ac8ce3", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_d623f582f6e725fc851d081ffcc705c6);
+                {
+}
+            ).addTo(feature_group_2e64718a65f013f5f4bbadecd0f1469b);
         
     
-        var popup_6100cdb9a636de050f9ec442af011633 = L.popup({
+            var div_icon_89bf7bdf0c5cb8fb6bbbc5d6f3e42b05 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#ac8ce3\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 4 9 10 9-10H3ZM12 14v7M7 21h10M16 7l4-4\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_967add6c9781ff41b1f1b5c9b9d9c35a = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_db9ee82ad56663d3a73475fb92fe9466 = $(`<div id="html_db9ee82ad56663d3a73475fb92fe9466" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Clockers</strong><p>Inventive gin drinks in a forest-inspired interior.</p><a href="https://www.google.com/maps/search/?api=1&query=Clockers%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_6100cdb9a636de050f9ec442af011633.setContent(html_db9ee82ad56663d3a73475fb92fe9466);
+                var html_a64d877afd52a8593c1bb9f26544f81a = $(`<div id="html_a64d877afd52a8593c1bb9f26544f81a" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Clockers</strong><p>Inventive gin drinks in a forest-inspired interior.</p><a href="https://www.google.com/maps/search/?api=1&query=Clockers%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_967add6c9781ff41b1f1b5c9b9d9c35a.setContent(html_a64d877afd52a8593c1bb9f26544f81a);
             
         
 
-        circle_marker_31ea93cf97e8d4363bc603feeadb6661.bindPopup(popup_6100cdb9a636de050f9ec442af011633)
+        marker_8a8f6bfe816eef49ada2036cc539100f.bindPopup(popup_967add6c9781ff41b1f1b5c9b9d9c35a)
         ;
 
         
     
     
-            circle_marker_31ea93cf97e8d4363bc603feeadb6661.bindTooltip(
+            marker_8a8f6bfe816eef49ada2036cc539100f.bindTooltip(
                 `<div>
                      Clockers
                  </div>`,
@@ -766,30 +1012,43 @@
             );
         
     
-            var circle_marker_fa105cbc184345554c9f78ae0b18f7fb = L.circleMarker(
+                marker_8a8f6bfe816eef49ada2036cc539100f.setIcon(div_icon_89bf7bdf0c5cb8fb6bbbc5d6f3e42b05);
+            
+    
+            var marker_d9e3acf176b218c6ffb8332d6012cf45 = L.marker(
                 [53.5406, 10.0024],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ac8ce3", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_d623f582f6e725fc851d081ffcc705c6);
+                {
+}
+            ).addTo(feature_group_2e64718a65f013f5f4bbadecd0f1469b);
         
     
-        var popup_3c1c26f602c11342720d7e34803e5ae6 = L.popup({
+            var div_icon_e3432a094139b60e733d0b94bad9bbda = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#ac8ce3\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 4 9 10 9-10H3ZM12 14v7M7 21h10M16 7l4-4\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_4dcf7f6406ac558187762e5fc9f8e037 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_d756a079927cbd1471f74d3e53e1296a = $(`<div id="html_d756a079927cbd1471f74d3e53e1296a" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Puzzle Bar</strong><p>Modern experimental cocktails and 15th-floor city views.</p><a href="https://www.google.com/maps/search/?api=1&query=Puzzle%20Bar%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_3c1c26f602c11342720d7e34803e5ae6.setContent(html_d756a079927cbd1471f74d3e53e1296a);
+                var html_c5712d9da94fb04fbcfb8e785d7abf54 = $(`<div id="html_c5712d9da94fb04fbcfb8e785d7abf54" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Puzzle Bar</strong><p>Modern experimental cocktails and 15th-floor city views.</p><a href="https://www.google.com/maps/search/?api=1&query=Puzzle%20Bar%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_4dcf7f6406ac558187762e5fc9f8e037.setContent(html_c5712d9da94fb04fbcfb8e785d7abf54);
             
         
 
-        circle_marker_fa105cbc184345554c9f78ae0b18f7fb.bindPopup(popup_3c1c26f602c11342720d7e34803e5ae6)
+        marker_d9e3acf176b218c6ffb8332d6012cf45.bindPopup(popup_4dcf7f6406ac558187762e5fc9f8e037)
         ;
 
         
     
     
-            circle_marker_fa105cbc184345554c9f78ae0b18f7fb.bindTooltip(
+            marker_d9e3acf176b218c6ffb8332d6012cf45.bindTooltip(
                 `<div>
                      Puzzle Bar
                  </div>`,
@@ -799,30 +1058,43 @@
             );
         
     
-            var circle_marker_22286de2a078bce4da8d2296a7370fd6 = L.circleMarker(
+                marker_d9e3acf176b218c6ffb8332d6012cf45.setIcon(div_icon_e3432a094139b60e733d0b94bad9bbda);
+            
+    
+            var marker_43012540234536c3bf2b29f4316168d7 = L.marker(
                 [53.5468, 9.9876],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ac8ce3", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_d623f582f6e725fc851d081ffcc705c6);
+                {
+}
+            ).addTo(feature_group_2e64718a65f013f5f4bbadecd0f1469b);
         
     
-        var popup_3248d7e4843cf927d79a3ce97bdb9496 = L.popup({
+            var div_icon_df88b80f816ccde889e58d5f0342d746 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#ac8ce3\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 4 9 10 9-10H3ZM12 14v7M7 21h10M16 7l4-4\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_6c311f666149a21fbda37893692a1554 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_13d4ca49a1f0cfa298e551c039fc7e01 = $(`<div id="html_13d4ca49a1f0cfa298e551c039fc7e01" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>The Bohemian</strong><p>Creative cocktails in historic Deichstraße.</p><a href="https://www.google.com/maps/search/?api=1&query=The%20Bohemian%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_3248d7e4843cf927d79a3ce97bdb9496.setContent(html_13d4ca49a1f0cfa298e551c039fc7e01);
+                var html_50ae1d0d66fe9882cc7c1771d6f2bccb = $(`<div id="html_50ae1d0d66fe9882cc7c1771d6f2bccb" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>The Bohemian</strong><p>Creative cocktails in historic Deichstraße.</p><a href="https://www.google.com/maps/search/?api=1&query=The%20Bohemian%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_6c311f666149a21fbda37893692a1554.setContent(html_50ae1d0d66fe9882cc7c1771d6f2bccb);
             
         
 
-        circle_marker_22286de2a078bce4da8d2296a7370fd6.bindPopup(popup_3248d7e4843cf927d79a3ce97bdb9496)
+        marker_43012540234536c3bf2b29f4316168d7.bindPopup(popup_6c311f666149a21fbda37893692a1554)
         ;
 
         
     
     
-            circle_marker_22286de2a078bce4da8d2296a7370fd6.bindTooltip(
+            marker_43012540234536c3bf2b29f4316168d7.bindTooltip(
                 `<div>
                      The Bohemian
                  </div>`,
@@ -832,39 +1104,52 @@
             );
         
     
-            feature_group_d623f582f6e725fc851d081ffcc705c6.addTo(map_ad296c07d642851b7a62294deaf34c96);
+                marker_43012540234536c3bf2b29f4316168d7.setIcon(div_icon_df88b80f816ccde889e58d5f0342d746);
+            
+    
+            feature_group_2e64718a65f013f5f4bbadecd0f1469b.addTo(map_bd33321629d9f18a89ca43a77e984c16);
         
     
-            var feature_group_c2d5f52e4d48c0904e6693fdd009acfc = L.featureGroup(
+            var feature_group_f40ce101f04857863fa778366467aa55 = L.featureGroup(
                 {
 }
             );
         
     
-            var circle_marker_68081ab81a8a6c154a66b9dfb1debfee = L.circleMarker(
+            var marker_1761f803964893ee6ed42f5946ca5101 = L.marker(
                 [53.54697, 9.96959],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#469a89", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_c2d5f52e4d48c0904e6693fdd009acfc);
+                {
+}
+            ).addTo(feature_group_f40ce101f04857863fa778366467aa55);
         
     
-        var popup_7525920c95c79852cfa0d8a1485d8833 = L.popup({
+            var div_icon_f1d07302e01da0db617b06662cbb9dc5 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#469a89\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_4869e0428284d18dd7049fb26aeba02e = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_385bcdb887f785a0df7cb2373e56a1fa = $(`<div id="html_385bcdb887f785a0df7cb2373e56a1fa" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Hotel Hafen Hamburg</strong><p>Traditional maritime hotel above the Landungsbrücken with harbor views. The Tower Bar is located inside the hotel.</p><div><b>Address:</b> Seewartenstraße 9, 20459 Hamburg</div><div><b>Phone:</b> +49 40 31113-0</div><p><a href="https://www.hotel-hafen-hamburg.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Hotel%20Hafen%20Hamburg%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_7525920c95c79852cfa0d8a1485d8833.setContent(html_385bcdb887f785a0df7cb2373e56a1fa);
+                var html_2a58ba650161c129cda7e8b08d9d4178 = $(`<div id="html_2a58ba650161c129cda7e8b08d9d4178" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Hotel Hafen Hamburg</strong><p>Traditional maritime hotel above the Landungsbrücken with harbor views. The Tower Bar is located inside the hotel.</p><div><b>Address:</b> Seewartenstraße 9, 20459 Hamburg</div><div><b>Phone:</b> +49 40 31113-0</div><p><a href="https://www.hotel-hafen-hamburg.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Hotel%20Hafen%20Hamburg%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_4869e0428284d18dd7049fb26aeba02e.setContent(html_2a58ba650161c129cda7e8b08d9d4178);
             
         
 
-        circle_marker_68081ab81a8a6c154a66b9dfb1debfee.bindPopup(popup_7525920c95c79852cfa0d8a1485d8833)
+        marker_1761f803964893ee6ed42f5946ca5101.bindPopup(popup_4869e0428284d18dd7049fb26aeba02e)
         ;
 
         
     
     
-            circle_marker_68081ab81a8a6c154a66b9dfb1debfee.bindTooltip(
+            marker_1761f803964893ee6ed42f5946ca5101.bindTooltip(
                 `<div>
                      Hotel Hafen Hamburg
                  </div>`,
@@ -874,30 +1159,43 @@
             );
         
     
-            var circle_marker_a81e11bd801743d0576dfec43072e8b0 = L.circleMarker(
+                marker_1761f803964893ee6ed42f5946ca5101.setIcon(div_icon_f1d07302e01da0db617b06662cbb9dc5);
+            
+    
+            var marker_6c2cbb48a1e9465b55578025e4144fdd = L.marker(
                 [53.5467, 9.9881],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#469a89", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_c2d5f52e4d48c0904e6693fdd009acfc);
+                {
+}
+            ).addTo(feature_group_f40ce101f04857863fa778366467aa55);
         
     
-        var popup_18e85f78a2958f3eb17b1ed35ed5128c = L.popup({
+            var div_icon_70598ea65ad38d18e05de2c4263f7ca0 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#469a89\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_ec8eca1c2ee5d7e3151edec6488d4a32 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_6367121f7ab4e0580f759da0ab420d2f = $(`<div id="html_6367121f7ab4e0580f759da0ab420d2f" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Deichstraße &amp; Nikolaifleet</strong><p>Old merchant houses and waterways: historic Hamburg.</p><a href="https://www.google.com/maps/search/?api=1&query=Deichstra%C3%9Fe%20%26%20Nikolaifleet%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_18e85f78a2958f3eb17b1ed35ed5128c.setContent(html_6367121f7ab4e0580f759da0ab420d2f);
+                var html_9bf23665e4b8929d3f9a47c0ae75edb5 = $(`<div id="html_9bf23665e4b8929d3f9a47c0ae75edb5" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Deichstraße &amp; Nikolaifleet</strong><p>Old merchant houses and waterways: historic Hamburg.</p><a href="https://www.google.com/maps/search/?api=1&query=Deichstra%C3%9Fe%20%26%20Nikolaifleet%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_ec8eca1c2ee5d7e3151edec6488d4a32.setContent(html_9bf23665e4b8929d3f9a47c0ae75edb5);
             
         
 
-        circle_marker_a81e11bd801743d0576dfec43072e8b0.bindPopup(popup_18e85f78a2958f3eb17b1ed35ed5128c)
+        marker_6c2cbb48a1e9465b55578025e4144fdd.bindPopup(popup_ec8eca1c2ee5d7e3151edec6488d4a32)
         ;
 
         
     
     
-            circle_marker_a81e11bd801743d0576dfec43072e8b0.bindTooltip(
+            marker_6c2cbb48a1e9465b55578025e4144fdd.bindTooltip(
                 `<div>
                      Deichstraße & Nikolaifleet
                  </div>`,
@@ -907,30 +1205,43 @@
             );
         
     
-            var circle_marker_d987b815d64a0f268937009d3aadd3e3 = L.circleMarker(
+                marker_6c2cbb48a1e9465b55578025e4144fdd.setIcon(div_icon_70598ea65ad38d18e05de2c4263f7ca0);
+            
+    
+            var marker_e57747e9c4e4c4a65d70e0ef41a5f99d = L.marker(
                 [53.5461, 9.9677],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#469a89", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_c2d5f52e4d48c0904e6693fdd009acfc);
+                {
+}
+            ).addTo(feature_group_f40ce101f04857863fa778366467aa55);
         
     
-        var popup_4f4affa199540a1470b4142d9d5d3bc7 = L.popup({
+            var div_icon_78103856a2662fbb5975a5f86b256dc2 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#469a89\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_fcd12215b194afb9fd3c8eb238ab3eea = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_6cdf0ada7778852e7b4a9c7e47010274 = $(`<div id="html_6cdf0ada7778852e7b4a9c7e47010274" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Alter Elbtunnel</strong><p>Walk underneath the river through remarkable old engineering.</p><a href="https://www.google.com/maps/search/?api=1&query=Alter%20Elbtunnel%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_4f4affa199540a1470b4142d9d5d3bc7.setContent(html_6cdf0ada7778852e7b4a9c7e47010274);
+                var html_f5ca6e805c661ec7b4298bc596a505c6 = $(`<div id="html_f5ca6e805c661ec7b4298bc596a505c6" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Alter Elbtunnel</strong><p>Walk underneath the river through remarkable old engineering.</p><a href="https://www.google.com/maps/search/?api=1&query=Alter%20Elbtunnel%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_fcd12215b194afb9fd3c8eb238ab3eea.setContent(html_f5ca6e805c661ec7b4298bc596a505c6);
             
         
 
-        circle_marker_d987b815d64a0f268937009d3aadd3e3.bindPopup(popup_4f4affa199540a1470b4142d9d5d3bc7)
+        marker_e57747e9c4e4c4a65d70e0ef41a5f99d.bindPopup(popup_fcd12215b194afb9fd3c8eb238ab3eea)
         ;
 
         
     
     
-            circle_marker_d987b815d64a0f268937009d3aadd3e3.bindTooltip(
+            marker_e57747e9c4e4c4a65d70e0ef41a5f99d.bindTooltip(
                 `<div>
                      Alter Elbtunnel
                  </div>`,
@@ -940,30 +1251,43 @@
             );
         
     
-            var circle_marker_b0e5a5cecea4bc6a9d9e021bc237159d = L.circleMarker(
+                marker_e57747e9c4e4c4a65d70e0ef41a5f99d.setIcon(div_icon_78103856a2662fbb5975a5f86b256dc2);
+            
+    
+            var marker_91dffa93f088bb8285e1a38d58bb66a0 = L.marker(
                 [53.5435, 10.0025],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#469a89", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_c2d5f52e4d48c0904e6693fdd009acfc);
+                {
+}
+            ).addTo(feature_group_f40ce101f04857863fa778366467aa55);
         
     
-        var popup_4343a9931336a6363d6294e401d5e267 = L.popup({
+            var div_icon_f5b568c1946c7c402db9f5de9a3ae3cd = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#469a89\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_2bd33164a2f4d1d5f6164082df53b412 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_6be737f46fc4845a731c47152d11a5f5 = $(`<div id="html_6be737f46fc4845a731c47152d11a5f5" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Speicherstadt</strong><p>Historic brick warehouses and canals, especially atmospheric at dusk.</p><a href="https://www.google.com/maps/search/?api=1&query=Speicherstadt%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_4343a9931336a6363d6294e401d5e267.setContent(html_6be737f46fc4845a731c47152d11a5f5);
+                var html_11569a224ccd6f3f15f78f95ae6b5513 = $(`<div id="html_11569a224ccd6f3f15f78f95ae6b5513" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Speicherstadt</strong><p>Historic brick warehouses and canals, especially atmospheric at dusk.</p><a href="https://www.google.com/maps/search/?api=1&query=Speicherstadt%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_2bd33164a2f4d1d5f6164082df53b412.setContent(html_11569a224ccd6f3f15f78f95ae6b5513);
             
         
 
-        circle_marker_b0e5a5cecea4bc6a9d9e021bc237159d.bindPopup(popup_4343a9931336a6363d6294e401d5e267)
+        marker_91dffa93f088bb8285e1a38d58bb66a0.bindPopup(popup_2bd33164a2f4d1d5f6164082df53b412)
         ;
 
         
     
     
-            circle_marker_b0e5a5cecea4bc6a9d9e021bc237159d.bindTooltip(
+            marker_91dffa93f088bb8285e1a38d58bb66a0.bindTooltip(
                 `<div>
                      Speicherstadt
                  </div>`,
@@ -973,30 +1297,43 @@
             );
         
     
-            var circle_marker_9cfe1758f313c2a1e2835a865c02f26d = L.circleMarker(
+                marker_91dffa93f088bb8285e1a38d58bb66a0.setIcon(div_icon_f5b568c1946c7c402db9f5de9a3ae3cd);
+            
+    
+            var marker_f957bd261f4bba5e4d9eaf237d7640c9 = L.marker(
                 [53.5594, 9.8108],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#469a89", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_c2d5f52e4d48c0904e6693fdd009acfc);
+                {
+}
+            ).addTo(feature_group_f40ce101f04857863fa778366467aa55);
         
     
-        var popup_f3a63dda6188e650fb3df0e3784fed16 = L.popup({
+            var div_icon_9df086602c4fabc8326b30bf40c1d0d4 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#469a89\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_3f3758dd289203f15c4078f77bf9c76b = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_b1da53dbe6301399daf7d71e311d4f3e = $(`<div id="html_b1da53dbe6301399daf7d71e311d4f3e" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Treppenviertel Blankenese</strong><p>Stairways, white captains&#x27; houses and sweeping Elbe views.</p><a href="https://www.google.com/maps/search/?api=1&query=Treppenviertel%20Blankenese%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_f3a63dda6188e650fb3df0e3784fed16.setContent(html_b1da53dbe6301399daf7d71e311d4f3e);
+                var html_576ec9a6c176beb8d3172453167501d7 = $(`<div id="html_576ec9a6c176beb8d3172453167501d7" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Treppenviertel Blankenese</strong><p>Stairways, white captains&#x27; houses and sweeping Elbe views.</p><a href="https://www.google.com/maps/search/?api=1&query=Treppenviertel%20Blankenese%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_3f3758dd289203f15c4078f77bf9c76b.setContent(html_576ec9a6c176beb8d3172453167501d7);
             
         
 
-        circle_marker_9cfe1758f313c2a1e2835a865c02f26d.bindPopup(popup_f3a63dda6188e650fb3df0e3784fed16)
+        marker_f957bd261f4bba5e4d9eaf237d7640c9.bindPopup(popup_3f3758dd289203f15c4078f77bf9c76b)
         ;
 
         
     
     
-            circle_marker_9cfe1758f313c2a1e2835a865c02f26d.bindTooltip(
+            marker_f957bd261f4bba5e4d9eaf237d7640c9.bindTooltip(
                 `<div>
                      Treppenviertel Blankenese
                  </div>`,
@@ -1006,30 +1343,43 @@
             );
         
     
-            var circle_marker_248bb7e585537efd7e128a5a0c4cbb93 = L.circleMarker(
+                marker_f957bd261f4bba5e4d9eaf237d7640c9.setIcon(div_icon_9df086602c4fabc8326b30bf40c1d0d4);
+            
+    
+            var marker_3db20b8190c837963154a03b69582377 = L.marker(
                 [53.544, 9.9188],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#469a89", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_c2d5f52e4d48c0904e6693fdd009acfc);
+                {
+}
+            ).addTo(feature_group_f40ce101f04857863fa778366467aa55);
         
     
-        var popup_e194d191440faac7cbc03f09119f10e6 = L.popup({
+            var div_icon_1e6a987ce5d6b9b9034a495d891bcf7f = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#469a89\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_9c71e05c0748972e0d4fbaf4331dff6b = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_34cfad8ab9cd4237f407235c03b9867e = $(`<div id="html_34cfad8ab9cd4237f407235c03b9867e" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Museumshafen Oevelgönne</strong><p>Historic working boats beside the Elbe beach.</p><a href="https://www.google.com/maps/search/?api=1&query=Museumshafen%20Oevelg%C3%B6nne%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_e194d191440faac7cbc03f09119f10e6.setContent(html_34cfad8ab9cd4237f407235c03b9867e);
+                var html_a8ceea135fe3470fbfee0a99c22c5e5e = $(`<div id="html_a8ceea135fe3470fbfee0a99c22c5e5e" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Museumshafen Oevelgönne</strong><p>Historic working boats beside the Elbe beach.</p><a href="https://www.google.com/maps/search/?api=1&query=Museumshafen%20Oevelg%C3%B6nne%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_9c71e05c0748972e0d4fbaf4331dff6b.setContent(html_a8ceea135fe3470fbfee0a99c22c5e5e);
             
         
 
-        circle_marker_248bb7e585537efd7e128a5a0c4cbb93.bindPopup(popup_e194d191440faac7cbc03f09119f10e6)
+        marker_3db20b8190c837963154a03b69582377.bindPopup(popup_9c71e05c0748972e0d4fbaf4331dff6b)
         ;
 
         
     
     
-            circle_marker_248bb7e585537efd7e128a5a0c4cbb93.bindTooltip(
+            marker_3db20b8190c837963154a03b69582377.bindTooltip(
                 `<div>
                      Museumshafen Oevelgönne
                  </div>`,
@@ -1039,30 +1389,43 @@
             );
         
     
-            var circle_marker_5db0d8b783323b6edd2a2492a1ed1333 = L.circleMarker(
+                marker_3db20b8190c837963154a03b69582377.setIcon(div_icon_1e6a987ce5d6b9b9034a495d891bcf7f);
+            
+    
+            var marker_b32194aff33f0cf997df3120f7c2d434 = L.marker(
                 [53.5433, 10.0055],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#469a89", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_c2d5f52e4d48c0904e6693fdd009acfc);
+                {
+}
+            ).addTo(feature_group_f40ce101f04857863fa778366467aa55);
         
     
-        var popup_71f65c56ad240493786664bc4997f67b = L.popup({
+            var div_icon_8ee36bbf8a2230831cc288e70e3d7abc = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#469a89\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_28490dee3dc8946165bf54e7ea083ccf = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_236e0cee4bae1e78cc7fc9076c35099e = $(`<div id="html_236e0cee4bae1e78cc7fc9076c35099e" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Internationales Maritimes Museum</strong><p>Ship models, maritime history, navigation and historical maps.</p><a href="https://www.google.com/maps/search/?api=1&query=Internationales%20Maritimes%20Museum%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_71f65c56ad240493786664bc4997f67b.setContent(html_236e0cee4bae1e78cc7fc9076c35099e);
+                var html_207008c03a90ca5e2d4bc1cf7679c96d = $(`<div id="html_207008c03a90ca5e2d4bc1cf7679c96d" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Internationales Maritimes Museum</strong><p>Ship models, maritime history, navigation and historical maps.</p><a href="https://www.google.com/maps/search/?api=1&query=Internationales%20Maritimes%20Museum%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_28490dee3dc8946165bf54e7ea083ccf.setContent(html_207008c03a90ca5e2d4bc1cf7679c96d);
             
         
 
-        circle_marker_5db0d8b783323b6edd2a2492a1ed1333.bindPopup(popup_71f65c56ad240493786664bc4997f67b)
+        marker_b32194aff33f0cf997df3120f7c2d434.bindPopup(popup_28490dee3dc8946165bf54e7ea083ccf)
         ;
 
         
     
     
-            circle_marker_5db0d8b783323b6edd2a2492a1ed1333.bindTooltip(
+            marker_b32194aff33f0cf997df3120f7c2d434.bindTooltip(
                 `<div>
                      Internationales Maritimes Museum
                  </div>`,
@@ -1072,30 +1435,43 @@
             );
         
     
-            var circle_marker_27a48384580f0f7d7e37603c5e1a1729 = L.circleMarker(
+                marker_b32194aff33f0cf997df3120f7c2d434.setIcon(div_icon_8ee36bbf8a2230831cc288e70e3d7abc);
+            
+    
+            var marker_609084f35380a830c18f78e914406cb6 = L.marker(
                 [53.585, 10.0462],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#469a89", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_c2d5f52e4d48c0904e6693fdd009acfc);
+                {
+}
+            ).addTo(feature_group_f40ce101f04857863fa778366467aa55);
         
     
-        var popup_bad3cf8c8423b811c472621eed08e152 = L.popup({
+            var div_icon_01a12fdc1fcf01ae1ca8b6a53350fc68 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#469a89\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_57cddc759dc6866537ea163fca452438 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_e67288a2260e16bda293d78f2983dab8 = $(`<div id="html_e67288a2260e16bda293d78f2983dab8" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Museum der Arbeit</strong><p>Hamburg&#x27;s industrial and working-class history in Barmbek.</p><a href="https://www.google.com/maps/search/?api=1&query=Museum%20der%20Arbeit%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_bad3cf8c8423b811c472621eed08e152.setContent(html_e67288a2260e16bda293d78f2983dab8);
+                var html_fb05be344f97e17641ebcc3a0b892963 = $(`<div id="html_fb05be344f97e17641ebcc3a0b892963" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Museum der Arbeit</strong><p>Hamburg&#x27;s industrial and working-class history in Barmbek.</p><a href="https://www.google.com/maps/search/?api=1&query=Museum%20der%20Arbeit%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_57cddc759dc6866537ea163fca452438.setContent(html_fb05be344f97e17641ebcc3a0b892963);
             
         
 
-        circle_marker_27a48384580f0f7d7e37603c5e1a1729.bindPopup(popup_bad3cf8c8423b811c472621eed08e152)
+        marker_609084f35380a830c18f78e914406cb6.bindPopup(popup_57cddc759dc6866537ea163fca452438)
         ;
 
         
     
     
-            circle_marker_27a48384580f0f7d7e37603c5e1a1729.bindTooltip(
+            marker_609084f35380a830c18f78e914406cb6.bindTooltip(
                 `<div>
                      Museum der Arbeit
                  </div>`,
@@ -1105,30 +1481,43 @@
             );
         
     
-            var circle_marker_5d491af1e9578e543de2232d36508fa9 = L.circleMarker(
+                marker_609084f35380a830c18f78e914406cb6.setIcon(div_icon_01a12fdc1fcf01ae1ca8b6a53350fc68);
+            
+    
+            var marker_11ff2d09e9133cb71fa84d061a00b3c3 = L.marker(
                 [53.5471, 9.935],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#469a89", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_c2d5f52e4d48c0904e6693fdd009acfc);
+                {
+}
+            ).addTo(feature_group_f40ce101f04857863fa778366467aa55);
         
     
-        var popup_83e939400526c90829d82ec008f433d4 = L.popup({
+            var div_icon_75cde04a9211459d6b6448cd2e672f33 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#469a89\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_e50b03f916062c0da8aa0b003c20934d = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_b28b17694e220fb386fde6e31c689d83 = $(`<div id="html_b28b17694e220fb386fde6e31c689d83" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Altonaer Museum</strong><p>Regional and cultural history of Altona and North Germany.</p><a href="https://www.google.com/maps/search/?api=1&query=Altonaer%20Museum%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_83e939400526c90829d82ec008f433d4.setContent(html_b28b17694e220fb386fde6e31c689d83);
+                var html_75486ec96567d41b7b5419714f936e40 = $(`<div id="html_75486ec96567d41b7b5419714f936e40" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Altonaer Museum</strong><p>Regional and cultural history of Altona and North Germany.</p><a href="https://www.google.com/maps/search/?api=1&query=Altonaer%20Museum%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_e50b03f916062c0da8aa0b003c20934d.setContent(html_75486ec96567d41b7b5419714f936e40);
             
         
 
-        circle_marker_5d491af1e9578e543de2232d36508fa9.bindPopup(popup_83e939400526c90829d82ec008f433d4)
+        marker_11ff2d09e9133cb71fa84d061a00b3c3.bindPopup(popup_e50b03f916062c0da8aa0b003c20934d)
         ;
 
         
     
     
-            circle_marker_5d491af1e9578e543de2232d36508fa9.bindTooltip(
+            marker_11ff2d09e9133cb71fa84d061a00b3c3.bindTooltip(
                 `<div>
                      Altonaer Museum
                  </div>`,
@@ -1138,30 +1527,43 @@
             );
         
     
-            var circle_marker_37cfd52167b0f55422c358c0856eb4f5 = L.circleMarker(
+                marker_11ff2d09e9133cb71fa84d061a00b3c3.setIcon(div_icon_75cde04a9211459d6b6448cd2e672f33);
+            
+    
+            var marker_6c756f9f291426405eed136766cd5b27 = L.marker(
                 [53.5547, 9.9678],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#469a89", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_c2d5f52e4d48c0904e6693fdd009acfc);
+                {
+}
+            ).addTo(feature_group_f40ce101f04857863fa778366467aa55);
         
     
-        var popup_92f52f2f0b498676be4927b08483adf5 = L.popup({
+            var div_icon_01cb119d1eae5f6ddf39ef1780936008 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#469a89\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_d8a8419223d1fdda7b429e3ef661f09c = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_6e2eb039fbf7440ac627b5a47524dedf = $(`<div id="html_6e2eb039fbf7440ac627b5a47524dedf" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Winterdom / Heiligengeistfeld</strong><p>A proper Hamburg classic: the Winterdom funfair on Heiligengeistfeld, with rides, lights, fairground snacks and St. Pauli atmosphere. Running 6 November–6 December 2026.</p><div><b>Address:</b> Heiligengeistfeld, 20359 Hamburg</div><div><b>Hours:</b> 6 Nov–6 Dec 2026. Mon–Thu 15:00–23:00; Fri–Sat 15:00–00:00; Sun 14:00–23:00 (15 Nov 15:00–23:00).</div><p><a href="https://www.hamburg.de/freizeit/dom/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Winterdom%20/%20Heiligengeistfeld%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_92f52f2f0b498676be4927b08483adf5.setContent(html_6e2eb039fbf7440ac627b5a47524dedf);
+                var html_dfe5223438ab219c6e5fe68d3228bf1e = $(`<div id="html_dfe5223438ab219c6e5fe68d3228bf1e" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Winterdom / Heiligengeistfeld</strong><p>A proper Hamburg classic: the Winterdom funfair on Heiligengeistfeld, with rides, lights, fairground snacks and St. Pauli atmosphere. Running 6 November–6 December 2026.</p><div><b>Address:</b> Heiligengeistfeld, 20359 Hamburg</div><div><b>Hours:</b> 6 Nov–6 Dec 2026. Mon–Thu 15:00–23:00; Fri–Sat 15:00–00:00; Sun 14:00–23:00 (15 Nov 15:00–23:00).</div><p><a href="https://www.hamburg.de/freizeit/dom/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Winterdom%20/%20Heiligengeistfeld%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_d8a8419223d1fdda7b429e3ef661f09c.setContent(html_dfe5223438ab219c6e5fe68d3228bf1e);
             
         
 
-        circle_marker_37cfd52167b0f55422c358c0856eb4f5.bindPopup(popup_92f52f2f0b498676be4927b08483adf5)
+        marker_6c756f9f291426405eed136766cd5b27.bindPopup(popup_d8a8419223d1fdda7b429e3ef661f09c)
         ;
 
         
     
     
-            circle_marker_37cfd52167b0f55422c358c0856eb4f5.bindTooltip(
+            marker_6c756f9f291426405eed136766cd5b27.bindTooltip(
                 `<div>
                      Winterdom / Heiligengeistfeld
                  </div>`,
@@ -1171,30 +1573,43 @@
             );
         
     
-            var circle_marker_8a4fa2ce134c664941261d0b0777d6c0 = L.circleMarker(
+                marker_6c756f9f291426405eed136766cd5b27.setIcon(div_icon_01cb119d1eae5f6ddf39ef1780936008);
+            
+    
+            var marker_7b6b1dce303a6a28e84cc0367c298862 = L.marker(
                 [53.4895, 10.2074],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#469a89", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_c2d5f52e4d48c0904e6693fdd009acfc);
+                {
+}
+            ).addTo(feature_group_f40ce101f04857863fa778366467aa55);
         
     
-        var popup_4adc83233c674aff20131647b0b59d18 = L.popup({
+            var div_icon_41768c8ce8a3884f85bc0d0c5d9b2609 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#469a89\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_f002c06ccea4e8669f689d55bb63173b = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_3a2b95a606da1a222388db03f1fc311a = $(`<div id="html_3a2b95a606da1a222388db03f1fc311a" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Bergedorfer Schloss</strong><p>Historic Bergedorf castle and old-town walk.</p><a href="https://www.google.com/maps/search/?api=1&query=Bergedorfer%20Schloss%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_4adc83233c674aff20131647b0b59d18.setContent(html_3a2b95a606da1a222388db03f1fc311a);
+                var html_352cab7da00de9b455997fb8ea5f4e39 = $(`<div id="html_352cab7da00de9b455997fb8ea5f4e39" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Bergedorfer Schloss</strong><p>Historic Bergedorf castle and old-town walk.</p><a href="https://www.google.com/maps/search/?api=1&query=Bergedorfer%20Schloss%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_f002c06ccea4e8669f689d55bb63173b.setContent(html_352cab7da00de9b455997fb8ea5f4e39);
             
         
 
-        circle_marker_8a4fa2ce134c664941261d0b0777d6c0.bindPopup(popup_4adc83233c674aff20131647b0b59d18)
+        marker_7b6b1dce303a6a28e84cc0367c298862.bindPopup(popup_f002c06ccea4e8669f689d55bb63173b)
         ;
 
         
     
     
-            circle_marker_8a4fa2ce134c664941261d0b0777d6c0.bindTooltip(
+            marker_7b6b1dce303a6a28e84cc0367c298862.bindTooltip(
                 `<div>
                      Bergedorfer Schloss
                  </div>`,
@@ -1204,39 +1619,52 @@
             );
         
     
-            feature_group_c2d5f52e4d48c0904e6693fdd009acfc.addTo(map_ad296c07d642851b7a62294deaf34c96);
+                marker_7b6b1dce303a6a28e84cc0367c298862.setIcon(div_icon_41768c8ce8a3884f85bc0d0c5d9b2609);
+            
+    
+            feature_group_f40ce101f04857863fa778366467aa55.addTo(map_bd33321629d9f18a89ca43a77e984c16);
         
     
-            var feature_group_ee2b8e2e01654c5149adb3dc04e02d28 = L.featureGroup(
+            var feature_group_e50ac1954de2b5b31e3acfb95b6b1808 = L.featureGroup(
                 {
 }
             );
         
     
-            var circle_marker_039ca4c6009cd0d4b3960e5a109af436 = L.circleMarker(
+            var marker_641487ca4b4ead096b65d25739c38e98 = L.marker(
                 [53.5459, 9.9693],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#428ec3", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_ee2b8e2e01654c5149adb3dc04e02d28);
+                {
+}
+            ).addTo(feature_group_e50ac1954de2b5b31e3acfb95b6b1808);
         
     
-        var popup_4b504784b0b8cbaaa265a80c55da3f44 = L.popup({
+            var div_icon_ff02164632f430eca058c2df71644af3 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#428ec3\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003ccircle cx=\"12\" cy=\"4\" r=\"2\"/\u003e\u003cpath d=\"M12 6v15M5 11H2l3 4M19 11h3l-3 4M3 15c1 4 4 6 9 6s8-2 9-6\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_1d3dab8ac91aa57c52999428373d4203 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_bedc24b9e59f22d72f0981c3895b106b = $(`<div id="html_bedc24b9e59f22d72f0981c3895b106b" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Ferry 62 – Landungsbrücken</strong><p>Start the HVV public ferry toward Finkenwerder; working harbor scenery.</p><a href="https://www.google.com/maps/search/?api=1&query=Ferry%2062%20%E2%80%93%20Landungsbr%C3%BCcken%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_4b504784b0b8cbaaa265a80c55da3f44.setContent(html_bedc24b9e59f22d72f0981c3895b106b);
+                var html_94834710e383655cd8350518be9a03d1 = $(`<div id="html_94834710e383655cd8350518be9a03d1" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Ferry 62 – Landungsbrücken</strong><p>Start the HVV public ferry toward Finkenwerder; working harbor scenery.</p><a href="https://www.google.com/maps/search/?api=1&query=Ferry%2062%20%E2%80%93%20Landungsbr%C3%BCcken%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_1d3dab8ac91aa57c52999428373d4203.setContent(html_94834710e383655cd8350518be9a03d1);
             
         
 
-        circle_marker_039ca4c6009cd0d4b3960e5a109af436.bindPopup(popup_4b504784b0b8cbaaa265a80c55da3f44)
+        marker_641487ca4b4ead096b65d25739c38e98.bindPopup(popup_1d3dab8ac91aa57c52999428373d4203)
         ;
 
         
     
     
-            circle_marker_039ca4c6009cd0d4b3960e5a109af436.bindTooltip(
+            marker_641487ca4b4ead096b65d25739c38e98.bindTooltip(
                 `<div>
                      Ferry 62 – Landungsbrücken
                  </div>`,
@@ -1246,30 +1674,43 @@
             );
         
     
-            var circle_marker_b7246528e8270de81deee4fcc8887c77 = L.circleMarker(
+                marker_641487ca4b4ead096b65d25739c38e98.setIcon(div_icon_ff02164632f430eca058c2df71644af3);
+            
+    
+            var marker_2bb60b205a6af33573ca1723f76d76e8 = L.marker(
                 [53.5358, 9.8782],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#428ec3", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_ee2b8e2e01654c5149adb3dc04e02d28);
+                {
+}
+            ).addTo(feature_group_e50ac1954de2b5b31e3acfb95b6b1808);
         
     
-        var popup_4139d3f38057307c2b1dfcfa683d494d = L.popup({
+            var div_icon_db9debd757f346cbe25b1a42a361e6e2 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#428ec3\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003ccircle cx=\"12\" cy=\"4\" r=\"2\"/\u003e\u003cpath d=\"M12 6v15M5 11H2l3 4M19 11h3l-3 4M3 15c1 4 4 6 9 6s8-2 9-6\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_15e78f87907ebba7af14ad37376b8f44 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_8bb1b7dcc588f48be980c94f4c257e61 = $(`<div id="html_8bb1b7dcc588f48be980c94f4c257e61" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Ferry 62 – Finkenwerder</strong><p>The western end of the public ferry outing.</p><a href="https://www.google.com/maps/search/?api=1&query=Ferry%2062%20%E2%80%93%20Finkenwerder%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_4139d3f38057307c2b1dfcfa683d494d.setContent(html_8bb1b7dcc588f48be980c94f4c257e61);
+                var html_4e9a62af1b8ef5033232523410eb93a1 = $(`<div id="html_4e9a62af1b8ef5033232523410eb93a1" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Ferry 62 – Finkenwerder</strong><p>The western end of the public ferry outing.</p><a href="https://www.google.com/maps/search/?api=1&query=Ferry%2062%20%E2%80%93%20Finkenwerder%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_15e78f87907ebba7af14ad37376b8f44.setContent(html_4e9a62af1b8ef5033232523410eb93a1);
             
         
 
-        circle_marker_b7246528e8270de81deee4fcc8887c77.bindPopup(popup_4139d3f38057307c2b1dfcfa683d494d)
+        marker_2bb60b205a6af33573ca1723f76d76e8.bindPopup(popup_15e78f87907ebba7af14ad37376b8f44)
         ;
 
         
     
     
-            circle_marker_b7246528e8270de81deee4fcc8887c77.bindTooltip(
+            marker_2bb60b205a6af33573ca1723f76d76e8.bindTooltip(
                 `<div>
                      Ferry 62 – Finkenwerder
                  </div>`,
@@ -1279,39 +1720,52 @@
             );
         
     
-            feature_group_ee2b8e2e01654c5149adb3dc04e02d28.addTo(map_ad296c07d642851b7a62294deaf34c96);
+                marker_2bb60b205a6af33573ca1723f76d76e8.setIcon(div_icon_db9debd757f346cbe25b1a42a361e6e2);
+            
+    
+            feature_group_e50ac1954de2b5b31e3acfb95b6b1808.addTo(map_bd33321629d9f18a89ca43a77e984c16);
         
     
-            var feature_group_153a48eb3888d2dae4b7c11d1076f08d = L.featureGroup(
+            var feature_group_d62e4779e2240e55861c5529d600d7f7 = L.featureGroup(
                 {
 }
             );
         
     
-            var circle_marker_2f68e30fadcd41aa696102034b341068 = L.circleMarker(
+            var marker_b229c852086d88e9060cbf4e987e7893 = L.marker(
                 [53.5526, 10.0012],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_fe41a1d04abf198c8498a043366a0c58 = L.popup({
+            var div_icon_54451aec66451399ad0326e03341526e = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_67dd5f3aca4f4e5128f4daaeedf4a8bc = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_e370c77b96c59f2681364db55f877400 = $(`<div id="html_e370c77b96c59f2681364db55f877400" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Dr. Götze Land &amp; Karte</strong><p>Browse maps, atlases and historical Hamburg cartography at Alstertor 14.</p><a href="https://www.google.com/maps/search/?api=1&query=Dr.%20G%C3%B6tze%20Land%20%26%20Karte%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_fe41a1d04abf198c8498a043366a0c58.setContent(html_e370c77b96c59f2681364db55f877400);
+                var html_c2869a351df305110ab2cd9634f8d640 = $(`<div id="html_c2869a351df305110ab2cd9634f8d640" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Dr. Götze Land &amp; Karte</strong><p>Browse maps, atlases and historical Hamburg cartography at Alstertor 14.</p><a href="https://www.google.com/maps/search/?api=1&query=Dr.%20G%C3%B6tze%20Land%20%26%20Karte%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_67dd5f3aca4f4e5128f4daaeedf4a8bc.setContent(html_c2869a351df305110ab2cd9634f8d640);
             
         
 
-        circle_marker_2f68e30fadcd41aa696102034b341068.bindPopup(popup_fe41a1d04abf198c8498a043366a0c58)
+        marker_b229c852086d88e9060cbf4e987e7893.bindPopup(popup_67dd5f3aca4f4e5128f4daaeedf4a8bc)
         ;
 
         
     
     
-            circle_marker_2f68e30fadcd41aa696102034b341068.bindTooltip(
+            marker_b229c852086d88e9060cbf4e987e7893.bindTooltip(
                 `<div>
                      Dr. Götze Land & Karte
                  </div>`,
@@ -1321,30 +1775,43 @@
             );
         
     
-            var circle_marker_5be1276d9e1bfb4b19d0aa8a328447c7 = L.circleMarker(
+                marker_b229c852086d88e9060cbf4e987e7893.setIcon(div_icon_54451aec66451399ad0326e03341526e);
+            
+    
+            var marker_2cdeccb2dfb9b1600b14e455813fbcfd = L.marker(
                 [53.4873, 10.214],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_d2e58d15b56f833368276f9191a22673 = L.popup({
+            var div_icon_08c1be1a551b500779d114cf1ab36814 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_b615316f0b058a3d082a80ba9f2d943c = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_53c21922c03feb5aa4d31baf81c533c8 = $(`<div id="html_53c21922c03feb5aa4d31baf81c533c8" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Heinr. von Have</strong><p>Traditional Bergedorf wine merchant; ask for Hamburger Rotspon.</p><a href="https://www.google.com/maps/search/?api=1&query=Heinr.%20von%20Have%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_d2e58d15b56f833368276f9191a22673.setContent(html_53c21922c03feb5aa4d31baf81c533c8);
+                var html_26acba3473c640f0f5951900aec86aae = $(`<div id="html_26acba3473c640f0f5951900aec86aae" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Heinr. von Have</strong><p>Traditional Bergedorf wine merchant; ask for Hamburger Rotspon.</p><a href="https://www.google.com/maps/search/?api=1&query=Heinr.%20von%20Have%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_b615316f0b058a3d082a80ba9f2d943c.setContent(html_26acba3473c640f0f5951900aec86aae);
             
         
 
-        circle_marker_5be1276d9e1bfb4b19d0aa8a328447c7.bindPopup(popup_d2e58d15b56f833368276f9191a22673)
+        marker_2cdeccb2dfb9b1600b14e455813fbcfd.bindPopup(popup_b615316f0b058a3d082a80ba9f2d943c)
         ;
 
         
     
     
-            circle_marker_5be1276d9e1bfb4b19d0aa8a328447c7.bindTooltip(
+            marker_2cdeccb2dfb9b1600b14e455813fbcfd.bindTooltip(
                 `<div>
                      Heinr. von Have
                  </div>`,
@@ -1354,30 +1821,43 @@
             );
         
     
-            var circle_marker_cb65c3afaaad03e43a23323854187cc5 = L.circleMarker(
+                marker_2cdeccb2dfb9b1600b14e455813fbcfd.setIcon(div_icon_08c1be1a551b500779d114cf1ab36814);
+            
+    
+            var marker_2d0581f3cfb01fbf65ea0ffd01c27f12 = L.marker(
                 [53.5487, 9.9806],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_d40aeca8d27fbf57c8910a52d27f64a2 = L.popup({
+            var div_icon_eed1bcf489f2d330bd5b50cf33dba034 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_34b8341189ccb846d4205db41bb61041 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_df8258692d8a6a24f7b5c6ec62d3bf94 = $(`<div id="html_df8258692d8a6a24f7b5c6ec62d3bf94" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Antiquariat near the Michel</strong><p>Browse older Hamburg books and German literary classics in the Michel area.</p><a href="https://www.google.com/maps/search/?api=1&query=Antiquariat%20near%20the%20Michel%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_d40aeca8d27fbf57c8910a52d27f64a2.setContent(html_df8258692d8a6a24f7b5c6ec62d3bf94);
+                var html_1bb13196dee8b720c02491d9ebdc61de = $(`<div id="html_1bb13196dee8b720c02491d9ebdc61de" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Antiquariat near the Michel</strong><p>Browse older Hamburg books and German literary classics in the Michel area.</p><a href="https://www.google.com/maps/search/?api=1&query=Antiquariat%20near%20the%20Michel%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_34b8341189ccb846d4205db41bb61041.setContent(html_1bb13196dee8b720c02491d9ebdc61de);
             
         
 
-        circle_marker_cb65c3afaaad03e43a23323854187cc5.bindPopup(popup_d40aeca8d27fbf57c8910a52d27f64a2)
+        marker_2d0581f3cfb01fbf65ea0ffd01c27f12.bindPopup(popup_34b8341189ccb846d4205db41bb61041)
         ;
 
         
     
     
-            circle_marker_cb65c3afaaad03e43a23323854187cc5.bindTooltip(
+            marker_2d0581f3cfb01fbf65ea0ffd01c27f12.bindTooltip(
                 `<div>
                      Antiquariat near the Michel
                  </div>`,
@@ -1387,30 +1867,43 @@
             );
         
     
-            var circle_marker_b730cf3117d06bd35b0a98fe6ee0d1e2 = L.circleMarker(
+                marker_2d0581f3cfb01fbf65ea0ffd01c27f12.setIcon(div_icon_eed1bcf489f2d330bd5b50cf33dba034);
+            
+    
+            var marker_608b91e142e3cb6424ba64a28b59d35d = L.marker(
                 [53.6053, 10.1179],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_b6cacce49572cd9a09e004c4ff857e12 = L.popup({
+            var div_icon_1de800df1fd69f9f9bd929ed32fbf60c = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_caff0733b2bd2f0e6d6e42a1acc1670d = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_659956502c6797effb64a59f195d304a = $(`<div id="html_659956502c6797effb64a59f195d304a" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Aktion Buch – Farmsen</strong><p>Affordable secondhand books in Einkaufstreff Farmsen, near U-Bahn Farmsen. Book prices reportedly €2–6.</p><div><b>Address:</b> Berner Heerweg 177–179, 22159 Hamburg</div><div><b>Phone:</b> +49 40 33356932</div><div><b>Hours:</b> Mon–Fri 10:00–19:00; Sat 10:00–18:00</div><p><a href="https://aktion-buch.de/buecher-kaufen/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Aktion%20Buch%20%E2%80%93%20Farmsen%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_b6cacce49572cd9a09e004c4ff857e12.setContent(html_659956502c6797effb64a59f195d304a);
+                var html_5a6de4200433ee7829df942791faf826 = $(`<div id="html_5a6de4200433ee7829df942791faf826" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Aktion Buch – Farmsen</strong><p>Affordable secondhand books in Einkaufstreff Farmsen, near U-Bahn Farmsen. Book prices reportedly €2–6.</p><div><b>Address:</b> Berner Heerweg 177–179, 22159 Hamburg</div><div><b>Phone:</b> +49 40 33356932</div><div><b>Hours:</b> Mon–Fri 10:00–19:00; Sat 10:00–18:00</div><p><a href="https://aktion-buch.de/buecher-kaufen/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Aktion%20Buch%20%E2%80%93%20Farmsen%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_caff0733b2bd2f0e6d6e42a1acc1670d.setContent(html_5a6de4200433ee7829df942791faf826);
             
         
 
-        circle_marker_b730cf3117d06bd35b0a98fe6ee0d1e2.bindPopup(popup_b6cacce49572cd9a09e004c4ff857e12)
+        marker_608b91e142e3cb6424ba64a28b59d35d.bindPopup(popup_caff0733b2bd2f0e6d6e42a1acc1670d)
         ;
 
         
     
     
-            circle_marker_b730cf3117d06bd35b0a98fe6ee0d1e2.bindTooltip(
+            marker_608b91e142e3cb6424ba64a28b59d35d.bindTooltip(
                 `<div>
                      Aktion Buch – Farmsen
                  </div>`,
@@ -1420,30 +1913,43 @@
             );
         
     
-            var circle_marker_3a0826baf31975f16dab45eb5567a976 = L.circleMarker(
+                marker_608b91e142e3cb6424ba64a28b59d35d.setIcon(div_icon_1de800df1fd69f9f9bd929ed32fbf60c);
+            
+    
+            var marker_f79e9b81d6da8aa37e1c0383435f57aa = L.marker(
                 [53.70875, 10.02033],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_9263692700a6a7462b20875fe7ec3cd7 = L.popup({
+            var div_icon_aabfb4a6945928af549de15a3a74ae71 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_9424b71ac502d4af3a4bc8e009b7a286 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_0ae1e58c07057830a06d88c0d307061a = $(`<div id="html_0ae1e58c07057830a06d88c0d307061a" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Hempels Gebrauchtwarenhaus</strong><p>Secondhand warehouse in Norderstedt with glassware, porcelain, furniture and surprising finds.</p><div><b>Address:</b> Stormarnstraße 34–36, 22844 Norderstedt</div><div><b>Phone:</b> +49 40 53595800</div><div><b>Hours:</b> Mon–Fri 10:00–18:00; Sat 10:00–15:00</div><p><a href="https://www.hempels-norderstedt.de/Kontakt" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Hempels%20Gebrauchtwarenhaus%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_9263692700a6a7462b20875fe7ec3cd7.setContent(html_0ae1e58c07057830a06d88c0d307061a);
+                var html_bd116f2dbb045d95aff4722d60b1be38 = $(`<div id="html_bd116f2dbb045d95aff4722d60b1be38" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Hempels Gebrauchtwarenhaus</strong><p>Secondhand warehouse in Norderstedt with glassware, porcelain, furniture and surprising finds.</p><div><b>Address:</b> Stormarnstraße 34–36, 22844 Norderstedt</div><div><b>Phone:</b> +49 40 53595800</div><div><b>Hours:</b> Mon–Fri 10:00–18:00; Sat 10:00–15:00</div><p><a href="https://www.hempels-norderstedt.de/Kontakt" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Hempels%20Gebrauchtwarenhaus%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_9424b71ac502d4af3a4bc8e009b7a286.setContent(html_bd116f2dbb045d95aff4722d60b1be38);
             
         
 
-        circle_marker_3a0826baf31975f16dab45eb5567a976.bindPopup(popup_9263692700a6a7462b20875fe7ec3cd7)
+        marker_f79e9b81d6da8aa37e1c0383435f57aa.bindPopup(popup_9424b71ac502d4af3a4bc8e009b7a286)
         ;
 
         
     
     
-            circle_marker_3a0826baf31975f16dab45eb5567a976.bindTooltip(
+            marker_f79e9b81d6da8aa37e1c0383435f57aa.bindTooltip(
                 `<div>
                      Hempels Gebrauchtwarenhaus
                  </div>`,
@@ -1453,30 +1959,43 @@
             );
         
     
-            var circle_marker_36ff1ee66ef81da23bd20b2f5c2f9fa9 = L.circleMarker(
+                marker_f79e9b81d6da8aa37e1c0383435f57aa.setIcon(div_icon_aabfb4a6945928af549de15a3a74ae71);
+            
+    
+            var marker_ab0148c8a4813dc7152b1aef0697eedb = L.marker(
                 [53.54965, 10.00802],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_819fc4a63c0931b54f742bee7cf38a14 = L.popup({
+            var div_icon_8633b98c3fefbb3b7f820060e6ca8d8a = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_349f734558f95abdd23278abb3d8487c = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_af0f1b82252010f04b9612a1a4458374 = $(`<div id="html_af0f1b82252010f04b9612a1a4458374" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Bücherflohmarkt der Bücherhallen</strong><p>Volunteer-run secondhand book market in the Zentralbibliothek. Books usually €1; cash only.</p><div><b>Address:</b> Hühnerposten 1, 20097 Hamburg</div><div><b>Hours:</b> Mon &amp; Thu 11:00–18:00; Tue, Wed, Fri 11:00–17:00; 1st &amp; 2nd Sat 11:00–17:00</div><p><a href="https://www.buecherhallen.de/buecherflohmarkt.html" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=B%C3%BCcherflohmarkt%20der%20B%C3%BCcherhallen%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_819fc4a63c0931b54f742bee7cf38a14.setContent(html_af0f1b82252010f04b9612a1a4458374);
+                var html_9dbca65d2d49ee6268135d0c0ba8f2c2 = $(`<div id="html_9dbca65d2d49ee6268135d0c0ba8f2c2" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Bücherflohmarkt der Bücherhallen</strong><p>Volunteer-run secondhand book market in the Zentralbibliothek. Books usually €1; cash only.</p><div><b>Address:</b> Hühnerposten 1, 20097 Hamburg</div><div><b>Hours:</b> Mon &amp; Thu 11:00–18:00; Tue, Wed, Fri 11:00–17:00; 1st &amp; 2nd Sat 11:00–17:00</div><p><a href="https://www.buecherhallen.de/buecherflohmarkt.html" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=B%C3%BCcherflohmarkt%20der%20B%C3%BCcherhallen%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_349f734558f95abdd23278abb3d8487c.setContent(html_9dbca65d2d49ee6268135d0c0ba8f2c2);
             
         
 
-        circle_marker_36ff1ee66ef81da23bd20b2f5c2f9fa9.bindPopup(popup_819fc4a63c0931b54f742bee7cf38a14)
+        marker_ab0148c8a4813dc7152b1aef0697eedb.bindPopup(popup_349f734558f95abdd23278abb3d8487c)
         ;
 
         
     
     
-            circle_marker_36ff1ee66ef81da23bd20b2f5c2f9fa9.bindTooltip(
+            marker_ab0148c8a4813dc7152b1aef0697eedb.bindTooltip(
                 `<div>
                      Bücherflohmarkt der Bücherhallen
                  </div>`,
@@ -1486,30 +2005,43 @@
             );
         
     
-            var circle_marker_519a6da83f0248d21ea7a7afc0e18040 = L.circleMarker(
+                marker_ab0148c8a4813dc7152b1aef0697eedb.setIcon(div_icon_8633b98c3fefbb3b7f820060e6ca8d8a);
+            
+    
+            var marker_3bd4c942f9da1fb13a188e48c3fa53df = L.marker(
                 [53.5569, 9.9641],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_b7bc60540f289920c8bf596f6a258660 = L.popup({
+            var div_icon_fb5dd5aceb846c9159d515b7110204ba = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_90dc2ebd8d371519224a464c372e26eb = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_c32dd461eb76e708eae5fee7e7ff6675 = $(`<div id="html_c32dd461eb76e708eae5fee7e7ff6675" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Flohschanze</strong><p>Saturday flea market at the Alte Rinderschlachthalle: vintage objects, books and curious finds.</p><div><b>Address:</b> Neuer Kamp 30, 20357 Hamburg</div><div><b>Phone:</b> +49 40 2702766</div><div><b>Hours:</b> Sat 08:00–16:00; confirm event day</div><p><a href="https://www.marktundkultur.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Flohschanze%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_b7bc60540f289920c8bf596f6a258660.setContent(html_c32dd461eb76e708eae5fee7e7ff6675);
+                var html_96f595c686597a28df2c5e68963a8d68 = $(`<div id="html_96f595c686597a28df2c5e68963a8d68" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Flohschanze</strong><p>Saturday flea market at the Alte Rinderschlachthalle: vintage objects, books and curious finds.</p><div><b>Address:</b> Neuer Kamp 30, 20357 Hamburg</div><div><b>Phone:</b> +49 40 2702766</div><div><b>Hours:</b> Sat 08:00–16:00; confirm event day</div><p><a href="https://www.marktundkultur.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Flohschanze%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_90dc2ebd8d371519224a464c372e26eb.setContent(html_96f595c686597a28df2c5e68963a8d68);
             
         
 
-        circle_marker_519a6da83f0248d21ea7a7afc0e18040.bindPopup(popup_b7bc60540f289920c8bf596f6a258660)
+        marker_3bd4c942f9da1fb13a188e48c3fa53df.bindPopup(popup_90dc2ebd8d371519224a464c372e26eb)
         ;
 
         
     
     
-            circle_marker_519a6da83f0248d21ea7a7afc0e18040.bindTooltip(
+            marker_3bd4c942f9da1fb13a188e48c3fa53df.bindTooltip(
                 `<div>
                      Flohschanze
                  </div>`,
@@ -1519,30 +2051,43 @@
             );
         
     
-            var circle_marker_57790a18c40bb8230af22aab471514b6 = L.circleMarker(
+                marker_3bd4c942f9da1fb13a188e48c3fa53df.setIcon(div_icon_fb5dd5aceb846c9159d515b7110204ba);
+            
+    
+            var marker_5aca33e609420881d74140451922cd53 = L.marker(
                 [53.5755, 9.9514],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_f7c21fb834abb97e2d5f0898e8c113c2 = L.popup({
+            var div_icon_a9be9092d2240f4fd2e9ba5d90623202 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_ad54008326925e3e1c3323a98b2abb58 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_c97d35dcbc8648092883a31184a8387b = $(`<div id="html_c97d35dcbc8648092883a31184a8387b" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Lüders Buchhandlung &amp; Antiquariat</strong><p>Independent bookshop and antiquarian books in Eimsbüttel; literature, classics, philosophy and art.</p><div><b>Address:</b> Heußweg 33, 20255 Hamburg</div><div><b>Phone:</b> +49 40 405727</div><div><b>Hours:</b> Mon–Fri 09:00–20:00; Sat 10:00–19:00</div><p><a href="https://buchhandlunglueders.buchhandlung.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=L%C3%BCders%20Buchhandlung%20%26%20Antiquariat%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_f7c21fb834abb97e2d5f0898e8c113c2.setContent(html_c97d35dcbc8648092883a31184a8387b);
+                var html_71487a9b2146acd4550fb54e88c0f233 = $(`<div id="html_71487a9b2146acd4550fb54e88c0f233" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Lüders Buchhandlung &amp; Antiquariat</strong><p>Independent bookshop and antiquarian books in Eimsbüttel; literature, classics, philosophy and art.</p><div><b>Address:</b> Heußweg 33, 20255 Hamburg</div><div><b>Phone:</b> +49 40 405727</div><div><b>Hours:</b> Mon–Fri 09:00–20:00; Sat 10:00–19:00</div><p><a href="https://buchhandlunglueders.buchhandlung.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=L%C3%BCders%20Buchhandlung%20%26%20Antiquariat%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_ad54008326925e3e1c3323a98b2abb58.setContent(html_71487a9b2146acd4550fb54e88c0f233);
             
         
 
-        circle_marker_57790a18c40bb8230af22aab471514b6.bindPopup(popup_f7c21fb834abb97e2d5f0898e8c113c2)
+        marker_5aca33e609420881d74140451922cd53.bindPopup(popup_ad54008326925e3e1c3323a98b2abb58)
         ;
 
         
     
     
-            circle_marker_57790a18c40bb8230af22aab471514b6.bindTooltip(
+            marker_5aca33e609420881d74140451922cd53.bindTooltip(
                 `<div>
                      Lüders Buchhandlung & Antiquariat
                  </div>`,
@@ -1552,30 +2097,43 @@
             );
         
     
-            var circle_marker_3464c0e8a00997077c5785039e86d872 = L.circleMarker(
+                marker_5aca33e609420881d74140451922cd53.setIcon(div_icon_a9be9092d2240f4fd2e9ba5d90623202);
+            
+    
+            var marker_a4ab8a6c456ecbdcaeb59e8747bcd7c3 = L.marker(
                 [53.628, 10.0252],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_4e8d515a63259acbf129b95876c02588 = L.popup({
+            var div_icon_3cb5c3d503591abe877ec458cc4641db = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_99dd42fe58c91205eb450763739d85f5 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_a90c83edd0ee3baca32be787db8b27a3 = $(`<div id="html_a90c83edd0ee3baca32be787db8b27a3" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Buchhandlung &amp; Antiquariat Lutz Heimhalt</strong><p>Books on history, architecture, philosophy, technology and aviation; also antiquarian postcards.</p><div><b>Address:</b> Erdkampsweg 18, 22335 Hamburg</div><div><b>Phone:</b> +49 40 5000140</div><div><b>Hours:</b> Mon–Fri 10:00–18:00; Sat 10:00–13:00</div><p><a href="https://www.buchhandlung-lutz-heimhalt.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Buchhandlung%20%26%20Antiquariat%20Lutz%20Heimhalt%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_4e8d515a63259acbf129b95876c02588.setContent(html_a90c83edd0ee3baca32be787db8b27a3);
+                var html_c0d521c6de1ac523d6c370bac90f8153 = $(`<div id="html_c0d521c6de1ac523d6c370bac90f8153" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Buchhandlung &amp; Antiquariat Lutz Heimhalt</strong><p>Books on history, architecture, philosophy, technology and aviation; also antiquarian postcards.</p><div><b>Address:</b> Erdkampsweg 18, 22335 Hamburg</div><div><b>Phone:</b> +49 40 5000140</div><div><b>Hours:</b> Mon–Fri 10:00–18:00; Sat 10:00–13:00</div><p><a href="https://www.buchhandlung-lutz-heimhalt.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Buchhandlung%20%26%20Antiquariat%20Lutz%20Heimhalt%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_99dd42fe58c91205eb450763739d85f5.setContent(html_c0d521c6de1ac523d6c370bac90f8153);
             
         
 
-        circle_marker_3464c0e8a00997077c5785039e86d872.bindPopup(popup_4e8d515a63259acbf129b95876c02588)
+        marker_a4ab8a6c456ecbdcaeb59e8747bcd7c3.bindPopup(popup_99dd42fe58c91205eb450763739d85f5)
         ;
 
         
     
     
-            circle_marker_3464c0e8a00997077c5785039e86d872.bindTooltip(
+            marker_a4ab8a6c456ecbdcaeb59e8747bcd7c3.bindTooltip(
                 `<div>
                      Buchhandlung & Antiquariat Lutz Heimhalt
                  </div>`,
@@ -1585,30 +2143,43 @@
             );
         
     
-            var circle_marker_5e817354f4b34b477ec6fb54af128edb = L.circleMarker(
+                marker_a4ab8a6c456ecbdcaeb59e8747bcd7c3.setIcon(div_icon_3cb5c3d503591abe877ec458cc4641db);
+            
+    
+            var marker_413424773680efe6e1caff4f4615972d = L.marker(
                 [53.5679, 10.0467],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_77aba24549819e02d74698c5760a5c7c = L.popup({
+            var div_icon_f58da2b2135b84d8350ebacf5ead557c = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_4881a559024143be939098dc09952637 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_2b29b3fa781272b3349ec9d7583b6e9b = $(`<div id="html_2b29b3fa781272b3349ec9d7583b6e9b" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Antiquariat Torsten Bernhardt</strong><p>Traditional Eilbek bookshop for used, out-of-print and antiquarian titles.</p><div><b>Address:</b> Wandsbeker Chaussee 159, 22089 Hamburg</div><div><b>Phone:</b> +49 40 336303</div><div><b>Hours:</b> Mon–Fri 10:00–18:30; Sat 10:00–15:00</div><a href="https://www.google.com/maps/search/?api=1&query=Antiquariat%20Torsten%20Bernhardt%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_77aba24549819e02d74698c5760a5c7c.setContent(html_2b29b3fa781272b3349ec9d7583b6e9b);
+                var html_527c93f9b1fac49f8c314e0f2a389467 = $(`<div id="html_527c93f9b1fac49f8c314e0f2a389467" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Antiquariat Torsten Bernhardt</strong><p>Traditional Eilbek bookshop for used, out-of-print and antiquarian titles.</p><div><b>Address:</b> Wandsbeker Chaussee 159, 22089 Hamburg</div><div><b>Phone:</b> +49 40 336303</div><div><b>Hours:</b> Mon–Fri 10:00–18:30; Sat 10:00–15:00</div><a href="https://www.google.com/maps/search/?api=1&query=Antiquariat%20Torsten%20Bernhardt%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_4881a559024143be939098dc09952637.setContent(html_527c93f9b1fac49f8c314e0f2a389467);
             
         
 
-        circle_marker_5e817354f4b34b477ec6fb54af128edb.bindPopup(popup_77aba24549819e02d74698c5760a5c7c)
+        marker_413424773680efe6e1caff4f4615972d.bindPopup(popup_4881a559024143be939098dc09952637)
         ;
 
         
     
     
-            circle_marker_5e817354f4b34b477ec6fb54af128edb.bindTooltip(
+            marker_413424773680efe6e1caff4f4615972d.bindTooltip(
                 `<div>
                      Antiquariat Torsten Bernhardt
                  </div>`,
@@ -1618,30 +2189,43 @@
             );
         
     
-            var circle_marker_c93bfb2f1e728329c71316748323bd30 = L.circleMarker(
+                marker_413424773680efe6e1caff4f4615972d.setIcon(div_icon_f58da2b2135b84d8350ebacf5ead557c);
+            
+    
+            var marker_12b2e6ccfa30b35ccee7c3102d23b407 = L.marker(
                 [53.56843, 10.04923],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_70e48362b225fcd1397dfde0286aea24 = L.popup({
+            var div_icon_2b77e620336585dc36a68405d28fb5f9 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_df9287965a2fd183079f1119b97e6914 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_12492f49eee2bc667c05fadfd7befbea = $(`<div id="html_12492f49eee2bc667c05fadfd7befbea" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Schn€ppchen-Hamburg</strong><p>Vintage and secondhand household goods, lamps, ceramics, pictures and furniture.</p><div><b>Address:</b> Wandsbeker Chaussee 189, 22089 Hamburg</div><div><b>Phone:</b> +49 40 23686866</div><div><b>Hours:</b> Tue–Fri 10:30–19:00; Sat 12:00–18:00</div><p><a href="https://www.schnaeppchen-hamburg.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Schn%E2%82%ACppchen-Hamburg%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_70e48362b225fcd1397dfde0286aea24.setContent(html_12492f49eee2bc667c05fadfd7befbea);
+                var html_cddf084af80404861166519a9d3f1fa6 = $(`<div id="html_cddf084af80404861166519a9d3f1fa6" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Schn€ppchen-Hamburg</strong><p>Vintage and secondhand household goods, lamps, ceramics, pictures and furniture.</p><div><b>Address:</b> Wandsbeker Chaussee 189, 22089 Hamburg</div><div><b>Phone:</b> +49 40 23686866</div><div><b>Hours:</b> Tue–Fri 10:30–19:00; Sat 12:00–18:00</div><p><a href="https://www.schnaeppchen-hamburg.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Schn%E2%82%ACppchen-Hamburg%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_df9287965a2fd183079f1119b97e6914.setContent(html_cddf084af80404861166519a9d3f1fa6);
             
         
 
-        circle_marker_c93bfb2f1e728329c71316748323bd30.bindPopup(popup_70e48362b225fcd1397dfde0286aea24)
+        marker_12b2e6ccfa30b35ccee7c3102d23b407.bindPopup(popup_df9287965a2fd183079f1119b97e6914)
         ;
 
         
     
     
-            circle_marker_c93bfb2f1e728329c71316748323bd30.bindTooltip(
+            marker_12b2e6ccfa30b35ccee7c3102d23b407.bindTooltip(
                 `<div>
                      Schn€ppchen-Hamburg
                  </div>`,
@@ -1651,30 +2235,43 @@
             );
         
     
-            var circle_marker_2fbc1ba580331af38f2302820bd73414 = L.circleMarker(
+                marker_12b2e6ccfa30b35ccee7c3102d23b407.setIcon(div_icon_2b77e620336585dc36a68405d28fb5f9);
+            
+    
+            var marker_ba1c91d934afb29eb2424a1c1eea3bb2 = L.marker(
                 [53.5504, 9.9952],
-                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b99c50", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1.5}
-            ).addTo(feature_group_153a48eb3888d2dae4b7c11d1076f08d);
+                {
+}
+            ).addTo(feature_group_d62e4779e2240e55861c5529d600d7f7);
         
     
-        var popup_76eeaaa72828df85725c2b17c07699fc = L.popup({
+            var div_icon_13f7d20f637f7c8458cf4718dfceacd2 = L.divIcon({
+  "html": "\u003cdiv class=\"poi-symbol\" style=\"background:#b99c50\"\u003e\u003csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\u003cpath d=\"M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7\"/\u003e\u003c/svg\u003e\u003c/div\u003e",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "popupAnchor": [0, -16],
+  "className": "poi-div-icon",
+});
+        
+    
+        var popup_89aecab45b9843490f0afe70336eb660 = L.popup({
   "maxWidth": 320,
 });
 
         
             
-                var html_62d3d6f2945516c62ad726b0d9467173 = $(`<div id="html_62d3d6f2945516c62ad726b0d9467173" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Rathauspassage Hamburg</strong><p>Social-enterprise café and bookshop beneath Rathausmarkt, with secondhand books.</p><div><b>Address:</b> Rathausmarkt 3, 20095 Hamburg</div><div><b>Phone:</b> +49 40 60002000</div><div><b>Hours:</b> Mon–Sat 09:30–19:00</div><p><a href="https://www.rathauspassage.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Rathauspassage%20Hamburg%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
-                popup_76eeaaa72828df85725c2b17c07699fc.setContent(html_62d3d6f2945516c62ad726b0d9467173);
+                var html_33f7061dcd443581c7aa0b310e5dae5d = $(`<div id="html_33f7061dcd443581c7aa0b310e5dae5d" style="width: 100.0%; height: 100.0%;"><strong style='font-size:15px'>Rathauspassage Hamburg</strong><p>Social-enterprise café and bookshop beneath Rathausmarkt, with secondhand books.</p><div><b>Address:</b> Rathausmarkt 3, 20095 Hamburg</div><div><b>Phone:</b> +49 40 60002000</div><div><b>Hours:</b> Mon–Sat 09:30–19:00</div><p><a href="https://www.rathauspassage.de/" target="_blank" rel="noopener noreferrer">Website ↗</a></p><a href="https://www.google.com/maps/search/?api=1&query=Rathauspassage%20Hamburg%2C%20Hamburg%20Germany" target="_blank" rel="noopener noreferrer">Directions ↗</a></div>`)[0];
+                popup_89aecab45b9843490f0afe70336eb660.setContent(html_33f7061dcd443581c7aa0b310e5dae5d);
             
         
 
-        circle_marker_2fbc1ba580331af38f2302820bd73414.bindPopup(popup_76eeaaa72828df85725c2b17c07699fc)
+        marker_ba1c91d934afb29eb2424a1c1eea3bb2.bindPopup(popup_89aecab45b9843490f0afe70336eb660)
         ;
 
         
     
     
-            circle_marker_2fbc1ba580331af38f2302820bd73414.bindTooltip(
+            marker_ba1c91d934afb29eb2424a1c1eea3bb2.bindTooltip(
                 `<div>
                      Rathauspassage Hamburg
                  </div>`,
@@ -1684,37 +2281,40 @@
             );
         
     
-            feature_group_153a48eb3888d2dae4b7c11d1076f08d.addTo(map_ad296c07d642851b7a62294deaf34c96);
+                marker_ba1c91d934afb29eb2424a1c1eea3bb2.setIcon(div_icon_13f7d20f637f7c8458cf4718dfceacd2);
+            
+    
+            feature_group_d62e4779e2240e55861c5529d600d7f7.addTo(map_bd33321629d9f18a89ca43a77e984c16);
         
     
-            var layer_control_5d2b55c61e85e76eb4119a9a5d01fe7e_layers = {
+            var layer_control_10ba86d5da1419cde1be6819ef73dadf_layers = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_b85838b1db280219db5b0686df2530c9,
+                    "openstreetmap" : tile_layer_9e685e4e8c5ac329b04c1a1621318ca9,
                 },
                 overlays :  {
-                    "Food" : feature_group_e2fa3efd15e0012a67a649ebe38d82e6,
-                    "Kneipen" : feature_group_8e71034e9759eb67319200c4d442867a,
-                    "Cocktails" : feature_group_d623f582f6e725fc851d081ffcc705c6,
-                    "Sights" : feature_group_c2d5f52e4d48c0904e6693fdd009acfc,
-                    "Harbor" : feature_group_ee2b8e2e01654c5149adb3dc04e02d28,
-                    "Shops" : feature_group_153a48eb3888d2dae4b7c11d1076f08d,
+                    "Food" : feature_group_c61e8b9acaca608b161bb31725c76e99,
+                    "Kneipen" : feature_group_866ca6d8415c2a301d066a613e5c8a75,
+                    "Cocktails" : feature_group_2e64718a65f013f5f4bbadecd0f1469b,
+                    "Sights" : feature_group_f40ce101f04857863fa778366467aa55,
+                    "Harbor" : feature_group_e50ac1954de2b5b31e3acfb95b6b1808,
+                    "Shops" : feature_group_d62e4779e2240e55861c5529d600d7f7,
                 },
             };
-            let layer_control_5d2b55c61e85e76eb4119a9a5d01fe7e = L.control.layers(
-                layer_control_5d2b55c61e85e76eb4119a9a5d01fe7e_layers.base_layers,
-                layer_control_5d2b55c61e85e76eb4119a9a5d01fe7e_layers.overlays,
+            let layer_control_10ba86d5da1419cde1be6819ef73dadf = L.control.layers(
+                layer_control_10ba86d5da1419cde1be6819ef73dadf_layers.base_layers,
+                layer_control_10ba86d5da1419cde1be6819ef73dadf_layers.overlays,
                 {
   "position": "topright",
   "collapsed": true,
   "autoZIndex": true,
 }
-            ).addTo(map_ad296c07d642851b7a62294deaf34c96);
+            ).addTo(map_bd33321629d9f18a89ca43a77e984c16);
 
         
 
     (function () {
-      const map = map_ad296c07d642851b7a62294deaf34c96;
-      const groups = [{"category": "Food", "group": "feature_group_e2fa3efd15e0012a67a649ebe38d82e6", "markers": [{"id": 1, "layer": "circle_marker_24e71b440aca451991c559029c343521", "search": "krameramtsstuben historic courtyard dining near the michel, with labskaus and pannfisch. historische gaststuben am michel. auf der karte stehen hamburger klassiker wie labskaus und pannfisch. food"}, {"id": 2, "layer": "circle_marker_6c38d0ecee25bd9ba04cf9b4b41d9792", "search": "old commercial room a classic hamburg institution near the michel, renowned for labskaus. ein hamburger original gleich beim michel, besonders bekannt für labskaus. food"}, {"id": 3, "layer": "circle_marker_400f4b8a991cc30c4b9ac569f2a8945f", "search": "deichgraf hanseatic cooking on the historic deichstraße; ideal before an evening stroll. hanseatische küche in der alten deichstraße. gut mit einem spaziergang am nikolaifleet zu verbinden. food"}, {"id": 4, "layer": "circle_marker_0c681b4f1c802b4ccc54f5e2bdfeedc3", "search": "oberhafen-kantine distinctive crooked brick building and hearty regional fare. schiefes kleines backsteinhaus im oberhafen – ein stück hamburger geschichte mit deftiger küche. food"}, {"id": 5, "layer": "circle_marker_820e90ef8c5588b4e2d8e9c49c06dc10", "search": "gasthaus heimathafen relaxed harbor restaurant with traditional fish dishes. gemütliches lokal am baumwall mit fischgerichten und hafenatmosphäre. food"}, {"id": 6, "layer": "circle_marker_e97f3e4001966745460d82246c4e66c4", "search": "das feuerschiff a restaurant aboard a historic red lightship. essen und trinken auf einem historischen roten feuerschiff im city-sporthafen. food"}, {"id": 7, "layer": "circle_marker_b1517ce38489fa5fb650f9c7818e5b60", "search": "brücke 10 fischbrötchen and harbor views at the landungsbrücken. fischbrötchen an den landungsbrücken, dazu elbe und hafen direkt vor der nase. food"}, {"id": 8, "layer": "circle_marker_0d6dc346274bbf57990ef966af776ef2", "search": "fischereihafen restaurant traditional seafood restaurant near the elbe, for a more formal meal. klassisches fischrestaurant an der elbe – für einen etwas besonderen abend. food"}, {"id": 37, "layer": "circle_marker_92c777257b1ba022c77edb14dade5b08", "search": "speicherstadt kaffeerösterei coffee roasted on site, cake and a view of the canal in a historic 1888 speicherstadt warehouse. kehrwieder 5; a good stop while exploring the old port. frisch gerösteter kaffee, kuchen und fleetblick im historischen speicherboden von 1888. kehrwieder 5 – ein schöner zwischenstopp beim bummel durch die speicherstadt. food"}]}, {"category": "Kneipen", "group": "feature_group_8e71034e9759eb67319200c4d442867a", "markers": [{"id": 9, "layer": "circle_marker_c51692ae46991f14d8ac55ed721bb8e8", "search": "capri-stube traditional barmbek-süd gardinenkneipe with neighborhood regulars. alte gardinenkneipe in barmbek-süd, mit stammgästen und viel stadtteilgeschichte. kneipen"}, {"id": 10, "layer": "circle_marker_66483cbddd0a179a89898ecad569ea3d", "search": "zum guten tropfen historic mozartstraße eckkneipe with football and local conversations. eine eckkneipe in der mozartstraße. fußball, tresen und barmbeker alltag. kneipen"}, {"id": 11, "layer": "circle_marker_163a0ad75689582a59982eb68cdb5cbf", "search": "gaststätte imstedt 4 neighborhood pub with football, cards and classic tresen culture. kiezkneipe mit fußball, karten und unkomplizierter tresenkultur. kneipen"}, {"id": 12, "layer": "circle_marker_1a2b5688bcad33e2c4723fc8b8ee77f6", "search": "meisennest old-fashioned neighborhood bar on wachtelstraße. eine traditionelle kneipe in der wachtelstraße in barmbek-nord. kneipen"}, {"id": 13, "layer": "circle_marker_0fd02a3ca6cd435be9ab1835e5775d4d", "search": "barmbek express unpretentious barmbek-nord stammkneipe with darts. unaufgeregte stammkneipe in barmbek-nord, unter anderem mit darts. kneipen"}]}, {"category": "Cocktails", "group": "feature_group_d623f582f6e725fc851d081ffcc705c6", "markers": [{"id": 14, "layer": "circle_marker_1c15121a7d826517693d78b5a5ec9e89", "search": "le lion – bar de paris birthplace of the gin basil smash; intimate and expertly made classics. hier wurde der gin basil smash bekannt. eine kleine, feine cocktailbar in der innenstadt. cocktails"}, {"id": 15, "layer": "circle_marker_176deb718a7b0fd5136e8da1c568d0ef", "search": "christiansen's a long-running st. pauli institution for vintage and forgotten cocktails. hamburger cocktailinstitution auf st. pauli – klassische und fast vergessene drinks. cocktails"}, {"id": 16, "layer": "circle_marker_388bf8bac22e0a03423b78991cebdecc", "search": "the chug club tequila and mezcal specialists with tasting-sized cocktails. auf tequila und mezcal spezialisiert, mit kleineren cocktails zum probieren. cocktails"}, {"id": 17, "layer": "circle_marker_abaea2878de7ac5c4b589c9b2c4dd2f3", "search": "the rabbithole cozy creative cocktails and excellent rum and whiskey selections. gemütliche bar für kreative cocktails, rum und whiskey. cocktails"}, {"id": 18, "layer": "circle_marker_31ea93cf97e8d4363bc603feeadb6661", "search": "clockers inventive gin drinks in a forest-inspired interior. originelle gin-drinks in einer bar mit ungewöhnlich waldartigem interieur. cocktails"}, {"id": 19, "layer": "circle_marker_fa105cbc184345554c9f78ae0b18f7fb", "search": "puzzle bar modern experimental cocktails and 15th-floor city views. experimentelle cocktails mit aussicht über die hafencity. cocktails"}, {"id": 20, "layer": "circle_marker_22286de2a078bce4da8d2296a7370fd6", "search": "the bohemian creative cocktails in historic deichstraße. kreative cocktails in der historischen deichstraße. cocktails"}]}, {"category": "Sights", "group": "feature_group_c2d5f52e4d48c0904e6693fdd009acfc", "markers": [{"id": 21, "layer": "circle_marker_68081ab81a8a6c154a66b9dfb1debfee", "search": "hotel hafen hamburg traditional maritime hotel above the landungsbrücken with harbor views. the tower bar is located inside the hotel. traditionsreiches hotel oberhalb der landungsbrücken mit hafenblick. die tower bar befindet sich im hotel. sights"}, {"id": 22, "layer": "circle_marker_a81e11bd801743d0576dfec43072e8b0", "search": "deichstraße & nikolaifleet old merchant houses and waterways: historic hamburg. alte kaufmannshäuser am nikolaifleet. hier sieht hamburg noch nach früher aus. sights"}, {"id": 23, "layer": "circle_marker_d987b815d64a0f268937009d3aadd3e3", "search": "alter elbtunnel walk underneath the river through remarkable old engineering. ein spaziergang unter der elbe durch einen beeindruckenden alten tunnel. sights"}, {"id": 24, "layer": "circle_marker_b0e5a5cecea4bc6a9d9e021bc237159d", "search": "speicherstadt historic brick warehouses and canals, especially atmospheric at dusk. backsteinspeicher, fleete und brücken. besonders schön in der dämmerung. sights"}, {"id": 25, "layer": "circle_marker_9cfe1758f313c2a1e2835a865c02f26d", "search": "treppenviertel blankenese stairways, white captains' houses and sweeping elbe views. treppen, kapitänshäuser und ein weiter blick über die elbe. sights"}, {"id": 26, "layer": "circle_marker_248bb7e585537efd7e128a5a0c4cbb93", "search": "museumshafen oevelgönne historic working boats beside the elbe beach. historische schiffe und alte hafengeschichte direkt am elbstrand. sights"}, {"id": 27, "layer": "circle_marker_5db0d8b783323b6edd2a2492a1ed1333", "search": "internationales maritimes museum ship models, maritime history, navigation and historical maps. schiffsmodelle, seefahrtsgeschichte und historische karten im kaispeicher b. sights"}, {"id": 28, "layer": "circle_marker_27a48384580f0f7d7e37603c5e1a1729", "search": "museum der arbeit hamburg's industrial and working-class history in barmbek. industrie- und arbeitergeschichte hamburgs – passend gelegen in barmbek. sights"}, {"id": 29, "layer": "circle_marker_5d491af1e9578e543de2232d36508fa9", "search": "altonaer museum regional and cultural history of altona and north germany. geschichte und kultur von altona und norddeutschland. sights"}, {"id": 30, "layer": "circle_marker_37cfd52167b0f55422c358c0856eb4f5", "search": "winterdom / heiligengeistfeld a proper hamburg classic: the winterdom funfair on heiligengeistfeld, with rides, lights, fairground snacks and st. pauli atmosphere. running 6 november–6 december 2026. ein echter hamburger klassiker: winterdom auf dem heiligengeistfeld, mit fahrgeschäften, lichtern, jahrmarktessen und st.-pauli-atmosphäre. vom 6. november bis 6. dezember 2026. sights"}, {"id": 31, "layer": "circle_marker_8a4fa2ce134c664941261d0b0777d6c0", "search": "bergedorfer schloss historic bergedorf castle and old-town walk. altes bergedorfer schloss und ein spaziergang durch die historische innenstadt. sights"}]}, {"category": "Harbor", "group": "feature_group_ee2b8e2e01654c5149adb3dc04e02d28", "markers": [{"id": 32, "layer": "circle_marker_039ca4c6009cd0d4b3960e5a109af436", "search": "ferry 62 – landungsbrücken start the hvv public ferry toward finkenwerder; working harbor scenery. mit der hvv-fähre 62 ab landungsbrücken richtung finkenwerder – eine kleine hafenrundfahrt im alltag. harbor"}, {"id": 33, "layer": "circle_marker_b7246528e8270de81deee4fcc8887c77", "search": "ferry 62 – finkenwerder the western end of the public ferry outing. endstation der fähre 62; hier lässt sich die elbe einmal aus einem anderen winkel sehen. harbor"}]}, {"category": "Shops", "group": "feature_group_153a48eb3888d2dae4b7c11d1076f08d", "markers": [{"id": 34, "layer": "circle_marker_2f68e30fadcd41aa696102034b341068", "search": "dr. götze land & karte browse maps, atlases and historical hamburg cartography at alstertor 14. karten, atlanten und hamburgs historische kartografie am alstertor 14. shops"}, {"id": 35, "layer": "circle_marker_5be1276d9e1bfb4b19d0aa8a328447c7", "search": "heinr. von have traditional bergedorf wine merchant; ask for hamburger rotspon. traditionsreicher weinhändler in bergedorf. hier würde ich nach hamburger rotspon schauen. shops"}, {"id": 36, "layer": "circle_marker_cb65c3afaaad03e43a23323854187cc5", "search": "antiquariat near the michel browse older hamburg books and german literary classics in the michel area. auf der suche nach alten hamburg-büchern und deutschen klassikern rund um den michel. shops"}, {"id": 38, "layer": "circle_marker_b730cf3117d06bd35b0a98fe6ee0d1e2", "search": "aktion buch – farmsen affordable secondhand books in einkaufstreff farmsen, near u-bahn farmsen. book prices reportedly €2–6. gemeinnütziger gebrauchtbuchladen im einkaufstreff farmsen, nahe u farmsen. bücher etwa 2–6 €. shops"}, {"id": 39, "layer": "circle_marker_3a0826baf31975f16dab45eb5567a976", "search": "hempels gebrauchtwarenhaus secondhand warehouse in norderstedt with glassware, porcelain, furniture and surprising finds. gebrauchtwarenkaufhaus in norderstedt mit glas, porzellan, möbeln und allerlei fundstücken. shops"}, {"id": 40, "layer": "circle_marker_36ff1ee66ef81da23bd20b2f5c2f9fa9", "search": "bücherflohmarkt der bücherhallen volunteer-run secondhand book market in the zentralbibliothek. books usually €1; cash only. ehrenamtlicher bücherflohmarkt in der zentralbibliothek. bücher meist 1 €; nur bargeld. shops"}, {"id": 41, "layer": "circle_marker_519a6da83f0248d21ea7a7afc0e18040", "search": "flohschanze saturday flea market at the alte rinderschlachthalle: vintage objects, books and curious finds. samstagsflohmarkt an der alten rinderschlachthalle mit vintage, büchern und kuriositäten. shops"}, {"id": 42, "layer": "circle_marker_57790a18c40bb8230af22aab471514b6", "search": "lüders buchhandlung & antiquariat independent bookshop and antiquarian books in eimsbüttel; literature, classics, philosophy and art. buchhandlung und antiquariat in eimsbüttel mit literatur, klassikern, philosophie und kunst. shops"}, {"id": 43, "layer": "circle_marker_3464c0e8a00997077c5785039e86d872", "search": "buchhandlung & antiquariat lutz heimhalt books on history, architecture, philosophy, technology and aviation; also antiquarian postcards. bücher über geschichte, architektur, philosophie, technik und luftfahrt; auch alte postkarten. shops"}, {"id": 44, "layer": "circle_marker_5e817354f4b34b477ec6fb54af128edb", "search": "antiquariat torsten bernhardt traditional eilbek bookshop for used, out-of-print and antiquarian titles. traditionelles antiquariat in eilbek für gebrauchte, vergriffene und ältere bücher. shops"}, {"id": 45, "layer": "circle_marker_c93bfb2f1e728329c71316748323bd30", "search": "schn€ppchen-hamburg vintage and secondhand household goods, lamps, ceramics, pictures and furniture. secondhand und vintage: lampen, keramik, bilder, möbel und haushaltswaren. shops"}, {"id": 46, "layer": "circle_marker_2fbc1ba580331af38f2302820bd73414", "search": "rathauspassage hamburg social-enterprise café and bookshop beneath rathausmarkt, with secondhand books. soziales café und buchladen unter dem rathausmarkt, auch mit gebrauchten büchern. shops"}]}];
+      const map = map_bd33321629d9f18a89ca43a77e984c16;
+      const groups = [{"category": "Food", "group": "feature_group_c61e8b9acaca608b161bb31725c76e99", "markers": [{"id": 1, "layer": "marker_b3d0869fc9ee84c3f5d9618542e9e0d2", "search": "krameramtsstuben historic courtyard dining near the michel, with labskaus and pannfisch. historische gaststuben am michel. auf der karte stehen hamburger klassiker wie labskaus und pannfisch. food"}, {"id": 2, "layer": "marker_eb6bb810917f615bd142cbf4c543e7bc", "search": "old commercial room a classic hamburg institution near the michel, renowned for labskaus. ein hamburger original gleich beim michel, besonders bekannt für labskaus. food"}, {"id": 3, "layer": "marker_6824b5b6e8a610cb226eb9d1f5f2e424", "search": "deichgraf hanseatic cooking on the historic deichstraße; ideal before an evening stroll. hanseatische küche in der alten deichstraße. gut mit einem spaziergang am nikolaifleet zu verbinden. food"}, {"id": 4, "layer": "marker_fb7f43bf5529fd7fa3fe88a50df99f1b", "search": "oberhafen-kantine distinctive crooked brick building and hearty regional fare. schiefes kleines backsteinhaus im oberhafen – ein stück hamburger geschichte mit deftiger küche. food"}, {"id": 5, "layer": "marker_9f3b26bc7d3da597c6d30a735ed4b61e", "search": "gasthaus heimathafen relaxed harbor restaurant with traditional fish dishes. gemütliches lokal am baumwall mit fischgerichten und hafenatmosphäre. food"}, {"id": 6, "layer": "marker_9eea85bbd00a7be35399971cb08dc65b", "search": "das feuerschiff a restaurant aboard a historic red lightship. essen und trinken auf einem historischen roten feuerschiff im city-sporthafen. food"}, {"id": 7, "layer": "marker_268c8b211e6496270c965e6fe8cab5b6", "search": "brücke 10 fischbrötchen and harbor views at the landungsbrücken. fischbrötchen an den landungsbrücken, dazu elbe und hafen direkt vor der nase. food"}, {"id": 8, "layer": "marker_72e449d9d1f0b2ec1947409acb97c631", "search": "fischereihafen restaurant traditional seafood restaurant near the elbe, for a more formal meal. klassisches fischrestaurant an der elbe – für einen etwas besonderen abend. food"}, {"id": 37, "layer": "marker_d80eba91113aaf005b8caf7f601a0462", "search": "speicherstadt kaffeerösterei coffee roasted on site, cake and a view of the canal in a historic 1888 speicherstadt warehouse. kehrwieder 5; a good stop while exploring the old port. frisch gerösteter kaffee, kuchen und fleetblick im historischen speicherboden von 1888. kehrwieder 5 – ein schöner zwischenstopp beim bummel durch die speicherstadt. food"}]}, {"category": "Kneipen", "group": "feature_group_866ca6d8415c2a301d066a613e5c8a75", "markers": [{"id": 9, "layer": "marker_02bc617bb936325884fb5eb69e2041c8", "search": "capri-stube traditional barmbek-süd gardinenkneipe with neighborhood regulars. alte gardinenkneipe in barmbek-süd, mit stammgästen und viel stadtteilgeschichte. kneipen"}, {"id": 10, "layer": "marker_aa46e5316bb8056a5733d04cf2619780", "search": "zum guten tropfen historic mozartstraße eckkneipe with football and local conversations. eine eckkneipe in der mozartstraße. fußball, tresen und barmbeker alltag. kneipen"}, {"id": 11, "layer": "marker_c17ad97df0a4c627e8f08c89e00448aa", "search": "gaststätte imstedt 4 neighborhood pub with football, cards and classic tresen culture. kiezkneipe mit fußball, karten und unkomplizierter tresenkultur. kneipen"}, {"id": 12, "layer": "marker_bf7f8c21572a55cfa4f90c65f8217b21", "search": "meisennest old-fashioned neighborhood bar on wachtelstraße. eine traditionelle kneipe in der wachtelstraße in barmbek-nord. kneipen"}, {"id": 13, "layer": "marker_d962f9356005b87f84d3feb65ce11731", "search": "barmbek express unpretentious barmbek-nord stammkneipe with darts. unaufgeregte stammkneipe in barmbek-nord, unter anderem mit darts. kneipen"}]}, {"category": "Cocktails", "group": "feature_group_2e64718a65f013f5f4bbadecd0f1469b", "markers": [{"id": 14, "layer": "marker_017f18c244673d9e037fbb9216afe6e6", "search": "le lion – bar de paris birthplace of the gin basil smash; intimate and expertly made classics. hier wurde der gin basil smash bekannt. eine kleine, feine cocktailbar in der innenstadt. cocktails"}, {"id": 15, "layer": "marker_18c351800c0c347114f841a018939556", "search": "christiansen's a long-running st. pauli institution for vintage and forgotten cocktails. hamburger cocktailinstitution auf st. pauli – klassische und fast vergessene drinks. cocktails"}, {"id": 16, "layer": "marker_402756a6fd6b510d666dead8f54642f3", "search": "the chug club tequila and mezcal specialists with tasting-sized cocktails. auf tequila und mezcal spezialisiert, mit kleineren cocktails zum probieren. cocktails"}, {"id": 17, "layer": "marker_5836d48bce2d1995253c7b3a1bb7f6c9", "search": "the rabbithole cozy creative cocktails and excellent rum and whiskey selections. gemütliche bar für kreative cocktails, rum und whiskey. cocktails"}, {"id": 18, "layer": "marker_8a8f6bfe816eef49ada2036cc539100f", "search": "clockers inventive gin drinks in a forest-inspired interior. originelle gin-drinks in einer bar mit ungewöhnlich waldartigem interieur. cocktails"}, {"id": 19, "layer": "marker_d9e3acf176b218c6ffb8332d6012cf45", "search": "puzzle bar modern experimental cocktails and 15th-floor city views. experimentelle cocktails mit aussicht über die hafencity. cocktails"}, {"id": 20, "layer": "marker_43012540234536c3bf2b29f4316168d7", "search": "the bohemian creative cocktails in historic deichstraße. kreative cocktails in der historischen deichstraße. cocktails"}]}, {"category": "Sights", "group": "feature_group_f40ce101f04857863fa778366467aa55", "markers": [{"id": 21, "layer": "marker_1761f803964893ee6ed42f5946ca5101", "search": "hotel hafen hamburg traditional maritime hotel above the landungsbrücken with harbor views. the tower bar is located inside the hotel. traditionsreiches hotel oberhalb der landungsbrücken mit hafenblick. die tower bar befindet sich im hotel. sights"}, {"id": 22, "layer": "marker_6c2cbb48a1e9465b55578025e4144fdd", "search": "deichstraße & nikolaifleet old merchant houses and waterways: historic hamburg. alte kaufmannshäuser am nikolaifleet. hier sieht hamburg noch nach früher aus. sights"}, {"id": 23, "layer": "marker_e57747e9c4e4c4a65d70e0ef41a5f99d", "search": "alter elbtunnel walk underneath the river through remarkable old engineering. ein spaziergang unter der elbe durch einen beeindruckenden alten tunnel. sights"}, {"id": 24, "layer": "marker_91dffa93f088bb8285e1a38d58bb66a0", "search": "speicherstadt historic brick warehouses and canals, especially atmospheric at dusk. backsteinspeicher, fleete und brücken. besonders schön in der dämmerung. sights"}, {"id": 25, "layer": "marker_f957bd261f4bba5e4d9eaf237d7640c9", "search": "treppenviertel blankenese stairways, white captains' houses and sweeping elbe views. treppen, kapitänshäuser und ein weiter blick über die elbe. sights"}, {"id": 26, "layer": "marker_3db20b8190c837963154a03b69582377", "search": "museumshafen oevelgönne historic working boats beside the elbe beach. historische schiffe und alte hafengeschichte direkt am elbstrand. sights"}, {"id": 27, "layer": "marker_b32194aff33f0cf997df3120f7c2d434", "search": "internationales maritimes museum ship models, maritime history, navigation and historical maps. schiffsmodelle, seefahrtsgeschichte und historische karten im kaispeicher b. sights"}, {"id": 28, "layer": "marker_609084f35380a830c18f78e914406cb6", "search": "museum der arbeit hamburg's industrial and working-class history in barmbek. industrie- und arbeitergeschichte hamburgs – passend gelegen in barmbek. sights"}, {"id": 29, "layer": "marker_11ff2d09e9133cb71fa84d061a00b3c3", "search": "altonaer museum regional and cultural history of altona and north germany. geschichte und kultur von altona und norddeutschland. sights"}, {"id": 30, "layer": "marker_6c756f9f291426405eed136766cd5b27", "search": "winterdom / heiligengeistfeld a proper hamburg classic: the winterdom funfair on heiligengeistfeld, with rides, lights, fairground snacks and st. pauli atmosphere. running 6 november–6 december 2026. ein echter hamburger klassiker: winterdom auf dem heiligengeistfeld, mit fahrgeschäften, lichtern, jahrmarktessen und st.-pauli-atmosphäre. vom 6. november bis 6. dezember 2026. sights"}, {"id": 31, "layer": "marker_7b6b1dce303a6a28e84cc0367c298862", "search": "bergedorfer schloss historic bergedorf castle and old-town walk. altes bergedorfer schloss und ein spaziergang durch die historische innenstadt. sights"}]}, {"category": "Harbor", "group": "feature_group_e50ac1954de2b5b31e3acfb95b6b1808", "markers": [{"id": 32, "layer": "marker_641487ca4b4ead096b65d25739c38e98", "search": "ferry 62 – landungsbrücken start the hvv public ferry toward finkenwerder; working harbor scenery. mit der hvv-fähre 62 ab landungsbrücken richtung finkenwerder – eine kleine hafenrundfahrt im alltag. harbor"}, {"id": 33, "layer": "marker_2bb60b205a6af33573ca1723f76d76e8", "search": "ferry 62 – finkenwerder the western end of the public ferry outing. endstation der fähre 62; hier lässt sich die elbe einmal aus einem anderen winkel sehen. harbor"}]}, {"category": "Shops", "group": "feature_group_d62e4779e2240e55861c5529d600d7f7", "markers": [{"id": 34, "layer": "marker_b229c852086d88e9060cbf4e987e7893", "search": "dr. götze land & karte browse maps, atlases and historical hamburg cartography at alstertor 14. karten, atlanten und hamburgs historische kartografie am alstertor 14. shops"}, {"id": 35, "layer": "marker_2cdeccb2dfb9b1600b14e455813fbcfd", "search": "heinr. von have traditional bergedorf wine merchant; ask for hamburger rotspon. traditionsreicher weinhändler in bergedorf. hier würde ich nach hamburger rotspon schauen. shops"}, {"id": 36, "layer": "marker_2d0581f3cfb01fbf65ea0ffd01c27f12", "search": "antiquariat near the michel browse older hamburg books and german literary classics in the michel area. auf der suche nach alten hamburg-büchern und deutschen klassikern rund um den michel. shops"}, {"id": 38, "layer": "marker_608b91e142e3cb6424ba64a28b59d35d", "search": "aktion buch – farmsen affordable secondhand books in einkaufstreff farmsen, near u-bahn farmsen. book prices reportedly €2–6. gemeinnütziger gebrauchtbuchladen im einkaufstreff farmsen, nahe u farmsen. bücher etwa 2–6 €. shops"}, {"id": 39, "layer": "marker_f79e9b81d6da8aa37e1c0383435f57aa", "search": "hempels gebrauchtwarenhaus secondhand warehouse in norderstedt with glassware, porcelain, furniture and surprising finds. gebrauchtwarenkaufhaus in norderstedt mit glas, porzellan, möbeln und allerlei fundstücken. shops"}, {"id": 40, "layer": "marker_ab0148c8a4813dc7152b1aef0697eedb", "search": "bücherflohmarkt der bücherhallen volunteer-run secondhand book market in the zentralbibliothek. books usually €1; cash only. ehrenamtlicher bücherflohmarkt in der zentralbibliothek. bücher meist 1 €; nur bargeld. shops"}, {"id": 41, "layer": "marker_3bd4c942f9da1fb13a188e48c3fa53df", "search": "flohschanze saturday flea market at the alte rinderschlachthalle: vintage objects, books and curious finds. samstagsflohmarkt an der alten rinderschlachthalle mit vintage, büchern und kuriositäten. shops"}, {"id": 42, "layer": "marker_5aca33e609420881d74140451922cd53", "search": "lüders buchhandlung & antiquariat independent bookshop and antiquarian books in eimsbüttel; literature, classics, philosophy and art. buchhandlung und antiquariat in eimsbüttel mit literatur, klassikern, philosophie und kunst. shops"}, {"id": 43, "layer": "marker_a4ab8a6c456ecbdcaeb59e8747bcd7c3", "search": "buchhandlung & antiquariat lutz heimhalt books on history, architecture, philosophy, technology and aviation; also antiquarian postcards. bücher über geschichte, architektur, philosophie, technik und luftfahrt; auch alte postkarten. shops"}, {"id": 44, "layer": "marker_413424773680efe6e1caff4f4615972d", "search": "antiquariat torsten bernhardt traditional eilbek bookshop for used, out-of-print and antiquarian titles. traditionelles antiquariat in eilbek für gebrauchte, vergriffene und ältere bücher. shops"}, {"id": 45, "layer": "marker_12b2e6ccfa30b35ccee7c3102d23b407", "search": "schn€ppchen-hamburg vintage and secondhand household goods, lamps, ceramics, pictures and furniture. secondhand und vintage: lampen, keramik, bilder, möbel und haushaltswaren. shops"}, {"id": 46, "layer": "marker_ba1c91d934afb29eb2424a1c1eea3bb2", "search": "rathauspassage hamburg social-enterprise café and bookshop beneath rathausmarkt, with secondhand books. soziales café und buchladen unter dem rathausmarkt, auch mit gebrauchten büchern. shops"}]}];
       function findMarker(id) {
         for (const group of groups) for (const entry of group.markers) {
           if (String(entry.id) === String(id)) return {group, entry};
