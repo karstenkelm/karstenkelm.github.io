@@ -715,29 +715,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 39,
-        "name": "Hempels Gebrauchtwarenhaus",
-        "category": "Shops",
-        "description": "Secondhand warehouse in Norderstedt with glassware, porcelain, furniture and surprising finds.",
-        "description_de": "Gebrauchtwarenkaufhaus in Norderstedt mit Glas, Porzellan, Möbeln und allerlei Fundstücken.",
-        "address": "Stormarnstraße 34–36, 22844 Norderstedt",
-        "phone": "+49 40 53595800",
-        "hours": "Mon–Fri 10:00–18:00; Sat 10:00–15:00",
-        "hours_de": "Mo–Fr 10:00–18:00; Sa 10:00–15:00",
-        "website": "https://www.hempels-norderstedt.de/Kontakt",
-        "location_note": "Approximate map location; use the address and Directions link for the exact entrance. Shop schedules may change."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          10.02033,
-          53.70875
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 40,
         "name": "Bücherflohmarkt der Bücherhallen",
         "category": "Shops",
