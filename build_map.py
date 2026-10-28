@@ -35,6 +35,14 @@ def category_icon(category, color):
 
 for lang, output in (("en", "leafmap-map.html"), ("de", "leafmap-map-de.html")):
     m = leafmap.Map(center=[53.563, 9.987], zoom=12, fullscreen_control=False)
+    # Fit every pin, including outlying locations, on desktop and mobile.
+    coordinates = [feature["geometry"]["coordinates"] for feature in geo["features"]]
+    m.fit_bounds(
+        [[min(p[1] for p in coordinates), min(p[0] for p in coordinates)],
+         [max(p[1] for p in coordinates), max(p[0] for p in coordinates)]],
+        padding_top_left=(36, 36),
+        padding_bottom_right=(36, 36),
+    )
     # Minimal monochrome appearance for the raster basemap, preserving colored markers.
     m.get_root().header.add_child(folium.Element("""
     <style>
