@@ -9,9 +9,9 @@ import leafmap.foliumap as leafmap
 ROOT = Path(__file__).resolve().parent
 geo = json.loads((ROOT / "data/hamburg_places.geojson").read_text(encoding="utf-8"))
 colors = {"Food": "#eaa45f", "Kneipen": "#e05d5a", "Cocktails": "#ac8ce3",
-          "Sights": "#469a89", "Harbor": "#428ec3", "Shops": "#b99c50"}
+          "Sights": "#469a89", "Harbor": "#428ec3", "Shops": "#b99c50", "Kodak Moments": "#527c9c"}
 names_de = {"Food": "Essen", "Kneipen": "Kneipen", "Cocktails": "Cocktails",
-            "Sights": "Sehenswertes", "Harbor": "Hafen", "Shops": "Läden"}
+            "Sights": "Sehenswertes", "Harbor": "Hafen", "Shops": "Läden", "Kodak Moments": "Kodak Moments"}
 
 # Compact Lucide-style SVG pictograms inside understated, category-colored badges.
 icon_paths = {
@@ -21,6 +21,7 @@ icon_paths = {
     "Sights": '<path d="m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18"/>',
     "Harbor": '<circle cx="12" cy="4" r="2"/><path d="M12 6v15M5 11H2l3 4M19 11h3l-3 4M3 15c1 4 4 6 9 6s8-2 9-6"/>',
     "Shops": '<path d="M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7"/>',
+    "Kodak Moments": '<path d="M3 7h4l2-3h6l2 3h4v13H3V7Z"/><circle cx="12" cy="13" r="4"/>',
 }
 def category_icon(category, color):
     svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" '
@@ -65,6 +66,13 @@ for lang, output in (("en", "leafmap-map.html"), ("de", "leafmap-map-de.html")):
             desc = p.get("description_de", p["description"]) if lang == "de" else p["description"]
             link_text = "Route anzeigen" if lang == "de" else "Directions"
             fields = [f"<strong style='font-size:15px'>{html.escape(p['name'])}</strong>", f"<p>{html.escape(desc)}</p>"]
+            if p["category"] == "Kodak Moments":
+                viewpoint = p["viewpoint_de"] if lang == "de" else p["viewpoint"]
+                shot = p["photo_tip_de"] if lang == "de" else p["photo_tip"]
+                light = p["best_light_de"] if lang == "de" else p["best_light"]
+                fields.append(f"<div><b>{'Fotostandort' if lang == 'de' else 'Viewpoint'}:</b> {html.escape(viewpoint)}</div>")
+                fields.append(f"<div><b>{'Motiv' if lang == 'de' else 'Photo idea'}:</b> {html.escape(shot)}</div>")
+                fields.append(f"<div><b>{'Beste Zeit' if lang == 'de' else 'Best light'}:</b> {html.escape(light)}</div>")
             for key, title in (("address", "Adresse" if lang == "de" else "Address"),
                                ("phone", "Telefon" if lang == "de" else "Phone"),
                                ("hours_de" if lang == "de" else "hours", "Öffnungszeiten" if lang == "de" else "Hours")):
