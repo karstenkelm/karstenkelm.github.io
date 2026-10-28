@@ -894,6 +894,29 @@
           53.5504
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 47,
+        "name": "T.R.U.D.E.",
+        "category": "Food",
+        "description": "Industrial-chic restaurant by the Museum der Arbeit in Barmbek, serving Hamburg classics, burgers and vegetarian dishes. Named for the giant Elbe tunnel-boring machine.",
+        "description_de": "Restaurant im Industrieambiente am Museum der Arbeit in Barmbek, mit Hamburger Klassikern, Burgern und vegetarischen Gerichten. Namensgeber ist die riesige Tunnelbohrmaschine für den Elbtunnel.",
+        "address": "Maurienstraße 13–15, 22305 Hamburg",
+        "phone": "+49 40 20006931",
+        "hours": "Mon–Fri 12:00–00:00; Sat–Sun 10:00–22:00 (confirm before visiting)",
+        "hours_de": "Mo–Fr 12:00–00:00; Sa–So 10:00–22:00 (vor Besuch prüfen)",
+        "website": "https://www.trude-hh.de/",
+        "location_note": "Location based on published map coordinates; confirm the entrance and opening hours before visiting."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.04509,
+          53.585
+        ]
+      }
     }
   ]
 }
