@@ -894,6 +894,500 @@
           53.585
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 48,
+        "name": "Oberhafenquartier + Oberhafenbrücke",
+        "category": "Kodak Moments",
+        "photo_theme": "Industrial Hamburg",
+        "photo_theme_de": "Industrie-Hamburg",
+        "viewpoint": "Public-side view near Oberhafenbrücke and Oberhafen-Kantine",
+        "viewpoint_de": "Öffentlicher Bereich an Oberhafenbrücke und Oberhafen-Kantine",
+        "photo_tip": "Steel railway structure, old warehouses and the tiny canteen",
+        "photo_tip_de": "Stahlkonstruktion, alte Speicher und die kleine Kantine",
+        "best_light": "Overcast afternoon",
+        "best_light_de": "Bewölkter Nachmittag",
+        "description": "Steel railway structure, old warehouses and the tiny canteen. Best: Overcast afternoon. Viewpoint: Public-side view near Oberhafenbrücke and Oberhafen-Kantine.",
+        "description_de": "Stahlkonstruktion, alte Speicher und die kleine Kantine. Beste Zeit: Bewölkter Nachmittag. Standort: Öffentlicher Bereich an Oberhafenbrücke und Oberhafen-Kantine.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0107,
+          53.5416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 49,
+        "name": "Waltershofer Damm",
+        "category": "Kodak Moments",
+        "photo_theme": "Harbor & industry",
+        "photo_theme_de": "Hafen und Industrie",
+        "viewpoint": "Public roadside or pedestrian path at Waltershofer Damm; avoid terminal gates",
+        "viewpoint_de": "Öffentlicher Fußweg am Waltershofer Damm; Hafentore meiden",
+        "photo_tip": "Container ships, towering cranes and working harbor",
+        "photo_tip_de": "Containerschiffe, Kräne und Hafenbetrieb",
+        "best_light": "Morning or blue hour",
+        "best_light_de": "Morgens oder zur blauen Stunde",
+        "description": "Container ships, towering cranes and working harbor. Best: Morning or blue hour. Viewpoint: Public roadside or pedestrian path at Waltershofer Damm; avoid terminal gates.",
+        "description_de": "Containerschiffe, Kräne und Hafenbetrieb. Beste Zeit: Morgens oder zur blauen Stunde. Standort: Öffentlicher Fußweg am Waltershofer Damm; Hafentore meiden.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8916,
+          53.5244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 50,
+        "name": "Steinwerder — Alter Elbtunnel",
+        "category": "Kodak Moments",
+        "photo_theme": "Harbor & industry",
+        "photo_theme_de": "Hafen und Industrie",
+        "viewpoint": "Public waterfront near the south exit of the Old Elbe Tunnel",
+        "viewpoint_de": "Öffentlich zugängliches Ufer am Südausgang des Alten Elbtunnels",
+        "photo_tip": "Landungsbrücken skyline with a crossing ferry or tugboat",
+        "photo_tip_de": "Landungsbrücken mit Fähre oder Schlepper im Vordergrund",
+        "best_light": "Late afternoon / blue hour",
+        "best_light_de": "Spätnachmittag / blaue Stunde",
+        "description": "Landungsbrücken skyline with a crossing ferry or tugboat. Best: Late afternoon / blue hour. Viewpoint: Public waterfront near the south exit of the Old Elbe Tunnel.",
+        "description_de": "Landungsbrücken mit Fähre oder Schlepper im Vordergrund. Beste Zeit: Spätnachmittag / blaue Stunde. Standort: Öffentlich zugängliches Ufer am Südausgang des Alten Elbtunnels.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9707,
+          53.5427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 51,
+        "name": "Köhlbrandbrücke / Neuhof",
+        "category": "Kodak Moments",
+        "photo_theme": "Harbor & industry",
+        "photo_theme_de": "Hafen und Industrie",
+        "viewpoint": "Approximate Neuhof public-road viewpoint; confirm pedestrian access before visiting",
+        "viewpoint_de": "Ungefährer Standort an öffentlicher Straße in Neuhof; Zugang vorab prüfen",
+        "photo_tip": "Köhlbrand bridge silhouette against port structures",
+        "photo_tip_de": "Köhlbrandbrücke über der Industrielandschaft",
+        "best_light": "Clear evening or dramatic cloud",
+        "best_light_de": "Abendlicht oder dramatische Wolken",
+        "description": "Köhlbrand bridge silhouette against port structures. Best: Clear evening or dramatic cloud. Viewpoint: Approximate Neuhof public-road viewpoint; confirm pedestrian access before visiting.",
+        "description_de": "Köhlbrandbrücke über der Industrielandschaft. Beste Zeit: Abendlicht oder dramatische Wolken. Standort: Ungefährer Standort an öffentlicher Straße in Neuhof; Zugang vorab prüfen.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9393,
+          53.5215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 52,
+        "name": "Schwanenwikbrücke",
+        "category": "Kodak Moments",
+        "photo_theme": "Alster & waterside",
+        "photo_theme_de": "Alster und Wasser",
+        "viewpoint": "Public bridge sidewalk facing the Außenalster",
+        "viewpoint_de": "Öffentlicher Gehweg auf der Brücke mit Blick zur Außenalster",
+        "photo_tip": "Water reflections, distant skyline and bare winter trees",
+        "photo_tip_de": "Spiegelungen, Skyline und winterliche Bäume",
+        "best_light": "Sunset / blue hour",
+        "best_light_de": "Sonnenuntergang / blaue Stunde",
+        "description": "Water reflections, distant skyline and bare winter trees. Best: Sunset / blue hour. Viewpoint: Public bridge sidewalk facing the Außenalster.",
+        "description_de": "Spiegelungen, Skyline und winterliche Bäume. Beste Zeit: Sonnenuntergang / blaue Stunde. Standort: Öffentlicher Gehweg auf der Brücke mit Blick zur Außenalster.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.01681,
+          53.56553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 53,
+        "name": "Krugkoppelbrücke",
+        "category": "Kodak Moments",
+        "photo_theme": "Alster & waterside",
+        "photo_theme_de": "Alster und Wasser",
+        "viewpoint": "Public bridge sidewalk by the Alster ferry landing",
+        "viewpoint_de": "Öffentlicher Gehweg auf der Brücke am Anleger",
+        "photo_tip": "Quiet boats, landing, curved shore and trees",
+        "photo_tip_de": "Boote, Anleger, Ufer und alte Bäume",
+        "best_light": "Early morning",
+        "best_light_de": "Frühmorgens",
+        "description": "Quiet boats, landing, curved shore and trees. Best: Early morning. Viewpoint: Public bridge sidewalk by the Alster ferry landing.",
+        "description_de": "Boote, Anleger, Ufer und alte Bäume. Beste Zeit: Frühmorgens. Standort: Öffentlicher Gehweg auf der Brücke am Anleger.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9991,
+          53.57992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 54,
+        "name": "Gängeviertel",
+        "category": "Kodak Moments",
+        "photo_theme": "Urban character",
+        "photo_theme_de": "Stadtleben",
+        "viewpoint": "Public entrance passages around Valentinskamp / Caffamacherreihe",
+        "viewpoint_de": "Öffentliche Eingänge bei Valentinskamp / Caffamacherreihe",
+        "photo_tip": "Street art and old façades framing narrow courtyards",
+        "photo_tip_de": "Street-Art und alte Fassaden in engen Höfen",
+        "best_light": "Daylight / after rain",
+        "best_light_de": "Tagsüber / nach Regen",
+        "description": "Street art and old façades framing narrow courtyards. Best: Daylight / after rain. Viewpoint: Public entrance passages around Valentinskamp / Caffamacherreihe.",
+        "description_de": "Street-Art und alte Fassaden in engen Höfen. Beste Zeit: Tagsüber / nach Regen. Standort: Öffentliche Eingänge bei Valentinskamp / Caffamacherreihe.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9837,
+          53.5549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 55,
+        "name": "Hohe Brücke / Nikolaifleet",
+        "category": "Kodak Moments",
+        "photo_theme": "Urban character",
+        "photo_theme_de": "Stadtleben",
+        "viewpoint": "Public sidewalk on Hohe Brücke overlooking Nikolaifleet",
+        "viewpoint_de": "Öffentlicher Gehweg auf der Hohen Brücke mit Blick ins Nikolaifleet",
+        "photo_tip": "Old merchant-house backs reflected in the fleet",
+        "photo_tip_de": "Historische Kaufmannshäuser mit Spiegelungen im Fleet",
+        "best_light": "Blue hour",
+        "best_light_de": "Blaue Stunde",
+        "description": "Old merchant-house backs reflected in the fleet. Best: Blue hour. Viewpoint: Public sidewalk on Hohe Brücke overlooking Nikolaifleet.",
+        "description_de": "Historische Kaufmannshäuser mit Spiegelungen im Fleet. Beste Zeit: Blaue Stunde. Standort: Öffentlicher Gehweg auf der Hohen Brücke mit Blick ins Nikolaifleet.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9875,
+          53.5456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 56,
+        "name": "Kehrwiedersteg",
+        "category": "Kodak Moments",
+        "photo_theme": "Urban character",
+        "photo_theme_de": "Stadtleben",
+        "viewpoint": "Public pedestrian crossing at Kehrwiedersteg; confirm precise framing on site",
+        "viewpoint_de": "Öffentlicher Fußgängersteg; genauen Bildausschnitt vor Ort wählen",
+        "photo_tip": "Historic brick warehouse walls and layered waterfront bridges",
+        "photo_tip_de": "Backsteinspeicher, Wasser und Brücken",
+        "best_light": "Evening",
+        "best_light_de": "Abends",
+        "description": "Historic brick warehouse walls and layered waterfront bridges. Best: Evening. Viewpoint: Public pedestrian crossing at Kehrwiedersteg; confirm precise framing on site.",
+        "description_de": "Backsteinspeicher, Wasser und Brücken. Beste Zeit: Abends. Standort: Öffentlicher Fußgängersteg; genauen Bildausschnitt vor Ort wählen.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9827,
+          53.5438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 57,
+        "name": "Bäckerbreitergang",
+        "category": "Kodak Moments",
+        "photo_theme": "Historic architecture",
+        "photo_theme_de": "Historische Architektur",
+        "viewpoint": "Public lane along the restored historic houses",
+        "viewpoint_de": "Öffentlicher Weg an den restaurierten historischen Häusern",
+        "photo_tip": "Rhythm of old doors, windows and half-timbered façades",
+        "photo_tip_de": "Alte Türen, Fenster und Fachwerkfassaden",
+        "best_light": "Morning / soft daylight",
+        "best_light_de": "Morgens / weiches Tageslicht",
+        "description": "Rhythm of old doors, windows and half-timbered façades. Best: Morning / soft daylight. Viewpoint: Public lane along the restored historic houses.",
+        "description_de": "Alte Türen, Fenster und Fachwerkfassaden. Beste Zeit: Morgens / weiches Tageslicht. Standort: Öffentlicher Weg an den restaurierten historischen Häusern.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9789,
+          53.5508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 58,
+        "name": "Krameramtsstuben — courtyard",
+        "category": "Kodak Moments",
+        "photo_theme": "Historic architecture",
+        "photo_theme_de": "Historische Architektur",
+        "viewpoint": "Courtyard entrance at Krayenkamp (respect residents and opening times)",
+        "viewpoint_de": "Hofeingang am Krayenkamp (Privatsphäre und Öffnungszeiten beachten)",
+        "photo_tip": "Tight perspective down the historic timber-framed courtyard",
+        "photo_tip_de": "Blick durch den engen historischen Fachwerkhof",
+        "best_light": "Soft morning light",
+        "best_light_de": "Weiches Morgenlicht",
+        "description": "Tight perspective down the historic timber-framed courtyard. Best: Soft morning light. Viewpoint: Courtyard entrance at Krayenkamp (respect residents and opening times).",
+        "description_de": "Blick durch den engen historischen Fachwerkhof. Beste Zeit: Weiches Morgenlicht. Standort: Hofeingang am Krayenkamp (Privatsphäre und Öffnungszeiten beachten).",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9795,
+          53.5483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 59,
+        "name": "Sprinkenhof — courtyard",
+        "category": "Kodak Moments",
+        "photo_theme": "Historic architecture",
+        "photo_theme_de": "Historische Architektur",
+        "viewpoint": "Publicly accessible street entrance on Burchardstraße; courtyard access may vary",
+        "viewpoint_de": "Eingang an der Burchardstraße; Hofzugang kann eingeschränkt sein",
+        "photo_tip": "Brick arches and repeating expressionist windows",
+        "photo_tip_de": "Backsteinbögen und rhythmische expressionistische Fenster",
+        "best_light": "Daylight",
+        "best_light_de": "Tagsüber",
+        "description": "Brick arches and repeating expressionist windows. Best: Daylight. Viewpoint: Publicly accessible street entrance on Burchardstraße; courtyard access may vary.",
+        "description_de": "Backsteinbögen und rhythmische expressionistische Fenster. Beste Zeit: Tagsüber. Standort: Eingang an der Burchardstraße; Hofzugang kann eingeschränkt sein.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0035,
+          53.5489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 60,
+        "name": "Peterstraße / KomponistenQuartier",
+        "category": "Kodak Moments",
+        "photo_theme": "Historic architecture",
+        "photo_theme_de": "Historische Architektur",
+        "viewpoint": "Public footpath on Peterstraße",
+        "viewpoint_de": "Öffentlicher Gehweg in der Peterstraße",
+        "photo_tip": "Historic-style façades and lamplit street perspective; ensemble includes reconstructions",
+        "photo_tip_de": "Historisierende Fassaden und Laternen; Ensemble umfasst Rekonstruktionen",
+        "best_light": "Dusk",
+        "best_light_de": "Dämmerung",
+        "description": "Historic-style façades and lamplit street perspective; ensemble includes reconstructions. Best: Dusk. Viewpoint: Public footpath on Peterstraße.",
+        "description_de": "Historisierende Fassaden und Laternen; Ensemble umfasst Rekonstruktionen. Beste Zeit: Dämmerung. Standort: Öffentlicher Gehweg in der Peterstraße.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.981,
+          53.5493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 61,
+        "name": "Pickhubenbrücke",
+        "category": "Kodak Moments",
+        "photo_theme": "Speicherstadt bridges",
+        "photo_theme_de": "Speicherstadt-Brücken",
+        "viewpoint": "Public sidewalk on the bridge facing St. Katharinen",
+        "viewpoint_de": "Öffentlicher Gehweg auf der Brücke mit Blick zu St. Katharinen",
+        "photo_tip": "Brick canal façades with St. Katharinen in the distance",
+        "photo_tip_de": "Backsteinfassaden am Fleet mit St. Katharinen im Hintergrund",
+        "best_light": "Blue hour",
+        "best_light_de": "Blaue Stunde",
+        "description": "Brick canal façades with St. Katharinen in the distance. Best: Blue hour. Viewpoint: Public sidewalk on the bridge facing St. Katharinen.",
+        "description_de": "Backsteinfassaden am Fleet mit St. Katharinen im Hintergrund. Beste Zeit: Blaue Stunde. Standort: Öffentlicher Gehweg auf der Brücke mit Blick zu St. Katharinen.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99542,
+          53.54433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 62,
+        "name": "Brooksbrücke",
+        "category": "Kodak Moments",
+        "photo_theme": "Speicherstadt bridges",
+        "photo_theme_de": "Speicherstadt-Brücken",
+        "viewpoint": "Public bridge sidewalk",
+        "viewpoint_de": "Öffentlicher Gehweg auf der Brücke",
+        "photo_tip": "Ornate railings, lamps and curved ironwork",
+        "photo_tip_de": "Verzierte Geländer, Laternen und geschwungene Stahlkonstruktion",
+        "best_light": "Dusk / evening",
+        "best_light_de": "Dämmerung / Abend",
+        "description": "Ornate railings, lamps and curved ironwork. Best: Dusk / evening. Viewpoint: Public bridge sidewalk.",
+        "description_de": "Verzierte Geländer, Laternen und geschwungene Stahlkonstruktion. Beste Zeit: Dämmerung / Abend. Standort: Öffentlicher Gehweg auf der Brücke.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.98976,
+          53.54444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 63,
+        "name": "Wandrahmsfleetbrücke",
+        "category": "Kodak Moments",
+        "photo_theme": "Speicherstadt bridges",
+        "photo_theme_de": "Speicherstadt-Brücken",
+        "viewpoint": "Public bridge sidewalk over the Wandrahmsfleet",
+        "viewpoint_de": "Öffentlicher Gehweg über dem Wandrahmsfleet",
+        "photo_tip": "Long canal perspective between brick warehouses",
+        "photo_tip_de": "Lange Fleetperspektive zwischen Backsteinspeichern",
+        "best_light": "Blue hour",
+        "best_light_de": "Blaue Stunde",
+        "description": "Long canal perspective between brick warehouses. Best: Blue hour. Viewpoint: Public bridge sidewalk over the Wandrahmsfleet.",
+        "description_de": "Lange Fleetperspektive zwischen Backsteinspeichern. Beste Zeit: Blaue Stunde. Standort: Öffentlicher Gehweg über dem Wandrahmsfleet.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9995,
+          53.54563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 64,
+        "name": "Kibbelsteg",
+        "category": "Kodak Moments",
+        "photo_theme": "Speicherstadt bridges",
+        "photo_theme_de": "Speicherstadt-Brücken",
+        "viewpoint": "Public elevated pedestrian walkway across the Zollkanal",
+        "viewpoint_de": "Öffentlicher erhöhter Fußgängersteg über dem Zollkanal",
+        "photo_tip": "Strong geometric lines and a layered canal view",
+        "photo_tip_de": "Geometrische Linien und Blick über den Zollkanal",
+        "best_light": "Morning or twilight",
+        "best_light_de": "Morgens oder Dämmerung",
+        "description": "Strong geometric lines and a layered canal view. Best: Morning or twilight. Viewpoint: Public elevated pedestrian walkway across the Zollkanal.",
+        "description_de": "Geometrische Linien und Blick über den Zollkanal. Beste Zeit: Morgens oder Dämmerung. Standort: Öffentlicher erhöhter Fußgängersteg über dem Zollkanal.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9918,
+          53.5447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 65,
+        "name": "Holländischbrookfleet — bridge viewpoint",
+        "category": "Kodak Moments",
+        "photo_theme": "Speicherstadt bridges",
+        "photo_theme_de": "Speicherstadt-Brücken",
+        "viewpoint": "Public sidewalk on Holländischbrookfleetbrücke",
+        "viewpoint_de": "Öffentlicher Gehweg auf der Holländischbrookfleetbrücke",
+        "photo_tip": "Enclosed canal between warehouse façades and reflections",
+        "photo_tip_de": "Enger Fleetblick zwischen Speichern und Spiegelungen",
+        "best_light": "Blue hour / mist",
+        "best_light_de": "Blaue Stunde / Nebel",
+        "description": "Enclosed canal between warehouse façades and reflections. Best: Blue hour / mist. Viewpoint: Public sidewalk on Holländischbrookfleetbrücke.",
+        "description_de": "Enger Fleetblick zwischen Speichern und Spiegelungen. Beste Zeit: Blaue Stunde / Nebel. Standort: Öffentlicher Gehweg auf der Holländischbrookfleetbrücke.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99971,
+          53.54528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 66,
+        "name": "Jungfernbrücke",
+        "category": "Kodak Moments",
+        "photo_theme": "Speicherstadt bridges",
+        "photo_theme_de": "Speicherstadt-Brücken",
+        "viewpoint": "Public pedestrian bridge over the Zollkanal",
+        "viewpoint_de": "Öffentliche Fußgängerbrücke über den Zollkanal",
+        "photo_tip": "Historic ironwork against brick architecture and the old city",
+        "photo_tip_de": "Historische Eisenkonstruktion vor Backsteinbauten und Altstadt",
+        "best_light": "Evening",
+        "best_light_de": "Abends",
+        "description": "Historic ironwork against brick architecture and the old city. Best: Evening. Viewpoint: Public pedestrian bridge over the Zollkanal.",
+        "description_de": "Historische Eisenkonstruktion vor Backsteinbauten und Altstadt. Beste Zeit: Abends. Standort: Öffentliche Fußgängerbrücke über den Zollkanal.",
+        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99491,
+          53.54529
+        ]
+      }
     }
   ]
 }
