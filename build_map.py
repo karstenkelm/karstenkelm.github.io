@@ -65,7 +65,20 @@ for lang, output in (("en", "leafmap-map.html"), ("de", "leafmap-map-de.html")):
             dest = "https://www.google.com/maps/search/?api=1&query=" + quote(p["name"] + ", Hamburg Germany")
             desc = p.get("description_de", p["description"]) if lang == "de" else p["description"]
             link_text = "Route anzeigen" if lang == "de" else "Directions"
-            fields = [f"<strong style='font-size:15px'>{html.escape(p['name'])}</strong>", f"<p>{html.escape(desc)}</p>"]
+            fields = [f"<strong style='font-size:15px'>{html.escape(p['name'])}</strong>"]
+            photo_url = p.get("photo_url", "")
+            if p["category"] == "Kodak Moments" and photo_url.startswith("https://"):
+                image_alt = html.escape(p.get("photo_alt_de" if lang == "de" else "photo_alt", p["name"]), quote=True)
+                image_source = html.escape(photo_url, quote=True)
+                fields.append(f'<img src="{image_source}" alt="{image_alt}" loading="lazy" style="display:block;width:100%;height:auto;max-height:195px;object-fit:cover;border-radius:4px;margin:10px 0" />')
+                credit = p.get("photo_credit", "")
+                credit_url = p.get("photo_credit_url", "")
+                if credit:
+                    if credit_url.startswith("https://"):
+                        fields.append(f'<small style="display:block;margin-bottom:8px;color:#666"><a href="{html.escape(credit_url, quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(credit)}</a></small>')
+                    else:
+                        fields.append(f'<small style="display:block;margin-bottom:8px;color:#666">{html.escape(credit)}</small>')
+            fields.append(f"<p>{html.escape(desc)}</p>")
             if p["category"] == "Kodak Moments":
                 viewpoint = p["viewpoint_de"] if lang == "de" else p["viewpoint"]
                 shot = p["photo_tip_de"] if lang == "de" else p["photo_tip"]
