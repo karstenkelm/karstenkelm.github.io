@@ -929,21 +929,23 @@
         "category": "Kodak Moments",
         "photo_theme": "Harbor & industry",
         "photo_theme_de": "Hafen und Industrie",
-        "viewpoint": "Public roadside or pedestrian path at Waltershofer Damm; avoid terminal gates",
-        "viewpoint_de": "Öffentlicher Fußweg am Waltershofer Damm; Hafentore meiden",
+        "viewpoint": "Published road-bridge photography position at Waltershofer Damm, beyond a short tunnel; do not rely on the former pedestrian overpass",
+        "viewpoint_de": "Veröffentlichter Fotostandort auf der Straßenbrücke am Waltershofer Damm hinter einem kurzen Tunnel; frühere Fußgängerbrücke existiert nicht mehr",
         "photo_tip": "Container ships, towering cranes and working harbor",
         "photo_tip_de": "Containerschiffe, Kräne und Hafenbetrieb",
         "best_light": "Morning or blue hour",
         "best_light_de": "Morgens oder zur blauen Stunde",
-        "description": "Container ships, towering cranes and working harbor. Best: Morning or blue hour. Viewpoint: Public roadside or pedestrian path at Waltershofer Damm; avoid terminal gates.",
-        "description_de": "Containerschiffe, Kräne und Hafenbetrieb. Beste Zeit: Morgens oder zur blauen Stunde. Standort: Öffentlicher Fußweg am Waltershofer Damm; Hafentore meiden.",
-        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+        "description": "Container ships, towering cranes and working harbor. Best: Morning or blue hour. Viewpoint: Published road-bridge photography position at Waltershofer Damm, beyond a short tunnel; do not rely on the former pedestrian overpass.",
+        "description_de": "Containerschiffe, Kräne und Hafenbetrieb. Beste Zeit: Morgens oder zur blauen Stunde. Standort: Veröffentlichter Fotostandort auf der Straßenbrücke am Waltershofer Damm hinter einem kurzen Tunnel; frühere Fußgängerbrücke existiert nicht mehr.",
+        "location_note": "Coordinate from photographer's linked map; verify safe public access on site.",
+        "source_url": "https://zeitraffer.photo.blog/2022/05/11/zeitraffer-hamburg-be-und-entladung-von-containerschiffen-im-waltershofer-hafen/",
+        "coordinate_status": "source_linked"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          9.8916,
-          53.5244
+          9.9287407,
+          53.5267678
         ]
       }
     },
@@ -981,15 +983,17 @@
         "category": "Kodak Moments",
         "photo_theme": "Harbor & industry",
         "photo_theme_de": "Hafen und Industrie",
-        "viewpoint": "Approximate Neuhof public-road viewpoint; confirm pedestrian access before visiting",
-        "viewpoint_de": "Ungefährer Standort an öffentlicher Straße in Neuhof; Zugang vorab prüfen",
+        "viewpoint": "Neuhof ferry pontoon approached via Breslauer Straße and Roßweg; check present access and beware movement from ship wakes",
+        "viewpoint_de": "Fährponton Neuhof über Breslauer Straße und Roßweg; aktuellen Zugang prüfen und Schiffswellenschlag beachten",
         "photo_tip": "Köhlbrand bridge silhouette against port structures",
         "photo_tip_de": "Köhlbrandbrücke über der Industrielandschaft",
         "best_light": "Clear evening or dramatic cloud",
         "best_light_de": "Abendlicht oder dramatische Wolken",
-        "description": "Köhlbrand bridge silhouette against port structures. Best: Clear evening or dramatic cloud. Viewpoint: Approximate Neuhof public-road viewpoint; confirm pedestrian access before visiting.",
-        "description_de": "Köhlbrandbrücke über der Industrielandschaft. Beste Zeit: Abendlicht oder dramatische Wolken. Standort: Ungefährer Standort an öffentlicher Straße in Neuhof; Zugang vorab prüfen.",
-        "location_note": "Photo viewpoint on or near a public route; access and sightlines should be verified locally."
+        "description": "Köhlbrand bridge silhouette against port structures. Best: Clear evening or dramatic cloud. Viewpoint: Neuhof ferry pontoon approached via Breslauer Straße and Roßweg; check present access and beware movement from ship wakes.",
+        "description_de": "Köhlbrandbrücke über der Industrielandschaft. Beste Zeit: Abendlicht oder dramatische Wolken. Standort: Fährponton Neuhof über Breslauer Straße und Roßweg; aktuellen Zugang prüfen und Schiffswellenschlag beachten.",
+        "location_note": "Marker remains approximate. Photographer gives walking approach but not a reliable exact coordinate.",
+        "source_url": "https://zeitraffer.photo.blog/karte-hamburg/",
+        "coordinate_status": "approximate"
       },
       "geometry": {
         "type": "Point",
@@ -1386,6 +1390,230 @@
         "coordinates": [
           9.99491,
           53.54529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 67,
+        "name": "Cruise Terminal Altona — rooftop",
+        "category": "Kodak Moments",
+        "photo_theme": "Harbor & industry",
+        "photo_theme_de": "Harbor & industry",
+        "viewpoint": "Roof terrace, accessed by exterior stairs at the Cruise Terminal Altona; check current opening/access",
+        "viewpoint_de": "Dachterrasse über Außentreppe am Cruise Terminal Altona; Zugang aktuell prüfen",
+        "photo_tip": "Panorama across the Elbe toward Burchardkai container cranes",
+        "photo_tip_de": "Panorama über die Elbe zu den Kränen am Burchardkai",
+        "best_light": "Autumn/winter sunset",
+        "best_light_de": "Sonnenuntergang im Herbst/Winter",
+        "description": "Panorama across the Elbe toward Burchardkai container cranes. Best: Autumn/winter sunset. Viewpoint: Roof terrace, accessed by exterior stairs at the Cruise Terminal Altona; check current opening/access.",
+        "description_de": "Panorama über die Elbe zu den Kränen am Burchardkai. Beste Zeit: Sonnenuntergang im Herbst/Winter. Standort: Dachterrasse über Außentreppe am Cruise Terminal Altona; Zugang aktuell prüfen.",
+        "location_note": "Approximate location of the described photography area, not a surveyed camera position. Check current access.",
+        "source_url": "https://zeitraffer.photo.blog/2020/11/25/zeitraffer-hamburg-sonennuntergang-am-cruise-terminal-altona/",
+        "coordinate_status": "approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9451,
+          53.5451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 68,
+        "name": "Außenalster — eastern shore sunset",
+        "category": "Kodak Moments",
+        "photo_theme": "Alster & waterside",
+        "photo_theme_de": "Alster & waterside",
+        "viewpoint": "Approximate eastern shore at Schwanenwik; choose a public path position",
+        "viewpoint_de": "Ungefährer Standort am Ostufer beim Schwanenwik; öffentlichen Uferweg wählen",
+        "photo_tip": "Evening light and Hamburg skyline across the Außenalster",
+        "photo_tip_de": "Abendlicht und Hamburger Skyline über die Außenalster",
+        "best_light": "Sunset",
+        "best_light_de": "Sonnenuntergang",
+        "description": "Evening light and Hamburg skyline across the Außenalster. Best: Sunset. Viewpoint: Approximate eastern shore at Schwanenwik; choose a public path position.",
+        "description_de": "Abendlicht und Hamburger Skyline über die Außenalster. Beste Zeit: Sonnenuntergang. Standort: Ungefährer Standort am Ostufer beim Schwanenwik; öffentlichen Uferweg wählen.",
+        "location_note": "Approximate location of the described photography area, not a surveyed camera position. Check current access.",
+        "source_url": "https://zeitraffer.photo.blog/karte-hamburg/",
+        "coordinate_status": "approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0195,
+          53.5625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 69,
+        "name": "Blankenese — new lower lighthouse",
+        "category": "Kodak Moments",
+        "photo_theme": "Elbe & maritime",
+        "photo_theme_de": "Elbe & maritime",
+        "viewpoint": "Public access platform at the new lower lighthouse near Strandwegtreppe; confirm local access",
+        "viewpoint_de": "Öffentliche Aussichtsplattform am neuen Unterfeuer nahe Strandwegtreppe; Zugang prüfen",
+        "photo_tip": "Passing vessels from an unusual position above the Elbe",
+        "photo_tip_de": "Vorbeifahrende Schiffe von einem ungewöhnlichen Standort über der Elbe",
+        "best_light": "Late afternoon",
+        "best_light_de": "Spätnachmittag",
+        "description": "Passing vessels from an unusual position above the Elbe. Best: Late afternoon. Viewpoint: Public access platform at the new lower lighthouse near Strandwegtreppe; confirm local access.",
+        "description_de": "Vorbeifahrende Schiffe von einem ungewöhnlichen Standort über der Elbe. Beste Zeit: Spätnachmittag. Standort: Öffentliche Aussichtsplattform am neuen Unterfeuer nahe Strandwegtreppe; Zugang prüfen.",
+        "location_note": "Approximate location of the described photography area, not a surveyed camera position. Check current access.",
+        "source_url": "https://zeitraffer.photo.blog/karte-hamburg/",
+        "coordinate_status": "approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.80717,
+          53.55562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 70,
+        "name": "Dockland — rooftop viewpoint",
+        "category": "Kodak Moments",
+        "photo_theme": "Harbor & industry",
+        "photo_theme_de": "Harbor & industry",
+        "viewpoint": "Public stairs to the roof terrace, Van-der-Smissen-Straße 9",
+        "viewpoint_de": "Öffentliche Treppe zur Dachterrasse, Van-der-Smissen-Straße 9",
+        "photo_tip": "Angular architecture and elevated harbor panorama",
+        "photo_tip_de": "Kantige Architektur und erhöhte Hafenperspektive",
+        "best_light": "Sunset / blue hour",
+        "best_light_de": "Sonnenuntergang / blaue Stunde",
+        "description": "Angular architecture and elevated harbor panorama. Best: Sunset / blue hour. Viewpoint: Public stairs to the roof terrace, Van-der-Smissen-Straße 9.",
+        "description_de": "Kantige Architektur und erhöhte Hafenperspektive. Beste Zeit: Sonnenuntergang / blaue Stunde. Standort: Öffentliche Treppe zur Dachterrasse, Van-der-Smissen-Straße 9.",
+        "location_note": "Approximate location of the described photography area, not a surveyed camera position. Check current access.",
+        "source_url": "https://zeitraffer.photo.blog/karte-hamburg/",
+        "coordinate_status": "approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9463,
+          53.5433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 71,
+        "name": "Hirschpark — Elbe overlook",
+        "category": "Kodak Moments",
+        "photo_theme": "Elbe & maritime",
+        "photo_theme_de": "Elbe & maritime",
+        "viewpoint": "Approximate public lookout in Hirschpark on the Geest slope; locate the signed river viewpoint",
+        "viewpoint_de": "Ungefährer öffentlicher Aussichtspunkt im Hirschpark am Geesthang; markierten Elbblick suchen",
+        "photo_tip": "River traffic through mature trees from an elevated park setting",
+        "photo_tip_de": "Schiffsverkehr durch alte Bäume von einem erhöhten Parkstandort",
+        "best_light": "Evening",
+        "best_light_de": "Abends",
+        "description": "River traffic through mature trees from an elevated park setting. Best: Evening. Viewpoint: Approximate public lookout in Hirschpark on the Geest slope; locate the signed river viewpoint.",
+        "description_de": "Schiffsverkehr durch alte Bäume von einem erhöhten Parkstandort. Beste Zeit: Abends. Standort: Ungefährer öffentlicher Aussichtspunkt im Hirschpark am Geesthang; markierten Elbblick suchen.",
+        "location_note": "Approximate location of the described photography area, not a surveyed camera position. Check current access.",
+        "source_url": "https://zeitraffer.photo.blog/karte-hamburg/",
+        "coordinate_status": "approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8233,
+          53.5597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 72,
+        "name": "Museumshafen Oevelgönne — cranes & ships",
+        "category": "Kodak Moments",
+        "photo_theme": "Elbe & maritime",
+        "photo_theme_de": "Elbe & maritime",
+        "viewpoint": "Public quay around Museumshafen Oevelgönne",
+        "viewpoint_de": "Öffentliche Kaikante beim Museumshafen Oevelgönne",
+        "photo_tip": "Historic vessels set against modern harbor cranes",
+        "photo_tip_de": "Historische Schiffe vor modernen Hafenkränen",
+        "best_light": "Sunset",
+        "best_light_de": "Sonnenuntergang",
+        "description": "Historic vessels set against modern harbor cranes. Best: Sunset. Viewpoint: Public quay around Museumshafen Oevelgönne.",
+        "description_de": "Historische Schiffe vor modernen Hafenkränen. Beste Zeit: Sonnenuntergang. Standort: Öffentliche Kaikante beim Museumshafen Oevelgönne.",
+        "location_note": "Approximate location of the described photography area, not a surveyed camera position. Check current access.",
+        "source_url": "https://zeitraffer.photo.blog/karte-hamburg/",
+        "coordinate_status": "approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9252,
+          53.5435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 73,
+        "name": "Holzhafen — Altona waterfront",
+        "category": "Kodak Moments",
+        "photo_theme": "Elbe & maritime",
+        "photo_theme_de": "Elbe & maritime",
+        "viewpoint": "Approximate public promenade along Holzhafen, near Große Elbstraße",
+        "viewpoint_de": "Ungefährer öffentlicher Uferweg am Holzhafen bei Große Elbstraße",
+        "photo_tip": "Distinctive modern waterfront buildings and Elbe light",
+        "photo_tip_de": "Markante moderne Ufergebäude im Abendlicht an der Elbe",
+        "best_light": "Sunset / blue hour",
+        "best_light_de": "Sonnenuntergang / blaue Stunde",
+        "description": "Distinctive modern waterfront buildings and Elbe light. Best: Sunset / blue hour. Viewpoint: Approximate public promenade along Holzhafen, near Große Elbstraße.",
+        "description_de": "Markante moderne Ufergebäude im Abendlicht an der Elbe. Beste Zeit: Sonnenuntergang / blaue Stunde. Standort: Ungefährer öffentlicher Uferweg am Holzhafen bei Große Elbstraße.",
+        "location_note": "Approximate location of the described photography area, not a surveyed camera position. Check current access.",
+        "source_url": "https://zeitraffer.photo.blog/karte-hamburg/",
+        "coordinate_status": "approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9384,
+          53.545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 74,
+        "name": "Elbphilharmonie — Plaza panorama",
+        "category": "Kodak Moments",
+        "photo_theme": "City panorama",
+        "photo_theme_de": "City panorama",
+        "viewpoint": "Public Plaza viewing terrace; check ticket and access arrangements",
+        "viewpoint_de": "Öffentliche Plaza-Aussichtsterrasse; Ticket- und Zugangsregeln prüfen",
+        "photo_tip": "Wide-angle Hamburg harbor panorama with vessels and cranes",
+        "photo_tip_de": "Weitwinkelpanorama über den Hamburger Hafen mit Schiffen und Kränen",
+        "best_light": "Late afternoon / sunset",
+        "best_light_de": "Spätnachmittag / Sonnenuntergang",
+        "description": "Wide-angle Hamburg harbor panorama with vessels and cranes. Best: Late afternoon / sunset. Viewpoint: Public Plaza viewing terrace; check ticket and access arrangements.",
+        "description_de": "Weitwinkelpanorama über den Hamburger Hafen mit Schiffen und Kränen. Beste Zeit: Spätnachmittag / Sonnenuntergang. Standort: Öffentliche Plaza-Aussichtsterrasse; Ticket- und Zugangsregeln prüfen.",
+        "location_note": "Approximate location of the described photography area, not a surveyed camera position. Check current access.",
+        "source_url": "https://zeitraffer.photo.blog/karte-hamburg/",
+        "coordinate_status": "approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9841,
+          53.5413
         ]
       }
     }
