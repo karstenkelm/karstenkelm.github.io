@@ -127,6 +127,79 @@ footer{max-width:1020px;margin:70px auto 0;padding:32px 22px 44px;border-top:1px
  .weather-reading{align-items:flex-start}
  .weather-chip strong{max-width:none}
 }
+
+/* Mobile masthead: two compact rows of clocks and conditions */
+@media (max-width:600px) {
+  .topbar {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:center;
+    column-gap:12px;
+    row-gap:9px;
+    padding:10px 15px 12px;
+    min-height:0;
+    height:auto;
+  }
+  .topbar .brand {
+    font-size:23px;
+    line-height:1.15;
+    min-width:0;
+    white-space:nowrap;
+  }
+  .topbar .edition { display:none; }
+  .topbar .language-switch {
+    grid-column:2;
+    grid-row:1;
+    margin:0 !important;
+    gap:5px;
+    align-self:center;
+  }
+  .language-switch .flag {width:48px;height:34px;}
+  .language-switch button {min-width:0 !important;min-height:0 !important;padding:3px 2px 9px !important;}
+  .live-conditions {
+    grid-column:1 / -1;
+    grid-row:2;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    width:100%;
+    margin:0;
+    padding:10px 0 0;
+    gap:0;
+    justify-content:stretch;
+    border-top:1px solid var(--line);
+  }
+  .clock-chip,.weather-chip {
+    display:flex;
+    box-sizing:border-box;
+    width:100%;
+    min-width:0;
+    max-width:none;
+    padding:7px 10px;
+    margin:0;
+    border-left:0;
+    white-space:normal;
+    gap:5px;
+    flex:none;
+  }
+  .clock-chip:nth-child(1),.weather-chip:nth-child(3) {
+    padding-left:0;
+    border-right:1px solid var(--line);
+  }
+  .clock-chip:nth-child(2),.weather-chip:nth-child(4) {padding-left:14px;}
+  .clock-chip {border-bottom:1px solid var(--line);padding-bottom:11px;}
+  .weather-chip {padding-top:12px;}
+  .chip-label {font-size:10px;letter-spacing:.055em;line-height:1.2;}
+  .clock-chip time {font-size:20px;letter-spacing:-.04em;white-space:nowrap;}
+  .weather-reading {display:flex;align-items:center;gap:7px;min-width:0;}
+  .weather-symbol {font-size:21px;min-width:24px;}
+  .weather-chip strong {font-size:11px;line-height:1.4;max-width:none;overflow-wrap:break-word;}
+}
+@media (max-width:350px) {
+  .topbar .brand {font-size:20px;}
+  .language-switch .flag {width:40px;height:30px;}
+  .clock-chip time {font-size:18px;}
+  .weather-chip strong {font-size:10px;}
+}
 </style></head><body>
 <nav class="topbar" aria-label="Site heading"><span class="brand">Hamburg Notes</span><span class="edition" data-i18n="edition">A personal city journal · No. 01</span><div class="live-conditions" aria-label="Local times and weather in Hamburg and Thousand Oaks"><div class="clock-chip"><span class="chip-label">California</span><time id="california-clock">--:--</time></div><div class="clock-chip"><span class="chip-label">Hamburg</span><time id="hamburg-clock">--:--</time></div><div class="weather-chip" title="Current Thousand Oaks weather via Open-Meteo"><span class="chip-label" id="thousand-oaks-label">Thousand Oaks</span><div class="weather-reading"><span class="weather-symbol" id="thousand-oaks-symbol" aria-hidden="true">☁</span><strong id="thousand-oaks-weather" aria-live="polite">—</strong></div></div><div class="weather-chip" title="Current Hamburg weather via Open-Meteo"><span class="chip-label" id="hamburg-label">Hamburg</span><div class="weather-reading"><span class="weather-symbol" id="hamburg-symbol" aria-hidden="true">☁</span><strong id="hamburg-weather" aria-live="polite">—</strong></div></div></div><div class="language-switch" role="group" aria-label="Language / Sprache"><button type="button" id="lang-en" aria-pressed="true" aria-label="English"><img class="flag" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_California.svg" alt="" aria-hidden="true"></button><button type="button" id="lang-de" aria-pressed="false" aria-label="Deutsch"><img class="flag" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Hamburg.svg" alt="" aria-hidden="true"></button></div></nav>
 <header>
