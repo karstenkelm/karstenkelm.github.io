@@ -450,6 +450,8 @@ function switchLanguage(next){
  if(all.length)draw();else document.getElementById("count").textContent=tr("loading");
  renderWeather();
 }
+// Apply the initial locale to every translated element before the user clicks a flag.
+switchLanguage(language);
 document.getElementById("lang-en").addEventListener("click",()=>switchLanguage("en"));
 document.getElementById("lang-de").addEventListener("click",()=>switchLanguage("de"));
 const showPlaces=document.getElementById("showPlaces"),closePlaces=document.getElementById("closePlaces"),panel=document.getElementById("placesPanel");
