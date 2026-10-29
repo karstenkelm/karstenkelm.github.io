@@ -290,6 +290,13 @@ header h1 em{font-size:inherit}
 .shop-photo{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.shop-photo[hidden]{display:none}.shop-art--mug{position:relative}.shop-art--mug .shop-symbol:not([hidden]){font-size:60px}
 .shop-art--shirt:has(.shop-photo){background:#e9e1d5}.shop-art--shirt:has(.shop-photo):before{display:none}.shop-art--shirt .shop-photo{z-index:2}.shop-art .shop-photo{object-fit:contain;background:#e9e1d5}
 .shop-art--shirt-photo{background-color:#4c3829;background-image:url("assets/shirts.png");background-repeat:no-repeat;background-size:205% auto;background-position:right top;padding:0}.shop-art--shirt-photo:before{display:none!important}.shop-art--shirt-photo>*{display:none}@media(max-width:540px){.shop-art--shirt-photo{background-size:205% auto}}
+
+/* English-only glossary popovers in the editorial introduction. */
+.glossary-term{font:inherit;color:inherit;border:0;border-bottom:1px dotted currentColor;background:none;padding:0;cursor:help;text-decoration:none}
+.glossary-term:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.glossary-popover{position:absolute;z-index:30;max-width:min(300px,calc(100vw - 32px));padding:13px 16px;background:var(--paper);border:1px solid #c7b9a6;box-shadow:0 8px 24px #0002;color:var(--ink);font:14px/1.5 'DM Sans',sans-serif;text-align:left;border-radius:4px}
+.glossary-popover strong{display:block;font-size:15px;margin-bottom:4px}
+.glossary-popover[hidden]{display:none}
 </style></head><body>
 <nav class="topbar" aria-label="Site heading"><span class="brand">Hamburg Notes</span><span class="edition" data-i18n="edition">A personal city journal · No. 01</span><div class="live-conditions" aria-label="Local times and weather in Hamburg and Thousand Oaks"><div class="clock-chip"><span class="chip-label">California</span><time id="california-clock">--:--</time></div><div class="clock-chip"><span class="chip-label">Hamburg</span><time id="hamburg-clock">--:--</time></div><div class="weather-chip" title="Current Thousand Oaks weather via Open-Meteo"><span class="chip-label" id="thousand-oaks-label">Thousand Oaks</span><div class="weather-reading"><span class="weather-symbol" id="thousand-oaks-symbol" aria-hidden="true">☁</span><strong id="thousand-oaks-weather" aria-live="polite">—</strong></div></div><div class="weather-chip" title="Current Hamburg weather via Open-Meteo"><span class="chip-label" id="hamburg-label">Hamburg</span><div class="weather-reading"><span class="weather-symbol" id="hamburg-symbol" aria-hidden="true">☁</span><strong id="hamburg-weather" aria-live="polite">—</strong></div></div></div><div class="language-switch" role="group" aria-label="Language / Sprache"><button type="button" id="lang-en" aria-pressed="true" aria-label="English"><img class="flag" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_California.svg" alt="" aria-hidden="true"></button><button type="button" id="lang-de" aria-pressed="false" aria-label="Deutsch"><img class="flag" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Flag_of_Hamburg.svg" alt="" aria-hidden="true"></button></div></nav>
 <header>
@@ -443,11 +450,43 @@ function updateWeather(){
 updateWeather();setInterval(updateWeather,15*60*1000);
 
 filters();
+const glossary={
+ "Fischbrötchen": "Literally ‘fish roll’: a northern German staple—usually herring, matjes, or fried fish in a crusty bread roll, often with onions and pickles. Best eaten near the harbor.",
+ "Kneipe": "A neighborhood pub or local bar: informal, often unpretentious, and somewhere to linger over a beer rather than make an occasion of it."
+};
+const glossaryPopover=document.createElement("div");glossaryPopover.className="glossary-popover";glossaryPopover.id="glossary-popover";glossaryPopover.setAttribute("role","tooltip");glossaryPopover.hidden=true;document.body.append(glossaryPopover);
+let glossaryActive=null;
+function closeGlossary(){glossaryPopover.hidden=true;if(glossaryActive)glossaryActive.setAttribute("aria-expanded","false");glossaryActive=null}
+function toggleGlossary(button){
+ if(glossaryActive===button&&!glossaryPopover.hidden){closeGlossary();return}
+ closeGlossary();glossaryActive=button;button.setAttribute("aria-expanded","true");
+ const word=button.dataset.glossary;glossaryPopover.replaceChildren();
+ const heading=document.createElement("strong");heading.textContent=word+" — "+(word==="Kneipe"?"pub / local bar":"fish sandwich");
+ const description=document.createElement("span");description.textContent=glossary[word];glossaryPopover.append(heading,description);glossaryPopover.hidden=false;
+ const box=button.getBoundingClientRect();glossaryPopover.style.left=Math.max(16,Math.min(window.scrollX+box.left,window.scrollX+window.innerWidth-glossaryPopover.offsetWidth-16))+"px";
+ glossaryPopover.style.top=(window.scrollY+box.bottom+8)+"px";
+}
+function enhanceEnglishGlossary(){
+ closeGlossary();const essay=document.querySelector('[data-i18n="essay1"]');if(!essay||language!=="en")return;
+ for(const word of Object.keys(glossary)){
+  const walker=document.createTreeWalker(essay,NodeFilter.SHOW_TEXT);let node;
+  while((node=walker.nextNode())){const index=node.textContent.indexOf(word);if(index<0)continue;
+   const before=node.textContent.slice(0,index),after=node.textContent.slice(index+word.length);
+   const button=document.createElement("button");button.type="button";button.className="glossary-term";button.dataset.glossary=word;button.textContent=word;
+   button.setAttribute("aria-label",word+": show English explanation");button.setAttribute("aria-expanded","false");button.setAttribute("aria-controls","glossary-popover");
+   const fragment=document.createDocumentFragment();fragment.append(document.createTextNode(before),button,document.createTextNode(after));node.replaceWith(fragment);break;
+  }
+ }
+}
+document.addEventListener("click",event=>{const button=event.target.closest?.(".glossary-term");if(button){toggleGlossary(button)}else if(!glossaryPopover.contains(event.target)){closeGlossary()}});
+document.addEventListener("keydown",event=>{if(event.key==="Escape")closeGlossary()});
+window.addEventListener("resize",closeGlossary);window.addEventListener("scroll",closeGlossary,{passive:true});
 function switchLanguage(next){
  language=next;document.documentElement.lang=next;
  const mapFrame=document.getElementById("map");const desired=next==="de"?"leafmap-map-de.html?v=20261027-pictograms-1":"leafmap-map.html?v=20261027-pictograms-1";if(mapFrame.getAttribute("src")!==desired)mapFrame.setAttribute("src",desired);
  document.querySelectorAll("[data-i18n]").forEach(el=>{el.textContent=tr(el.dataset.i18n)});
  document.querySelectorAll("[data-i18n-html]").forEach(el=>{if(el.dataset.i18nHtml==="title")el.innerHTML=tr("title")});
+ enhanceEnglishGlossary();
  document.getElementById("lang-en").setAttribute("aria-pressed",String(next==="en"));
  document.getElementById("lang-de").setAttribute("aria-pressed",String(next==="de"));
  document.querySelectorAll(".filter").forEach(el=>{el.textContent=categoryNames[next][el.dataset.category]});
