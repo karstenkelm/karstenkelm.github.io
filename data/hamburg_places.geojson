@@ -1616,6 +1616,26 @@
           53.5413
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 75,
+        "name": "Manufactum — Chilehaus",
+        "category": "Shops",
+        "description": "Beautifully made new household goods, clothing, stationery and practical classics in Hamburg’s historic Chilehaus. Not an antiques or secondhand shop.",
+        "description_de": "Hochwertige neue Haushaltswaren, Kleidung, Schreibwaren und langlebige Klassiker im historischen Chilehaus. Kein Antiquitäten- oder Secondhandladen.",
+        "address": "Fischertwiete 2, 20095 Hamburg",
+        "website": "https://www.manufactum.de/",
+        "location_note": "Map pin approximate — use the address and Directions for the exact entrance."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0015,
+          53.548
+        ]
+      }
     }
   ]
 }
