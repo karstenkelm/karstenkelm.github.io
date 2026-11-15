@@ -9,9 +9,9 @@ import leafmap.foliumap as leafmap
 ROOT = Path(__file__).resolve().parent
 geo = json.loads((ROOT / "data/hamburg_places.geojson").read_text(encoding="utf-8"))
 colors = {"Food": "#eaa45f", "Kneipen": "#e05d5a", "Cocktails": "#ac8ce3",
-          "Sights": "#469a89", "Harbor": "#428ec3", "Shops": "#b99c50", "Kodak Moments": "#527c9c"}
+          "Sights": "#469a89", "Harbor": "#428ec3", "Shops": "#b99c50", "Bakeries": "#986f4c", "Kodak Moments": "#527c9c"}
 names_de = {"Food": "Essen", "Kneipen": "Kneipen", "Cocktails": "Cocktails",
-            "Sights": "Sehenswertes", "Harbor": "Hafen", "Shops": "Läden", "Kodak Moments": "Kodak Moments"}
+            "Sights": "Sehenswertes", "Harbor": "Hafen", "Shops": "Läden", "Bakeries": "Bäckereien", "Kodak Moments": "Kodak Moments"}
 
 # Compact Lucide-style SVG pictograms inside understated, category-colored badges.
 icon_paths = {
@@ -21,6 +21,7 @@ icon_paths = {
     "Sights": '<path d="m3 10 9-7 9 7M5 10v10h14V10M9 20v-7h6v7M3 20h18"/>',
     "Harbor": '<circle cx="12" cy="4" r="2"/><path d="M12 6v15M5 11H2l3 4M19 11h3l-3 4M3 15c1 4 4 6 9 6s8-2 9-6"/>',
     "Shops": '<path d="M4 9h16l-1-5H5L4 9ZM5 9v11h14V9M9 20v-7h6v7"/>',
+    "Bakeries": '<path d="M3 14c0-6 4-10 9-10s9 4 9 10v6H3v-6Z"/><path d="m8 10-1 4m6-5-1 4m6-3-1 4"/>',
     "Kodak Moments": '<path d="M3 7h4l2-3h6l2 3h4v13H3V7Z"/><circle cx="12" cy="13" r="4"/>',
 }
 def category_icon(category, color):
