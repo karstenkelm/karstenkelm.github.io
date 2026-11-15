@@ -125,6 +125,7 @@ for lang, output in (("en", "leafmap-map.html"), ("de", "leafmap-map-de.html")):
       }
       function applyFilter(category, term) {
         const needle = String(term || "").toLowerCase().trim();
+        const visible = [];
         map.closePopup();
         groups.forEach(row => {
           const layerGroup = window[row.group];
@@ -133,12 +134,23 @@ for lang, output in (("en", "leafmap-map.html"), ("de", "leafmap-map-de.html")):
           row.markers.forEach(entry => {
             const marker = window[entry.layer];
             if (!marker) return;
-            if (categoryMatches && (!needle || entry.search.includes(needle))) layerGroup.addLayer(marker);
-            else layerGroup.removeLayer(marker);
+            if (categoryMatches && (!needle || entry.search.includes(needle))) {
+              layerGroup.addLayer(marker);
+              visible.push(marker.getLatLng());
+            } else {
+              layerGroup.removeLayer(marker);
+            }
           });
           if (categoryMatches) map.addLayer(layerGroup);
           else map.removeLayer(layerGroup);
         });
+        // A filtered category should show its pins immediately rather than
+        // retaining the original full-city extent.
+        if (category !== "All" && visible.length) {
+          map.fitBounds(L.latLngBounds(visible), {
+            padding: [36, 36], maxZoom: 14, animate: false
+          });
+        }
       }
       window.addEventListener("message", event => {
         if (event.origin !== window.location.origin || event.source !== window.parent) return;
