@@ -1636,6 +1636,253 @@
           53.548
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 76,
+        "name": "Braaker Mühle — Hoisbüttel",
+        "category": "Shops",
+        "description": "Braaker Mühle lists this branch as selling FRZBRTCHN hoodies and caps. Phone the branch to confirm the specific size, design, and current stock.",
+        "description_de": "Laut Braaker Mühle sind hier FRZBRTCHN-Hoodies und Caps erhältlich. Vorher anrufen und Größe, Motiv und aktuellen Bestand erfragen.",
+        "address": "Hamburger Straße 12, 22949 Ammersbek, Germany",
+        "phone": "+49 40 21085730",
+        "website": "https://meine.braaker-muehle.de/Catalog/Stores",
+        "merchandise": "FRZBRTCHN hoodies and caps",
+        "location_note": "Map pin approximate — use the street address and directions to find the exact entrance."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1648,
+          53.6899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 77,
+        "name": "Braaker Mühle — Spitzbergenweg (Meiendorf)",
+        "category": "Shops",
+        "description": "Braaker Mühle lists this branch as selling FRZBRTCHN hoodies and caps. Phone the branch to confirm the specific size, design, and current stock.",
+        "description_de": "Laut Braaker Mühle sind hier FRZBRTCHN-Hoodies und Caps erhältlich. Vorher anrufen und Größe, Motiv und aktuellen Bestand erfragen.",
+        "address": "Spitzbergenweg 30 (EDEKA), 22145 Hamburg, Germany",
+        "phone": "+49 40 238383490",
+        "website": "https://meine.braaker-muehle.de/Catalog/Stores",
+        "merchandise": "FRZBRTCHN hoodies and caps",
+        "location_note": "Map pin approximate — use the street address and directions to find the exact entrance."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1684,
+          53.6276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 78,
+        "name": "Braaker Mühle — Trittau",
+        "category": "Shops",
+        "description": "Braaker Mühle lists this branch as selling FRZBRTCHN hoodies and caps. Phone the branch to confirm the specific size, design, and current stock.",
+        "description_de": "Laut Braaker Mühle sind hier FRZBRTCHN-Hoodies und Caps erhältlich. Vorher anrufen und Größe, Motiv und aktuellen Bestand erfragen.",
+        "address": "Bahnhofstraße 42, 22946 Trittau, Germany",
+        "phone": "+49 4154 708088",
+        "website": "https://meine.braaker-muehle.de/Catalog/Stores",
+        "merchandise": "FRZBRTCHN hoodies and caps",
+        "location_note": "Map pin approximate — use the street address and directions to find the exact entrance."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.402441,
+          53.615802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 79,
+        "name": "Braaker Mühle — Semperstraße (Winterhude)",
+        "category": "Shops",
+        "description": "Braaker Mühle lists this branch as selling FRZBRTCHN hoodies and caps. Phone the branch to confirm the specific size, design, and current stock.",
+        "description_de": "Laut Braaker Mühle sind hier FRZBRTCHN-Hoodies und Caps erhältlich. Vorher anrufen und Größe, Motiv und aktuellen Bestand erfragen.",
+        "address": "Semperstraße 56, 22303 Hamburg, Germany",
+        "phone": "+49 40 27807458",
+        "website": "https://meine.braaker-muehle.de/Catalog/Stores",
+        "merchandise": "FRZBRTCHN hoodies and caps",
+        "location_note": "Map pin approximate — use the street address and directions to find the exact entrance."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.017951,
+          53.586533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 80,
+        "name": "Braaker Mühle — Oldenfelde (Oldenfelder Straße)",
+        "category": "Shops",
+        "description": "Braaker Mühle lists this branch as selling FRZBRTCHN hoodies and caps. Phone the branch to confirm the specific size, design, and current stock.",
+        "description_de": "Laut Braaker Mühle sind hier FRZBRTCHN-Hoodies und Caps erhältlich. Vorher anrufen und Größe, Motiv und aktuellen Bestand erfragen.",
+        "address": "Oldenfelder Straße 66, 22143 Hamburg, Germany",
+        "phone": "+49 40 66854242",
+        "website": "https://meine.braaker-muehle.de/Catalog/Stores",
+        "merchandise": "FRZBRTCHN hoodies and caps",
+        "location_note": "Map pin approximate — use the street address and directions to find the exact entrance.",
+        "branch_note": "Braaker Mühle has a second Oldenfelde site at Grömitzer Weg 38; the merchandise email did not distinguish between them."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1565,
+          53.6139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 81,
+        "name": "Braaker Mühle — Back-Drive Braak",
+        "category": "Shops",
+        "description": "Braaker Mühle lists this branch as selling FRZBRTCHN hoodies and caps. Phone the branch to confirm the specific size, design, and current stock.",
+        "description_de": "Laut Braaker Mühle sind hier FRZBRTCHN-Hoodies und Caps erhältlich. Vorher anrufen und Größe, Motiv und aktuellen Bestand erfragen.",
+        "address": "Braaker Bogen 33, 22145 Braak, Germany",
+        "phone": "+49 40 18024177",
+        "website": "https://meine.braaker-muehle.de/Catalog/Stores",
+        "merchandise": "FRZBRTCHN hoodies and caps",
+        "location_note": "Map pin approximate — use the street address and directions to find the exact entrance."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2396556,
+          53.6180412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 82,
+        "name": "Braaker Mühle — Hofweg (Uhlenhorst)",
+        "category": "Shops",
+        "description": "Braaker Mühle lists this branch as selling FRZBRTCHN hoodies and caps. Phone the branch to confirm the specific size, design, and current stock.",
+        "description_de": "Laut Braaker Mühle sind hier FRZBRTCHN-Hoodies und Caps erhältlich. Vorher anrufen und Größe, Motiv und aktuellen Bestand erfragen.",
+        "address": "Hofweg 70, 22083 Hamburg, Germany",
+        "phone": "+49 40 22696339",
+        "website": "https://meine.braaker-muehle.de/Catalog/Stores",
+        "merchandise": "FRZBRTCHN hoodies and caps",
+        "location_note": "Map pin approximate — use the street address and directions to find the exact entrance."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0153,
+          53.5744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 83,
+        "name": "Braaker Mühle — Schwarzenbek",
+        "category": "Shops",
+        "description": "Braaker Mühle lists this branch as selling FRZBRTCHN hoodies and caps. Phone the branch to confirm the specific size, design, and current stock.",
+        "description_de": "Laut Braaker Mühle sind hier FRZBRTCHN-Hoodies und Caps erhältlich. Vorher anrufen und Größe, Motiv und aktuellen Bestand erfragen.",
+        "address": "Hamburger Straße 30, 21493 Schwarzenbek, Germany",
+        "phone": "+49 4151 8999530",
+        "website": "https://meine.braaker-muehle.de/Catalog/Stores",
+        "merchandise": "FRZBRTCHN hoodies and caps",
+        "location_note": "Map pin approximate — use the street address and directions to find the exact entrance."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.473217,
+          53.501836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 84,
+        "name": "Braaker Mühle — Bad Oldesloe (Pop-up-Café)",
+        "category": "Shops",
+        "description": "Braaker Mühle lists this branch as selling FRZBRTCHN hoodies and caps. Phone the branch to confirm the specific size, design, and current stock.",
+        "description_de": "Laut Braaker Mühle sind hier FRZBRTCHN-Hoodies und Caps erhältlich. Vorher anrufen und Größe, Motiv und aktuellen Bestand erfragen.",
+        "address": "Hamburger Straße 130–132, 23843 Bad Oldesloe, Germany",
+        "phone": "+49 4531 1695961",
+        "website": "https://meine.braaker-muehle.de/Catalog/Stores",
+        "merchandise": "FRZBRTCHN hoodies and caps",
+        "location_note": "Map pin approximate — use the street address and directions to find the exact entrance.",
+        "coordinate_status": "approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3575,
+          53.8025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 85,
+        "name": "Braaker Mühle — Mühlencafé Braak",
+        "category": "Shops",
+        "description": "Braaker Mühle lists this branch as selling FRZBRTCHN hoodies and caps. Phone the branch to confirm the specific size, design, and current stock.",
+        "description_de": "Laut Braaker Mühle sind hier FRZBRTCHN-Hoodies und Caps erhältlich. Vorher anrufen und Größe, Motiv und aktuellen Bestand erfragen.",
+        "address": "Braaker Mühle 8, 22145 Braak, Germany",
+        "phone": "+49 40 67596589",
+        "website": "https://meine.braaker-muehle.de/Catalog/Stores",
+        "merchandise": "FRZBRTCHN hoodies and caps",
+        "location_note": "Map pin approximate — use the street address and directions to find the exact entrance."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.24464,
+          53.60255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 86,
+        "name": "Braaker Mühle — Famila Reinbek",
+        "category": "Shops",
+        "description": "FRZBRTCHN hoodies and caps reportedly sold at this Braaker Mühle bakery inside famila. The phone number reaches the famila supermarket, not a verified direct bakery line. Ask for the bakery and confirm current stock.",
+        "description_de": "Hier gibt es laut Braaker Mühle FRZBRTCHN-Hoodies und Caps. Die Telefonnummer gehört zum famila-Markt, nicht nachweislich zur Bäckerei. Nach Braaker Mühle fragen und den aktuellen Bestand prüfen.",
+        "address": "Liebigstraße 2 (famila), 21465 Reinbek, Germany",
+        "phone": "+49 40 73091490",
+        "website": "https://meine.braaker-muehle.de/Catalog/Stores",
+        "merchandise": "FRZBRTCHN hoodies and caps",
+        "location_note": "Map pin approximate — use the street address and directions to find the exact entrance.",
+        "phone_context": "famila supermarket main line; ask for the bakery",
+        "phone_context_de": "famila-Marktzentrale; nach der Bäckerei fragen",
+        "coordinate_status": "approximate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2316,
+          53.522
+        ]
+      }
     }
   ]
 }
