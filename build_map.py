@@ -62,7 +62,7 @@ for lang, output in (("en", "leafmap-map.html"), ("de", "leafmap-map-de.html")):
             if p["category"] != category:
                 continue
             longitude, latitude = feature["geometry"]["coordinates"]
-            dest = "https://www.google.com/maps/search/?api=1&query=" + quote(p["name"] + ", Hamburg Germany")
+            dest = "https://www.google.com/maps/search/?api=1&query=" + quote(p.get("address") or (p["name"] + ", Hamburg Germany"))
             desc = p.get("description_de", p["description"]) if lang == "de" else p["description"]
             link_text = "Route anzeigen" if lang == "de" else "Directions"
             fields = [f"<strong style='font-size:15px'>{html.escape(p['name'])}</strong>"]
@@ -90,7 +90,13 @@ for lang, output in (("en", "leafmap-map.html"), ("de", "leafmap-map-de.html")):
                                ("phone", "Telefon" if lang == "de" else "Phone"),
                                ("hours_de" if lang == "de" else "hours", "Öffnungszeiten" if lang == "de" else "Hours")):
                 if p.get(key):
-                    fields.append(f"<div><b>{title}:</b> {html.escape(p[key])}</div>")
+                    if key == "phone":
+                        dial = "".join(ch for ch in p[key] if ch.isdigit() or ch == "+")
+                        context = p.get("phone_context_de" if lang == "de" else "phone_context", "")
+                        extra = f" ({html.escape(context)})" if context else ""
+                        fields.append(f'<div><b>{title}:</b> <a href="tel:{html.escape(dial, quote=True)}">{html.escape(p[key])}</a>{extra}</div>')
+                    else:
+                        fields.append(f"<div><b>{title}:</b> {html.escape(p[key])}</div>")
             if p.get("website", "").startswith(("https://", "http://")):
                 fields.append(f'<p><a href="{html.escape(p["website"], quote=True)}" target="_blank" rel="noopener noreferrer">{"Webseite" if lang == "de" else "Website"} ↗</a></p>')
             fields.append(f'<a href="{dest}" target="_blank" rel="noopener noreferrer">{link_text} ↗</a>')
